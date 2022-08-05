@@ -1,0 +1,44 @@
+{
+  "name": "typora-themeable",
+  "version": "0.0.0",
+  "description": "A beautiful, customizable, typography-focused theme for the markdown editor, Typora.",
+  "author": "John Hildenbiddle <http://hildenbiddle.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/jhildenbiddle/typora-themeable",
+  "repository": {
+    "type": "git",
+    "url": "git+https://jhildenbiddle@github.com/jhildenbiddle/typora-themeable.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jhildenbiddle/typora-themeable/issues"
+  },
+  "keywords": [
+    "typora",
+    "markdown",
+    "theme",
+    "themeable",
+    "custom",
+    "properties",
+    "variables",
+    "typography"
+  ],
+  "main": "dist/typora-themeable.css",
+  "scripts": {
+    "build": "sass src:dist --style=expanded --no-source-map",
+    "clean": "rimraf dist/*",
+    "_postbuild": "cpy dist/themeable.css ~/Library/Application Support/abnerworks.Typora/themes/ --rename=themeable-dev.css",
+    "prepare": "npm run clean && npm run build",
+    "serve": "node server.js",
+    "start": "npm run serve npm run watch",
+    "version": "npm run build && git add -A docs",
+    "watch": "npm run build -- -w"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.27.10",
+    "compression": "^1.7.4",
+    "cpy-cli": "^4.1.0",
+    "markdownlint-cli": "^0.32.1",
+    "rimraf": "^3.0.2",
+    "sass": "^1.54.0"
+  }
+}
