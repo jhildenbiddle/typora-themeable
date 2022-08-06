@@ -1,0 +1,13 @@
+:root {
+    /* Tailwind Zinc: https://tailwindcss.com/docs/customizing-colors */
+    --theme-50: #fafafa;
+    --theme-100: #f4f4f5;
+    --theme-200: #e4e4e7;
+    --theme-300: #d4d4d8;
+    --theme-400: #a1a1aa;
+    --theme-500: #71717a;
+    --theme-600: #52525b;
+    --theme-700: #3f3f46;
+    --theme-800: #27272a;
+    --theme-900: #18181b;
+}

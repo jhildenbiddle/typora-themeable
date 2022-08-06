@@ -1,0 +1,110 @@
+:root {
+    --mermaid-pie-color1 : var(--red-500);
+    --mermaid-pie-color2 : var(--orange-500);
+    --mermaid-pie-color3 : var(--amber-500);
+    --mermaid-pie-color4 : var(--lime-500);
+    --mermaid-pie-color5 : var(--emerald-500);
+    --mermaid-pie-color6 : var(--cyan-500);
+    --mermaid-pie-color7 : var(--blue-500);
+    --mermaid-pie-color8 : var(--violet-500);
+    --mermaid-pie-color9 : var(--fuchsia-500);
+}
+
+[id^="mermaidChart"] .pieCircle {
+    opacity: 1 !important;
+    stroke: transparent !important;
+}
+
+[id^="mermaidChart"] .legend rect {
+    stroke: transparent !important;
+}
+
+[id^="mermaidChart"] .pieCircle:nth-of-type(1n),
+[id^="mermaidChart"] .legend:nth-of-type(1n) rect {
+    fill: var(--mermaid-pie-color1) !important;
+}
+
+[id^="mermaidChart"] .pieCircle:nth-of-type(2n),
+[id^="mermaidChart"] .legend:nth-of-type(2n) rect {
+    fill: var(--mermaid-pie-color2) !important;
+}
+
+[id^="mermaidChart"] .pieCircle:nth-of-type(3n),
+[id^="mermaidChart"] .legend:nth-of-type(3n) rect {
+    fill: var(--mermaid-pie-color3) !important;
+}
+
+[id^="mermaidChart"] .pieCircle:nth-of-type(4n),
+[id^="mermaidChart"] .legend:nth-of-type(4n) rect {
+    fill: var(--mermaid-pie-color4) !important;
+}
+
+[id^="mermaidChart"] .pieCircle:nth-of-type(5n),
+[id^="mermaidChart"] .legend:nth-of-type(5n) rect {
+    fill: var(--mermaid-pie-color5) !important;
+}
+
+[id^="mermaidChart"] .pieCircle:nth-of-type(6n),
+[id^="mermaidChart"] .legend:nth-of-type(6n) rect {
+    fill: var(--mermaid-pie-color6) !important;
+}
+
+[id^="mermaidChart"] .pieCircle:nth-of-type(7n),
+[id^="mermaidChart"] .legend:nth-of-type(7n) rect {
+    fill: var(--mermaid-pie-color7) !important;
+}
+
+[id^="mermaidChart"] .pieCircle:nth-of-type(8n),
+[id^="mermaidChart"] .legend:nth-of-type(8n) rect {
+    fill: var(--mermaid-pie-color8) !important;
+}
+
+[id^="mermaidChart"] .pieCircle:nth-of-type(9n),
+[id^="mermaidChart"] .legend:nth-of-type(9n) rect {
+    fill: var(--mermaid-pie-color9) !important;
+}
+
+[id^="mermaidChart"] .pieCircle:nth-of-type(10n),
+[id^="mermaidChart"] .legend:nth-of-type(10n) rect {
+    fill: var(--mermaid-pie-color10) !important;
+}
+
+[id^="mermaidChart"] .pieCircle:nth-of-type(11n),
+[id^="mermaidChart"] .legend:nth-of-type(11n) rect {
+    fill: var(--mermaid-pie-color11) !important;
+}
+
+[id^="mermaidChart"] .pieCircle:nth-of-type(12n),
+[id^="mermaidChart"] .legend:nth-of-type(12n) rect {
+    fill: var(--mermaid-pie-color12) !important;
+}
+
+[id^="mermaidChart"] .pieCircle:nth-of-type(13n),
+[id^="mermaidChart"] .legend:nth-of-type(13n) rect {
+    fill: var(--mermaid-pie-color13) !important;
+}
+
+[id^="mermaidChart"] .pieCircle:nth-of-type(14n),
+[id^="mermaidChart"] .legend:nth-of-type(14n) rect {
+    fill: var(--mermaid-pie-color14) !important;
+}
+
+[id^="mermaidChart"] .pieCircle:nth-of-type(15n),
+[id^="mermaidChart"] .legend:nth-of-type(15n) rect {
+    fill: var(--mermaid-pie-color15) !important;
+}
+
+[id^="mermaidChart"] .pieCircle:nth-of-type(16n),
+[id^="mermaidChart"] .legend:nth-of-type(16n) rect {
+    fill: var(--mermaid-pie-color16) !important;
+}
+
+[id^="mermaidChart"] .pieCircle:nth-of-type(17n),
+[id^="mermaidChart"] .legend:nth-of-type(17n) rect {
+    fill: var(--mermaid-pie-color17) !important;
+}
+
+[id^="mermaidChart"] .pieCircle:nth-of-type(18n),
+[id^="mermaidChart"] .legend:nth-of-type(18n) rect {
+    fill: var(--mermaid-pie-color18) !important;
+}

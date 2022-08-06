@@ -1,0 +1,13 @@
+:root {
+  /* Tailwind Stone: https://tailwindcss.com/docs/customizing-colors */
+  --theme-50: #fafaf9;
+  --theme-100: #f5f5f4;
+  --theme-200: #e7e5e4;
+  --theme-300: #d6d3d1;
+  --theme-400: #a8a29e;
+  --theme-500: #78716c;
+  --theme-600: #57534e;
+  --theme-700: #44403c;
+  --theme-800: #292524;
+  --theme-900: #1c1917;
+}

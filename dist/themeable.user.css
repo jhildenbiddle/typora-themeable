@@ -1,0 +1,30 @@
+/* ========================================================================== */
+/* Imports
+/* ========================================================================== */
+/* Monochrome Palette */
+/* @import url("themeable/monochrome-slate.css"); */
+/* @import url("themeable/monochrome-gray.css"); */
+/* @import url("themeable/monochrome-zinc.css"); */
+/* @import url("themeable/monochrome-stone.css"); */
+/* Code Theme */
+/* @import url("themeable/code-theme-material.css"); */
+/* @import url("themeable/code-theme-vscode.css"); */
+/* Diagrams */
+/* @import url("themeable/mermaid-pie-colors.css"); */
+/* ========================================================================== */
+/* Variables
+/* ========================================================================== */
+:root {
+  /* Diagrams: Mermaid */
+  --mermaid-theme: neutral; /* default, base, dark, forest, neutral, night */
+  --mermaid-sequence-numbers: off;
+  --mermaid-flowchart-curve: basis;
+  --mermaid--gantt-left-padding: 75;
+  /* Diagrams: Sequence */
+  --sequence-theme: simple; /* simple, hand */
+  /* TESTING */
+  /* --outline-background  : var(--blue-500); */
+  /* --outline-border-color: var(--blue-200); */
+  /* --outline-border-width: 2px; */
+  /* --outline-color       : yellow; */
+}

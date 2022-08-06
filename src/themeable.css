@@ -1,0 +1,195 @@
+/* Styles */
+@import url("themeable/reset.css");
+@import url("themeable/core.css");
+@import url("https://rsms.me/inter/inter.css");
+
+/* Variables */
+@import url("themeable/colors.css");
+@import url("themeable/monochrome-neutral.css");
+
+
+/* Theme Variables
+/* ========================================================================== */
+:root {
+    /* Palette */
+    --theme-primary: var(--violet-500);
+
+    /* State */
+    --active-background: var(--theme-primary);
+    --active-color     : var(--violet-50);
+    --hover-background : var(--theme-200);
+    --hover-color      : inherit;
+
+    /* Typography */
+    /* XXL: 45 (28 * 1.414) */
+    /* XL : 32 (21 * 1.414) */
+    /* L  : 23 (16 * 1.414) */
+    /* M  : 16 */
+    /* S  : 13 (13 or (16 / 1.414 = 11) */
+    /* XS : 11 (11 or (13 / 1.414 = 9) */
+    --root-font-size  : 16px;
+    --modular-scale   : 1.414; /* 1.067, 1.125, 1.200, 1.250, 1.333, 1.414, 1.500, 1.618 */
+    --font-family-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --font-family-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    --font-size-app   : 14px;
+    --font-size-app-s : 12px;
+    --font-size-xxl   : calc(var(--font-size-xl) * var(--modular-scale));
+    --font-size-xl    : calc(var(--font-size-l) * var(--modular-scale));
+    --font-size-l     : calc(1rem * var(--modular-scale));
+    --font-size-m     : 1rem;
+    --font-size-s     : max(0.8325rem, calc(1rem / var(--modular-scale)));
+    --font-size-xs    : max(0.6875rem, calc(var(--font-size-s) / var(--modular-scale)));
+    --font-size-mono  : max(var(--font-size-s), 0.9375rem);
+    --font-weight     : 400;
+    --font-weight-mono: 500;
+    --line-height     : 1.6;
+
+    /* App */
+    --background-color         : var(--theme-50);
+    --border-color             : var(--theme-200);
+    --border-radius            : 6px;
+    --border-radius-s          : 3px;
+    --border-width             : 1px;
+    --drop-shadow              : drop-shadow(0 3px 5px rgba(0, 0, 0, 0.15));
+    --form-element-background  : #fff;
+    --selection-background     : #c2e8fb;
+    --selection-color          : ;
+    --text-color               : var(--theme-700);
+
+    /* Sidebar */
+    --sidebar-active-background  : var(--active-background);
+    --sidebar-active-color       : var(--active-color);
+    --sidebar-background         : var(--theme-100);
+    --sidebar-border-color       : var(--theme-200);
+    --sidebar-border-width       : 1px;
+    --sidebar-hover-background   : var(--hover-background);
+    --sidebar-hover-color        : var(--hover-color);
+    --sidebar-input-background   : #fff;
+    --sidebar-input-color        : var(--theme-700);
+    --sidebar-text-color         : var(--theme-700);
+
+    /* Search Panel */
+    --search-active-background : var(--active-background);
+    --search-active-color      : var(--active-color);
+    --search-background        : var(--sidebar-background);
+    --search-border-color      : var(--sidebar-border-color);
+    --search-color             : var(--sidebar-color);
+    --search-input-background  : var(--sidebar-input-background);
+    --search-input-border-color: var(--border-color);
+    --search-input-color       : var(--sidebar-input-color);
+    --search-hover-background  : var(--hover-background);
+    --search-hover-color       : var(--hover-color);
+
+    /* Outline Panel */
+    --outline-background  : var(--theme-100);
+    --outline-border-color: var(--theme-200);
+    --outline-border-width: 1px;
+    --outline-color       : ;
+
+    /* Elements */
+    --blockquote-background  : unset;
+    --blockquote-border-color: var(--theme-primary);
+    --blockquote-border-width: 0 0 0 4px;
+    --blockquote-color       : unset;
+    --blockquote-padding     : 0 0 0 1.5rem;
+    --heading-color          : var(--theme-800);
+    --heading-font-weight    : 800;
+    --h1-font-size           : var(--font-size-xxl);
+    --h2-font-size           : var(--font-size-xl);
+    --h3-font-size           : var(--font-size-l);
+    --h4-font-size           : var(--font-size-m);
+    --h5-font-size           : var(--font-size-m);
+    --h6-font-size           : var(--font-size-s);
+    --hr-color               : var(--theme-300);
+    --hr-width               : 2px;
+    --link-color             : var(--theme-primary);
+    --marked-background      : #ffde67;
+    --marked-color           : inherit;
+    --strong-color           : var(--theme-800);
+    --strong-font-weight     : 700;
+
+    /* Lists */
+    --checkbox-border-radius: 4px;
+    --checkbox-size         : 1.2rem;
+    --checkbox-icon         : url("data:image/svg+xml,%3Csvg width='24' height='24' fill='white' xmlns='http://www.w3.org/2000/svg' fill-rule='evenodd' clip-rule='evenodd'%3E%3Cpath d='M21 6.285l-11.16 12.733-6.84-6.018 1.319-1.49 5.341 4.686 9.865-11.196 1.475 1.285z'/%3E%3C/svg%3E");
+    --counter-color         : inherit;
+    --marker-color          : inherit;
+
+    /* Markdown Meta */
+    --md-brackets         : var(--theme-400);
+    --md-brackets-expanded: var(--theme-primary);
+    --md-tags             : var(--theme-400);
+    --md-tags-expanded    : var(--theme-primary);
+
+    /* Tables */
+    --table-editor-background: var(--theme-200);
+    --thead-border-color     : var(--theme-300);
+    --thead-border-width     : 0 0 2px 0;
+    --th-border-color        : unset;
+    --th-border-width        : unset;
+    --th-color               : var(--strong-color);
+    --th-font-weight         : var(--strong-font-weight);
+    --th-padding             : 0 0.75rem 0.5rem 0.75rem;
+    --tbody-border-color     : unset;
+    --tbody-border-width     : unset;
+    --tr-alt-background      : var(--theme-100);
+    --tr-border-color        : var(--theme-200);
+    --tr-border-width        : 0 0 1px 0;
+    --td-border-color        : unset;
+    --td-border-width        : unset;
+    --td-padding             : 0.5rem 0.75rem;
+
+    /* Code */
+    --code-inline-background: var(--theme-200);
+    --code-inline-color     : var(--strong-color);
+
+    /* Code Fences */
+    --code-activeline-background: var(--theme-200);
+    --code-atom-color           : var(--amber-500);
+    --code-attribute-color      : var(--sky-600);
+    --code-background           : var(--theme-100);
+    --code-bracket-color        : var(--theme-400);
+    --code-builtin-color        : var(--emerald-600);
+    --code-comment-color        : var(--theme-400);
+    --code-cursor-border        : 2px solid var(--theme-primary);
+    --code-def-color            : var(--violet-500);
+    --code-error-color          : var(--red-500);
+    --code-keyword-color        : var(--sky-600);
+    --code-language-background  : var(--code-activeline-background);
+    --code-language-color       : var(--code-text-color);
+    --code-linenumber-color     : var(--theme-400);
+    --code-link-color           : ;
+    --code-meta-color           : var(--rose-600);
+    --code-number-color         : ;
+    --code-operator-color       : var(--rose-600);
+    --code-property-color       : var(--sky-600);
+    --code-qualifier-color      : var(--emerald-600);
+    --code-selected-background  : var(--selection-background);
+    --code-selected-color       : var(--selection-color);
+    --code-string-2-color       : ;
+    --code-string-color         : ;
+    --code-tag-color            : var(--violet-500);
+    --code-text-color           : var(--theme-700);
+    --code-type-color           : var(--rose-600);
+    --code-variable-2-color     : var(--cyan-500);
+    --code-variable-3-color     : var(--emerald-500);
+    --code-variable-color       : var(--cyan-500);
+}
+
+
+/* Fature Support
+/* ========================================================================== */
+/* Variable Font */
+@supports (font-variation-settings: normal) {
+    :root {
+        --font-family-sans: "Inter var", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    }
+}
+
+/* Print Styles
+/* ========================================================================== */
+@media print {
+    :root {
+        --background-color: #fff;
+    }
+}

@@ -1,0 +1,32 @@
+:root {
+  --code-activeline-background: #3a3a3a;
+  --code-atom-color: #569cd6;
+  --code-attribute-color: #9cdcfe;
+  --code-background: #1e1e1e;
+  --code-bracket-color: #808080;
+  --code-builtin-color: #a9b7c6;
+  --code-comment-color: #6a9955;
+  --code-cursor-border: 1px solid #bebebe;
+  --code-def-color: #9cdcfe;
+  --code-error-color: #bc3f3c;
+  --code-keyword-color: #569cd6;
+  --code-language-background: var(--code-activeline-background);
+  --code-language-color: var(--code-text-color);
+  --code-linenumber-color: unset;
+  --code-link-color: #287bde;
+  --code-meta-color: #569cd6;
+  --code-number-color: #b5cea8;
+  --code-operator-color: #d4d4d4;
+  --code-property-color: #9cdcfe;
+  --code-qualifier-color: #d7ba7d;
+  --code-selected-background: #1e496c;
+  --code-selected-color: #3e4451;
+  --code-string-color: #ce9178;
+  --code-string-2-color: #6a8759;
+  --code-tag-color: #569cd6;
+  --code-text-color: #e9e9e9;
+  --code-type-color: #a9b7c6;
+  --code-variable-color: #ddd6a3;
+  --code-variable-2-color: #9cdcfe;
+  --code-variable-3-color: #a9b7c6;
+}
