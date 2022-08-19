@@ -1,88 +1,93 @@
-/* Styles */
-@import url("themeable/reset.css");
 @import url("themeable/core.css");
 @import url("https://rsms.me/inter/inter.css");
-
-/* Variables */
-@import url("themeable/colors.css");
-@import url("themeable/monochrome-neutral.css");
 
 
 /* Theme Variables
 /* ========================================================================== */
 :root {
-    /* Palette */
-    --theme-primary: var(--violet-500);
+    /* Palette - Color */
+    --theme-primary  : var(--sky-600);
+    --theme-secondary: var(--violet-500);
+
+    /* Palette - Monochrome (Grayscale) */
+    --theme-mono-50 : var(--neutral-50);
+    --theme-mono-100: var(--neutral-100);
+    --theme-mono-200: var(--neutral-200);
+    --theme-mono-300: var(--neutral-300);
+    --theme-mono-400: var(--neutral-400);
+    --theme-mono-500: var(--neutral-500);
+    --theme-mono-600: var(--neutral-600);
+    --theme-mono-700: var(--neutral-700);
+    --theme-mono-800: var(--neutral-800);
+    --theme-mono-900: var(--neutral-900);
 
     /* State */
     --active-background: var(--theme-primary);
-    --active-color     : var(--violet-50);
-    --hover-background : var(--theme-200);
+    --active-color     : #fff;
+    --hover-background : var(--theme-mono-200);
     --hover-color      : inherit;
 
     /* Typography */
-    /* XXL: 45 (28 * 1.414) */
-    /* XL : 32 (21 * 1.414) */
-    /* L  : 23 (16 * 1.414) */
-    /* M  : 16 */
-    /* S  : 13 (13 or (16 / 1.414 = 11) */
-    /* XS : 11 (11 or (13 / 1.414 = 9) */
     --root-font-size  : 16px;
     --modular-scale   : 1.414; /* 1.067, 1.125, 1.200, 1.250, 1.333, 1.414, 1.500, 1.618 */
     --font-family-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-    --font-family-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-    --font-size-app   : 14px;
-    --font-size-app-s : 12px;
-    --font-size-xxl   : calc(var(--font-size-xl) * var(--modular-scale));
-    --font-size-xl    : calc(var(--font-size-l) * var(--modular-scale));
-    --font-size-l     : calc(1rem * var(--modular-scale));
-    --font-size-m     : 1rem;
-    --font-size-s     : max(0.8325rem, calc(1rem / var(--modular-scale)));
-    --font-size-xs    : max(0.6875rem, calc(var(--font-size-s) / var(--modular-scale)));
+    --font-family-sans: "Inter var", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    --font-size-app   : 0.875rem; /* 14px */
+    --font-size-app-s : 0.75rem; /* 12px */
+    --font-size-app-xs: 0.6875rem; /* 12px */
     --font-size-mono  : max(var(--font-size-s), 0.9375rem);
+    --font-size-xxl   : calc(var(--font-size-xl) * var(--modular-scale)); /* 45px (28 * 1.414) */
+    --font-size-xl    : calc(var(--font-size-l) * var(--modular-scale)); /* 32px (21 * 1.414) */
+    --font-size-l     : calc(1rem * var(--modular-scale)); /* 23px (16 * 1.414) */
+    --font-size-m     : 1rem; /* 16px */
+    --font-size-s     : max(0.75rem, calc(1rem / var(--modular-scale))); /* 12px (13 > (16 / 1.414 = 11) */
+    --font-size-xs    : max(0.6875rem, calc(var(--font-size-s) / var(--modular-scale))); /* 11px (11 > (13 / 1.414 = 9) */
     --font-weight     : 400;
     --font-weight-mono: 500;
     --line-height     : 1.6;
 
     /* App */
-    --background-color         : var(--theme-50);
-    --border-color             : var(--theme-200);
-    --border-radius            : 6px;
-    --border-radius-s          : 3px;
-    --border-width             : 1px;
-    --drop-shadow              : drop-shadow(0 3px 5px rgba(0, 0, 0, 0.15));
-    --form-element-background  : #fff;
-    --selection-background     : #c2e8fb;
-    --selection-color          : ;
-    --text-color               : var(--theme-700);
+    --background-color       : var(--theme-mono-50);
+    --border-color           : var(--theme-mono-200);
+    --border-radius          : 6px;
+    --border-radius-s        : 3px;
+    --border-radius-xs       : 1px;
+    --border-width           : 1px;
+    --drop-shadow            : drop-shadow(0 3px 5px rgba(0, 0, 0, 0.15));
+    --form-element-background: #fff;
+    --max-width              : 75ch;
+    --selection-background   : #c2e8fb;
+    --selection-color        : ;
+    --text-color             : var(--theme-mono-700);
 
     /* Sidebar */
-    --sidebar-active-background  : var(--active-background);
-    --sidebar-active-color       : var(--active-color);
-    --sidebar-background         : var(--theme-100);
-    --sidebar-border-color       : var(--theme-200);
-    --sidebar-border-width       : 1px;
-    --sidebar-hover-background   : var(--hover-background);
-    --sidebar-hover-color        : var(--hover-color);
-    --sidebar-input-background   : #fff;
-    --sidebar-input-color        : var(--theme-700);
-    --sidebar-text-color         : var(--theme-700);
+    --sidebar-active-background      : var(--hover-background);
+    --sidebar-active-color           : var(--hover-color);
+    --sidebar-background             : var(--theme-mono-100);
+    --sidebar-border-color           : var(--theme-mono-200);
+    --sidebar-border-width           : 1px;
+    --sidebar-hover-background       : var(--hover-background);
+    --sidebar-hover-color            : var(--hover-color);
+    --sidebar-input-background       : #fff;
+    --sidebar-input-color            : var(--theme-mono-700);
+    --sidebar-input-placeholder-color: var(--theme-mono-400);
+    --sidebar-text-color             : var(--theme-mono-700);
 
-    /* Search Panel */
+    /* Search Bar (CMD/CTRL+F) */
     --search-active-background : var(--active-background);
     --search-active-color      : var(--active-color);
     --search-background        : var(--sidebar-background);
     --search-border-color      : var(--sidebar-border-color);
-    --search-color             : var(--sidebar-color);
+    --search-color             : ;
     --search-input-background  : var(--sidebar-input-background);
     --search-input-border-color: var(--border-color);
     --search-input-color       : var(--sidebar-input-color);
     --search-hover-background  : var(--hover-background);
     --search-hover-color       : var(--hover-color);
 
-    /* Outline Panel */
-    --outline-background  : var(--theme-100);
-    --outline-border-color: var(--theme-200);
+    /* Outline Popover */
+    --outline-background  : var(--theme-mono-100);
+    --outline-border-color: var(--theme-mono-200);
     --outline-border-width: 1px;
     --outline-color       : ;
 
@@ -92,7 +97,7 @@
     --blockquote-border-width: 0 0 0 4px;
     --blockquote-color       : unset;
     --blockquote-padding     : 0 0 0 1.5rem;
-    --heading-color          : var(--theme-800);
+    --heading-color          : var(--theme-mono-800);
     --heading-font-weight    : 800;
     --h1-font-size           : var(--font-size-xxl);
     --h2-font-size           : var(--font-size-xl);
@@ -100,12 +105,12 @@
     --h4-font-size           : var(--font-size-m);
     --h5-font-size           : var(--font-size-m);
     --h6-font-size           : var(--font-size-s);
-    --hr-color               : var(--theme-300);
+    --hr-color               : var(--theme-mono-300);
     --hr-width               : 2px;
     --link-color             : var(--theme-primary);
     --marked-background      : #ffde67;
     --marked-color           : inherit;
-    --strong-color           : var(--theme-800);
+    --strong-color           : var(--theme-mono-800);
     --strong-font-weight     : 700;
 
     /* Lists */
@@ -116,14 +121,14 @@
     --marker-color          : inherit;
 
     /* Markdown Meta */
-    --md-brackets         : var(--theme-400);
-    --md-brackets-expanded: var(--theme-primary);
-    --md-tags             : var(--theme-400);
-    --md-tags-expanded    : var(--theme-primary);
+    --md-brackets         : var(--theme-mono-400);
+    --md-brackets-expanded: var(--theme-secondary);
+    --md-tags             : var(--theme-mono-400);
+    --md-tags-expanded    : var(--theme-secondary);
 
     /* Tables */
-    --table-editor-background: var(--theme-200);
-    --thead-border-color     : var(--theme-300);
+    --table-editor-background: var(--theme-mono-200);
+    --thead-border-color     : var(--theme-mono-300);
     --thead-border-width     : 0 0 2px 0;
     --th-border-color        : unset;
     --th-border-width        : unset;
@@ -132,32 +137,32 @@
     --th-padding             : 0 0.75rem 0.5rem 0.75rem;
     --tbody-border-color     : unset;
     --tbody-border-width     : unset;
-    --tr-alt-background      : var(--theme-100);
-    --tr-border-color        : var(--theme-200);
+    --tr-alt-background      : var(--theme-mono-100);
+    --tr-border-color        : var(--theme-mono-200);
     --tr-border-width        : 0 0 1px 0;
     --td-border-color        : unset;
     --td-border-width        : unset;
     --td-padding             : 0.5rem 0.75rem;
 
     /* Code */
-    --code-inline-background: var(--theme-200);
+    --code-inline-background: var(--theme-mono-200);
     --code-inline-color     : var(--strong-color);
 
     /* Code Fences */
-    --code-activeline-background: var(--theme-200);
+    --code-activeline-background: var(--theme-mono-200);
     --code-atom-color           : var(--amber-500);
     --code-attribute-color      : var(--sky-600);
-    --code-background           : var(--theme-100);
-    --code-bracket-color        : var(--theme-400);
+    --code-background           : var(--theme-mono-100);
+    --code-bracket-color        : var(--theme-mono-400);
     --code-builtin-color        : var(--emerald-600);
-    --code-comment-color        : var(--theme-400);
+    --code-comment-color        : var(--theme-mono-400);
     --code-cursor-border        : 2px solid var(--theme-primary);
     --code-def-color            : var(--violet-500);
     --code-error-color          : var(--red-500);
     --code-keyword-color        : var(--sky-600);
     --code-language-background  : var(--code-activeline-background);
     --code-language-color       : var(--code-text-color);
-    --code-linenumber-color     : var(--theme-400);
+    --code-linenumber-color     : var(--theme-mono-400);
     --code-link-color           : ;
     --code-meta-color           : var(--rose-600);
     --code-number-color         : ;
@@ -169,22 +174,13 @@
     --code-string-2-color       : ;
     --code-string-color         : ;
     --code-tag-color            : var(--violet-500);
-    --code-text-color           : var(--theme-700);
+    --code-text-color           : var(--theme-mono-700);
     --code-type-color           : var(--rose-600);
     --code-variable-2-color     : var(--cyan-500);
     --code-variable-3-color     : var(--emerald-500);
     --code-variable-color       : var(--cyan-500);
 }
 
-
-/* Fature Support
-/* ========================================================================== */
-/* Variable Font */
-@supports (font-variation-settings: normal) {
-    :root {
-        --font-family-sans: "Inter var", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-    }
-}
 
 /* Print Styles
 /* ========================================================================== */

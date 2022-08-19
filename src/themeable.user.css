@@ -2,14 +2,14 @@
 /* Imports
 /* ========================================================================== */
 /* Monochrome Palette */
-/* @import url("themeable/monochrome-slate.css"); */
-/* @import url("themeable/monochrome-gray.css"); */
-/* @import url("themeable/monochrome-zinc.css"); */
-/* @import url("themeable/monochrome-stone.css"); */
+/* @import url("themeable/mono-100.css"); */
+/* @import url("themeable/mono-200.css"); */
+/* @import url("themeable/mono-300.css"); */
+/* @import url("themeable/mono-500.css"); */
 
 /* Code Theme */
-/* @import url("themeable/code-theme-material.css"); */
-/* @import url("themeable/code-theme-vscode.css"); */
+/* @import url("themeable/code-material.css"); */
+/* @import url("themeable/code-vscode.css"); */
 
 /* Diagrams */
 /* @import url("themeable/mermaid-pie-colors.css"); */
