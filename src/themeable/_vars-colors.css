@@ -1,7 +1,5 @@
-/* Credit: tailwind.css @ https://tailwindcss.com/docs/customizing-colors */
-
 :root {
-    /* Color */
+    /* Colors: tailwind.css @ https://tailwindcss.com/docs/customizing-colors */
     /* ---------------------------------------------------------------------- */
     /* Red */
     --red-50 : #fef2f2;
