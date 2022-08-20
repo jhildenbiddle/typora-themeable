@@ -1,0 +1,93 @@
+/* ========================================================================== */
+/* Base
+/* ========================================================================== */
+*,
+::before,
+::after  {
+    box-sizing: border-box;
+    border: 0;
+    border-style: solid;
+    border-color: currentColor;
+}
+
+html,
+body {
+    margin: 0;
+    line-height: var(--line-height);
+}
+
+html {
+    accent-color: var(--theme-primary);
+    font-family: var(--font-family-sans);
+    font-size: var(--root-font-size);
+    font-weight: var(--font-weight);
+    font-family: var(--font-family-sans);
+}
+
+a,
+a code {
+    color: var(--link-color);
+}
+
+a {
+    text-decoration: underline;
+}
+
+b,
+strong {
+    color: var(--strong-color);
+    font-weight: var(--strong-font-weight);
+}
+
+blockquote {
+    margin: 1.5rem 0;
+    padding: var(--blockquote-padding);
+    border-width: var(--blockquote-border-width);
+    border-color: var(--blockquote-border-color);
+    background: var(--blockquote-background);
+    color: var(--blockquote-color);
+}
+
+code,
+kbd,
+samp,
+pre {
+    font-family: var(--font-family-mono);
+}
+
+code,
+pre {
+    font-size: var(--font-size-mono);
+    font-weight: var(--font-weight-mono);
+}
+
+hr {
+    border-color: var(--hr-color);
+    border-top-width: var(--hr-width);
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: var(--sidebar-input-placeholder-color);
+}
+
+mark {
+    border-radius: var(--border-radius-xs);
+    box-shadow: 0 0 0 1px var(--marked-background);
+    background: var(--marked-background);
+    color: var(--marked-color);
+}
+
+p {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+small {
+    font-size: var(--font-size-s);
+}
+
+sub,
+sup {
+    font-size: var(--font-size-s);
+}

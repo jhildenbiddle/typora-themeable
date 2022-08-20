@@ -1,0 +1,64 @@
+/* ========================================================================== */
+/* Lists
+/* ========================================================================== */
+ol,
+ul {
+    padding-left: 1.5rem;
+}
+
+ol {
+    margin-left: 0.25rem;
+    list-style-type: decimal;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+:is(ol, ul) :is(ol, ul) {
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+}
+
+ol > li::marker {
+    color: var(--counter-color);
+}
+
+ul > li::marker {
+    color: var(--marker-color);
+}
+
+/* Task Lists
+/* -------------------------------------------------------------------------- */
+#write li.task-list-item {
+    padding-left: 0.75em;
+}
+
+input[checked] ~ * {
+    opacity: 0.6;
+    text-decoration: line-through;
+}
+
+#write input[type=checkbox],
+li.task-list-item > input[type=checkbox] {
+    appearance: none;
+    width: var(--checkbox-size);
+    height: var(--checkbox-size);
+    padding: 0;
+    border: 1px solid var(--theme-mono-300);
+    border-radius: var(--checkbox-border-radius);
+    background: var(--theme-mono-100);
+}
+
+#write input[type=checkbox][checked] {
+    border-color: var(--theme-primary);
+    background:
+        var(--checkbox-icon) center center / 85% no-repeat,
+        var(--theme-primary);
+}
+
+li.task-list-item > input[type=checkbox] {
+    top: calc(((1em * var(--line-height)) / 2) - (var(--checkbox-size) / 2));
+    left: calc(0px - var(--checkbox-size));
+    margin: 0;
+}

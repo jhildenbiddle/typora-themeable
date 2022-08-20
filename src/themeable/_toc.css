@@ -1,0 +1,63 @@
+/* ========================================================================== */
+/* TOC
+/* ========================================================================== */
+.md-toc {
+    margin: 2rem 0;
+    font-size: var(--font-size-m);
+    line-height: var(--line-height);
+}
+
+.md-toc-content {
+    padding: 0;
+    margin: 0;
+}
+
+.md-toc:focus .md-toc-content {
+    border: unset;
+    margin: 0;
+}
+
+.md-toc-h1 .md-toc-inner {
+    margin-left: 0;
+    font-weight: var(--strong-font-weight);
+}
+
+.md-toc-h2 .md-toc-inner {
+    margin-left: 1em;
+}
+
+.md-toc-h3 .md-toc-inner {
+    margin-left: 2em;
+}
+
+.md-toc-h4 .md-toc-inner {
+    margin-left: 3em;
+}
+
+.md-toc-h5 .md-toc-inner {
+    margin-left: 4em;
+}
+
+.md-toc-h6 .md-toc-inner {
+    margin-left: 5em;
+}
+
+/* Edit bar (TOC, Tables)
+/* -------------------------------------------------------------------------- */
+#write div.md-toc-tooltip {
+    inset: auto auto 100% -10px;
+    width: calc(100% + 20px);
+    padding: 0 8px;
+    border: 0;
+    border-radius: var(--border-radius);
+    background: var(--table-editor-background);
+    font-size: var(--font-size-s);
+    line-height: calc(var(--font-size-m) * var(--line-height));
+}
+
+.md-toc.md-focus .md-toc-tooltip,
+.md-toc:focus .md-toc-tooltip {
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+}

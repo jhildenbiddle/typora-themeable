@@ -1,0 +1,82 @@
+/* ========================================================================== */
+/* Quick Open
+/* ========================================================================== */
+#typora-quick-open {
+    padding: 0;
+    border-width: var(--outline-border-width);
+    border-color: var(--outline-border-color);
+    border-radius: var(--border-radius);
+    background: var(--outline-background);
+    color: var(--outline-color);
+    box-shadow: none;
+    filter: var(--drop-shadow);
+}
+
+#typora-quick-open-input,
+.typora-quick-open-list {
+    padding: 0.5em;
+}
+
+#typora-quick-open-input input {
+    max-height: unset;
+    overflow: unset;
+    border-color: var(--outline-border-color);
+    border-radius: var(--border-radius-s);
+    font-size: var(--font-size-app);
+    line-height: 2;
+}
+
+.ty-quick-open-category-title,
+.typora-quick-open-item-path {
+    opacity: 0.7;
+}
+
+.ty-quick-open-category-title {
+    margin-top: 0.5rem;
+    margin-bottom: 0.15rem;
+    font-size: var(--font-size-app-xs);
+    height: auto;
+    line-height: var(--line-height);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+}
+
+.ty-quick-open-category.ty-has-prev .ty-quick-open-category-title {
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
+}
+
+.typora-quick-open-item,
+.typora-quick-open-item-path {
+    max-height: auto;
+    line-height: var(--line-height);
+}
+
+.typora-quick-open-item {
+    height: auto;
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+    font-size: var(--font-size-app);
+    cursor: pointer;
+}
+
+.typora-quick-open-item.active {
+    border-radius: var(--border-radius-s);
+}
+
+.typora-quick-open-item-path {
+    font-size: var(--font-size-app-s);
+}
+
+.typora-quick-open-item-title {
+    margin-bottom: 0.25em;
+    line-height: var(--line-height);
+}
+
+.typora-quick-open-item-title b {
+    border-radius: var(--border-radius-xs);
+    box-shadow: 0 0 0 1px var(--marked-background);
+    background: var(--marked-background);
+    color: var(--marked-color);
+}

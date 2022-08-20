@@ -1,0 +1,94 @@
+/* ========================================================================== */
+/* Markdown
+/* ========================================================================== */
+/* Button Icons */
+button.btn .ty-icon {
+    font-size: 13px; /* Icons */
+}
+
+/* Footnotes */
+.footnotes {
+    opacity: 1;
+    font-size: var(--font-size-s);
+}
+
+.md-p {
+    /* Footnote cursor fix #1 */
+    z-index: 0;
+}
+
+.md-footnote {
+    /* Footnote cursor fix #2 */
+    z-index: -1;
+}
+
+sup.md-footnote {
+    padding: 0.1em 0.25em 0.2em 0.25em;
+    border-radius: var(--border-radius-s);
+    background: var(--code-inline-background);
+    color: var(--code-inline-color);
+    line-height: 1;
+}
+
+/* Footnote Brackets */
+.md-def-name:before,
+.md-def-name:after,
+.md-def-title:before,
+.md-def-title:after,
+/* Link Brackets */
+.md-link .md-meta.md-before,
+.md-link .md-meta.md-after {
+    color: var(--md-brackets);
+}
+
+/* Footnote & Link Bracket */
+.md-footnote .md-meta.md-before,
+.md-link .md-meta.md-before {
+    margin-right: 0.15em;
+}
+
+/* Footnote & Link Bracket */
+.md-footnote .md-meta.md-after,
+.md-link .md-meta.md-before ~ .md-meta.md-before,
+.md-link .md-meta.md-after {
+    margin-left: 0.15em;
+}
+
+/* Footnote & Link Name */
+.md-def-name {
+    font-weight: var(--strong-font-weight);
+    color: var(--strong-color);
+}
+
+/* HTML tags (always visible) */
+.md-br,
+.md-br-content,
+.md-comment {
+    opacity: 1;
+    color: var(--md-tags);
+}
+
+/* Horizontal Rules */
+.md-hr {
+    margin: 3rem 0;
+}
+
+/* Images */
+.md-image > .md-meta {
+    color: inherit;
+    font-family: var(--font-family-sans);
+}
+
+/* Image Icon */
+.md-image > .md-meta:before,
+/* HTML tags */
+.md-raw-inline:not(.md-br-content) {
+    opacity: 1 !important;
+    color: var(--md-tags-expanded);
+}
+
+/* URLs */
+.md-url,
+.md-def-url {
+    color: var(--link-color);
+}

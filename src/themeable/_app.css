@@ -1,0 +1,61 @@
+/* ========================================================================== */
+/* App
+/* ========================================================================== */
+.blink-area {
+  -webkit-animation: none;
+          animation: none;
+}
+
+.btn-primary,
+.btn-primary:hover {
+    background: var(--active-background);
+    color: var(--active-color);
+}
+
+.btn-primary:hover {
+    filter: contrast(1.2);
+}
+
+/* Context Menu (e.g., table context menu and... ???)*/
+.context-menu {
+    width: 250px;
+}
+.context-menu .divider {
+    border-top: var(--border-width) solid var(--border-color);
+    opacity: 1;
+}
+.context-menu .ty-menu-shortcut {
+    font-family: var(--font-family-sans);
+}
+
+/* Tooltips */
+.code-tooltip-content * {
+    color: unset;
+}
+
+/* Tabs */
+body:not([class*="seamless"]) :is(#typora-sidebar, content) {
+    border-top: 1px solid var(--border-color);
+}
+
+/* Auto-suggest (code fence language selection and... ???) */
+#ty-auto-suggest {
+    border-radius: var(--border-radius);
+    font-size: var(--font-size-s);
+    box-shadow: none;
+    filter: var(--drop-shadow);
+}
+
+/* Search Hits */
+.cm-search-hit.CodeMirror-selectedtext,
+.md-search-hit.md-search-select,
+.md-search-select,
+.md-search-hit {
+    border-radius: var(--border-radius-xs);
+    box-shadow: 0 0 0 1px var(--theme-mono-500);
+}
+
+.md-search-hit {
+    background: var(--search-select-bg-color);
+    color: var(--search-select-text-color);
+}

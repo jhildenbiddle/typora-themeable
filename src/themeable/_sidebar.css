@@ -1,0 +1,447 @@
+/* ========================================================================== */
+/* Sidebar
+/* ========================================================================== */
+#typora-sidebar {
+    border-right: var(--sidebar-border-width) solid var(--sidebar-border-color);
+    background: var(--sidebar-background);
+    color: var(--sidebar-text-color);
+}
+
+#typora-sidebar,
+#sidebar-files-menu.dropdown-menu > li {
+    font-size: var(--font-size-app);
+}
+
+#typora-sidebar input {
+    border-radius: var(--border-radius-s);
+    background: var(--sidebar-input-background);
+    color: var(--sidebar-input-color);
+}
+
+.file-list-item-time,
+.file-list-item-parent-loc,
+.file-list-item-summary,
+.ty-search-item-line {
+    font-family: var(--font-family-sans);
+}
+
+.ty-search-item-line:hover {
+    background-color: var(--hover-background);
+    color: var(--hover-color);
+}
+
+/* Selection Dot */
+.outline-item-active::after,
+.active .file-list-item-file-name::after,
+.active .file-node-content::after {
+    content: "";
+    position: absolute;
+    top: calc(50% - 4px);
+    right: 0;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--theme-secondary);
+}
+
+/* Headers
+/* -------------------------------------------------------------------------- */
+.sidebar-tabs {
+    border-bottom: var(--sidebar-border-width) solid var(--sidebar-border-color);
+}
+
+.sidebar-tab {
+    font-weight: var(--strong-font-weight);
+    text-transform: none;
+}
+
+/* Outline */
+/* -------------------------------------------------------------------------- */
+.pin-outline #outline-content .outline-active strong,
+.pin-outline .outline-active {
+    font-weight: var(--strong-font-weight);
+}
+
+.pin-outline .outline-active {
+    font-weight: var(--font-weight);
+}
+
+.outline-item,
+.no-collapse-outline .outline-item {
+    margin: 1px 0;
+}
+
+.outline-item {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-top: 0.4em;
+    padding-bottom: 0.4em;
+}
+
+.outline-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -100px;
+    left: -100px;
+}
+
+.outline-item:hover {
+    margin-right: 0;
+    margin-left: 0;
+    border-right: 0;
+    border-left: 0;
+    background: none;
+    color: var(--sidebar-hover-color);
+}
+
+.outline-item:hover::before {
+    background: var(--sidebar-hover-background);
+}
+
+.outline-item > * {
+    position: relative;
+}
+
+.outline-expander,
+.outline-expander:before {
+    --icon-width: 10px;
+
+    width: calc(var(--icon-width) * 2);
+    padding: 0;
+    font-size: var(--icon-width);
+    line-height: var(--icon-width);
+}
+
+.outline-expander {
+    display: unset;
+    height: auto;
+    text-align: center;
+}
+
+.outline-label {
+    width: 100%;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.outline-label:hover {
+    text-decoration: none;
+}
+
+.outline-item-active {
+    position: relative
+    padding-right: 8px;
+    color: var(--sidebar-active-color);
+}
+
+.outline-item-active::before {
+    background: var(--sidebar-active-background);
+}
+
+.outline-item-active .outline-label {
+    padding-right: 10px;
+}
+
+/* Articles & Files (Shared)
+/* -------------------------------------------------------------------------- */
+.file-node-icon.fa-folder::before {
+    content: "\f114";
+}
+
+.file-node-open-state {
+    margin-top: -2px;
+    margin-right: 3px;
+    margin-left: -2px;
+}
+
+.file-node-collapsed .fa-caret-right::before {
+    content: "\f125";
+    font-family: Ionicons;
+    font-size: 10px;
+}
+
+.file-node-expanded .fa-caret-down::before {
+    content: "\f123";
+    font-family: Ionicons;
+    font-size: 10px;
+}
+
+/* Articles
+/* -------------------------------------------------------------------------- */
+.file-list-item-file-ext-part,
+.file-list-item-parent-loc,
+.file-list-item-summary,
+.file-list-item-time {
+    opacity: 0.8;
+}
+
+.file-list-item-parent-loc,
+.file-list-item-time {
+    margin-bottom: 3px;
+    font-size: var(--font-size-app-s);
+}
+
+.file-list-item {
+    border-bottom: var(--sidebar-border-width) solid var(--sidebar-border-color);
+}
+
+.file-list-item:hover {
+    background-color: var(--sidebar-hover-background);
+    color: var(--sidebar-hover-color);
+}
+
+.file-list-item.active {
+    background: var(--sidebar-active-background);
+    color: var(--sidebar-active-color);
+}
+
+.file-list-item-file-name {
+    position: relative;
+    margin-bottom: 4px;
+}
+
+.active .file-list-item-file-name {
+    padding-right: 20px;
+    font-weight: var(--strong-font-weight);
+}
+
+/* Selection Dot */
+.active .file-list-item-file-name::after {
+    right: 8px;
+}
+
+.file-list-item-summary {
+    height: auto;
+    max-height: calc(3 * 0.95em * var(--line-height));
+    line-height: inherit;
+    font-size: var(--font-size-app-s);
+}
+
+.file-list-item-time {
+    font-size: var(--font-size-app-s);
+}
+
+/* Files List
+/* -------------------------------------------------------------------------- */
+.file-library-file-node:not(.active):hover {
+    color: var(--sidebar-hover-color);
+}
+
+.file-library-file-node:not(.active):hover > .file-node-background {
+    background: var(--sidebar-hover-background);
+}
+
+/* Remove dashed outline on mouse-down. */
+/* NOTE: Bad for keyboard navigation, but this is broken in Typora already. */
+.file-library-node:not(.file-node-root):focus > .file-node-content {
+    outline: unset;
+}
+
+.file-node-content {
+    padding-right: 0;
+}
+
+.file-node-content:hover {
+    cursor: pointer;
+}
+
+/* Selection Dot */
+.active .file-node-content::after {
+    right: 14px;
+}
+
+.file-node-icon {
+    margin-right: 5px;
+}
+
+.file-node-title {
+    width: calc(var(--sidebar-width) - 40px);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* outline: 1px solid red; */
+}
+
+.file-node-children .file-node-title {
+    width: calc(var(--sidebar-width) - 80px);
+    /* outline: 1px solid blue; */
+}
+
+.file-node-children .file-node-children .file-node-title {
+    width: calc(var(--sidebar-width) - 88px);
+    /* outline: 1px solid green; */
+}
+
+.file-node-children .file-node-children .file-node-children .file-node-title {
+    width: calc(var(--sidebar-width) - 96px);
+    /* outline: 1px solid orange; */
+}
+
+.allow-file-tree-scroll .file-node-title {
+    overflow-x: hidden;
+}
+
+.file-tree-node {
+    position: relative;
+}
+
+.file-tree-node.active > .file-node-background {
+    border: 0;
+}
+
+.file-tree-node.active > .file-node-background {
+    background-color: var(--sidebar-active-background);
+}
+
+.file-tree-node.active > .file-node-content {
+    color: var(--sidebar-active-color);
+}
+
+.file-node-background {
+    top: 0;
+    bottom: 0;
+    right: -4px;
+    left: -100px;
+    height: auto;
+    width: auto;
+}
+
+/* Search
+/* -------------------------------------------------------------------------- */
+#sidebar-search-btn,
+#ty-sidebar-search-back-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+#ty-sidebar-search-tabs .searchpanel-search-option-btn {
+    top: 1em;
+    padding: 3px 1px;
+}
+
+.ty-sidebar-search-panel .searchpanel-search-option-btn:hover {
+    background: var(--hover-background);
+    color: var(--hover-color);
+}
+
+.ty-sidebar-search-panel .searchpanel-search-option-btn.select {
+    background: var(--active-background);
+    color: var(--active-color);
+}
+
+#filesearch-case-option-btn {
+    transform: translateX(-8px);
+}
+
+#filesearch-word-option-btn {
+    transform: translateX(-4px);
+}
+
+#file-library-search-input {
+    padding: 0.5em 0.75em;
+    border: 1px solid currentColor;
+    border-color: var(--sidebar-border-color);
+    border-radius: var(--border-radius-s);
+    background: transparent;
+    color: inherit;
+}
+
+#file-library-search-input:not(:placeholder-shown),
+#file-library-search-input:focus {
+    border-color: var(--active-background);
+    background: var(--sidebar-input-background);
+    color: var(--sidebar-input-color);
+}
+
+.ty-search-item {
+    border-bottom: var(--sidebar-border-width) solid var(--sidebar-border-color);
+}
+
+.ty-file-search-match-text {
+    border-radius: var(--border-radius-xs);
+    box-shadow: 0 0 0 1px var(--marked-background);
+    background: var(--marked-background);
+    color: var(--marked-color);
+}
+
+.file-list-item-count {
+    height: 1.5em;
+    width: 1.5em;
+    border-radius: 50%;
+    background-color: var(--theme-mono-300);
+    text-align: center;
+    line-height: 1.5;
+}
+
+/* Footer Menu
+/* -------------------------------------------------------------------------- */
+#sidebar-files-menu {
+    border: var(--sidebar-border-width) solid var(--sidebar-border-color);
+}
+
+#ty-sidebar-footer,
+#sidebar-files-menu > .show + .menuitem-group-label.show {
+    border-top: var(--sidebar-border-width) solid var(--sidebar-border-color);
+}
+
+.dropdown-menu > li > a {
+    color: var(--sidebar-text-color);
+}
+
+.footer-item:hover,
+.sidebar-footer-item:hover,
+.dropdown-menu > li > a:focus,
+.dropdown-menu > li > a:hover {
+    background: var(--sidebar-hover-background);
+    color: var(--sidebar-hover-color);
+}
+
+.dropdown-menu .folder-menu-item i {
+    margin-right: 6px;
+}
+
+.menuitem-group-label.not-empty-menu-group {
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menuitem-group-label.not-empty-menu-group > .clearfix {
+    display: none;
+}
+
+.dropdown-menu .selected-folder-menu-item a::after {
+    content: "";
+    position: absolute;
+    top: calc(50% - 4px);
+    right: 8px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--theme-secondary);
+}
+
+.dropdown-menu .ty-icon {
+    font-size: var(--font-size-app-s);
+    font-size: revert;
+}
+
+.dropdown-menu .ty-icon.active {
+    background: var(--active-background);
+    color: var(--active-color);
+}
+
+.ty-side-sort-btn {
+    border-radius: var(--border-radius-s);
+}
+
+.ty-side-sort-btn:hover {
+    background: var(--sidebar-hover-background);
+    color: var(--sidebar-hover-color);
+}

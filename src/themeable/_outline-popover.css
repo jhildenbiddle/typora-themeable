@@ -1,0 +1,45 @@
+/* ========================================================================== */
+/* Outline Popover
+/* ========================================================================== */
+#toc-dropmenu {
+    right: 0;
+    border-width: var(--outline-border-width) 0 var(--outline-border-width) var(--outline-border-width);
+    border-color: var(--outline-border-color);
+    border-radius: var(--border-radius) 0 0 var(--border-radius);
+    background: var(--outline-background);
+    color: var(--outline-color);
+    box-shadow: none;
+    filter: var(--drop-shadow);
+}
+
+#toc-dropmenu.open {
+    animation: toc-in-from-right .3s ease-in;
+}
+
+#toc-dropmenu .btn {
+    color: inherit;
+}
+
+#toc-dropmenu .divider {
+    margin: 5px 0;
+    border-top: var(--outline-border-width) solid var(--outline-border-color);
+    opacity: 1;
+}
+
+#toc-dropmenu .outline-title-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@keyframes toc-in-from-right {
+    0% {
+        opacity: 0;
+        transform: translateX(20%)
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0)
+    }
+}

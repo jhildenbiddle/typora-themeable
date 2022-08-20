@@ -1,0 +1,377 @@
+/* ========================================================================== */
+/* Code
+/* ========================================================================== */
+/* Inline
+/* -------------------------------------------------------------------------- */
+[md-inline="code"] {
+    padding: 0.1em 0.35em;
+    border-radius: var(--border-radius-s);
+    background: var(--code-inline-background);
+    color: var(--code-inline-color);
+}
+
+/* Fences
+/* -------------------------------------------------------------------------- */
+.md-fences {
+    margin: 2rem 0;
+    background: none;
+}
+
+/* CodeMirror
+/* -------------------------------------------------------------------------- */
+#typora-source .CodeMirror-lines {
+    max-width: var(--max-width);
+}
+
+#typora-source .CodeMirror-line,
+#write .CodeMirror {
+    font-family: var(--font-family-mono);
+    font-size: var(--font-size-mono);
+    font-weight: var(--font-weight-mono);
+    color: var(--code-text-color);
+}
+
+#write .cm-s-inner {
+    padding: var(--code-padding-tb) var(--code-padding-lr);
+    border-radius: var(--border-radius);
+    background: var(--code-background);
+}
+
+:is(#write, #typora-source) .CodeMirror-cursor {
+    border-left: var(--code-cursor-border);
+}
+
+:is(#write, #typora-source) .CodeMirror-focused .CodeMirror-activeline:not(:only-child) .CodeMirror-activeline-background {
+    border-radius: var(--border-radius-s);
+    background: var(--code-activeline-background);
+}
+
+#write .CodeMirror-gutters {
+    border-right: 0;
+}
+
+:is(#write, #typora-source) .CodeMirror-linenumber {
+    color: var(--code-linenumber-color);
+}
+
+:is(#write, #typora-source) .CodeMirror-selected,
+:is(#write, #typora-source) .CodeMirror-selectedtext {
+    background: var(--code-selected-background) !important;
+    color: var(--code-selected-color) !important;
+}
+
+/* Syntax Highlighting
+/* -------------------------------------------------------------------------- */
+#typora-source .cm-atom {
+    color: inherit;
+}
+
+#write .cm-atom {
+    color: var(--code-atom-color);
+}
+
+:is(#write, #typora-source) .cm-attribute {
+    color: var(--code-attribute-color);
+}
+
+:is(#write, #typora-source) .cm-builtin {
+    color: var(--code-builtin-color);
+}
+
+:is(#write, #typora-source) .cm-comment {
+    color: var(--code-comment-color);
+    opacity: 1 !important;
+}
+
+:is(#write, #typora-source) .cm-def {
+    color: var(--code-def-color);
+}
+
+:is(#write, #typora-source) .cm-error {
+    color: var(--code-error-color);
+}
+
+#typora-source .cm-header {
+    color: var(--heading-color);
+}
+
+:is(#write, #typora-source) .cm-keyword {
+    color: var(--code-keyword-color);
+}
+
+#write .cm-link {
+    color: var(--code-link-color);
+}
+
+#typora-source .cm-link {
+    color: var(--link-color);
+}
+
+#write .cm-meta {
+    color: var(--code-meta-color);
+}
+
+:is(#write, #typora-source) .cm-number {
+    color: var(--code-number-color);
+}
+
+:is(#write, #typora-source) .cm-operator {
+    color: var(--code-operator-color);
+}
+
+:is(#write, #typora-source) .cm-property {
+    color: var(--code-property-color);
+}
+
+:is(#write, #typora-source) .cm-qualifier {
+    color: var(--code-qualifier-color);
+}
+
+:is(#write, #typora-source) .cm-string {
+    color: var(--code-string-color);
+}
+
+:is(#write, #typora-source) .cm-string-2 {
+    color: var(--code-string-2-color);
+}
+
+:is(#write, #typora-source) .cm-tag {
+    color: var(--code-tag-color);
+}
+
+:is(#write, #typora-source) .cm-type {
+    color: var(--code-type-color);
+}
+
+:is(#write, #typora-source) .cm-s-inner .cm-variable {
+    color: var(--code-variable-color);
+}
+
+:is(#write, #typora-source) .cm-s-inner .cm-variable-2 {
+    color: var(--code-variable-2-color);
+}
+
+:is(#write, #typora-source) .cm-s-inner .cm-variable-3 {
+    color: var(--code-variable-3-color);
+}
+
+/* Note: must come after other classes */
+:is(#write, #typora-source) .cm-bracket {
+    color: var(--code-bracket-color);
+}
+
+/* Language Selector
+/* -------------------------------------------------------------------------- */
+#write .md-fences > .code-tooltip,
+#write .md-fences > .code-tooltip .ty-cm-lang-input {
+    border-radius: var(--border-radius-s);
+    font-family: var(--font-family-sans);
+    font-size: var(--font-size-s);
+    line-height: var(--line-height);
+}
+
+#write .md-fences > .code-tooltip {
+    bottom: 100%;
+    right: var(--code-padding-lr);
+    z-index: 1;
+    padding: 0;
+    border: 0;
+    background: var(--code-language-background);
+    color: var(--code-language-color);
+    box-shadow: none;
+    opacity: 1;
+    transform: translateY(50%);
+}
+
+.md-fences > .code-tooltip .ty-cm-lang-input {
+    min-width: 17ch;
+    margin: 0;
+    padding: 0;
+    border: 1px solid transparent;
+    line-height: calc(var(--font-size-mono) * var(--line-height));
+}
+
+.md-fences > .code-tooltip .ty-cm-lang-input:focus {
+    border-color: var(--theme-primary);
+    background: var(--form-element-background);
+    color: var(--text-color);
+}
+
+/* Diagrams
+/* -------------------------------------------------------------------------- */
+.md-diagram-panel,
+.md-diagram-panel svg,
+.md-diagram-panel-preview {
+    margin: 0;
+    padding: 0;
+}
+
+#write .md-diagram.md-focus .cm-s-inner {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#write .md-diagram.md-focus .md-diagram-panel {
+    border-bottom-left-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+    border-width: 2px 0 0 0;
+    border-color: var(--code-activeline-background);
+    background: var(--theme-mono-100);
+}
+
+.md-diagram-panel-preview svg,
+mjx-container svg {
+    inset: auto;
+    margin: 0 auto;
+}
+
+.md-fences-adv-panel,
+.md-diagram-panel-preview svg *,
+mjx-container {
+    font-family: var(--font-family-sans);
+}
+
+/* Errors */
+.md-diagram-panel-error:not(:empty) {
+    position: relative;
+    margin-top: 10px;
+    padding: var(--code-padding-tb) var(--code-padding-lr);
+    border-radius: var(--border-radius);
+    background: var(--code-error-color);
+    color: #fff;;
+    font-size: var(--font-size-s);
+    font-weight: calc(var(--font-weight) + 100);
+}
+
+.md-diagram-panel-error:not(:empty):before {
+    content: '';
+    position: absolute;
+    inset: auto auto 100% 50%;
+    border-width: 11px;
+    border-color: transparent;
+    border-top-width: 0;
+    border-bottom-color: var(--code-error-color);
+    transform: translateX(-50%);
+}
+
+.md-diagram.md-focus .md-diagram-panel-error {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+/* Flowcharts */
+pre.md-diagram[lang="flow"] .md-diagram-panel-preview {
+    padding-bottom: 20px;
+}
+
+/* Mermaid */
+pre.md-diagram[mermaid-type] svg {
+    padding-top: 5px;
+    padding-bottom: 12px;
+}
+
+/* Mermaid: GANTT */
+pre.md-diagram[mermaid-type="gantt"] svg {
+    padding: 8px 0 0;
+}
+
+/* Mermaid: Pie */
+pre.md-diagram[mermaid-type="pie"] svg {
+    aspect-ratio: 16/9;
+    padding-top: 15px;
+}
+
+/* Mermaid: Sequence */
+pre.md-diagram[mermaid-type="sequenceDiagram"] svg {
+    padding: 13px;
+}
+
+/* Sequence */
+pre.md-fences[lang="sequence"] .md-diagram-panel {
+    padding: 0;
+}
+
+/* Math (LaTeX / Tex) */
+.md-math-block.md-focus {
+    background: var(--code-background);
+}
+
+.md-math-block .code-tooltip {
+    box-shadow: none;
+}
+
+.md-math-block .md-rawblock-before,
+.md-math-block .md-rawblock-after {
+    padding: var(--code-padding-tb) var(--code-padding-lr);
+}
+
+.md-math-block .md-rawblock-before {
+    padding-bottom: 0;
+}
+
+.md-math-block .md-rawblock-after {
+    padding-top: 0;
+}
+
+.md-math-block .md-math-tag-input {
+    position: relative;
+    z-index: 1;
+}
+
+.md-math-block .md-mathjax-preview {
+    border-top-width: 2px;
+    border-color: var(--panel-border-color);
+    padding: 20px var(--code-padding-lr);
+}
+
+/* Raw Blocks
+/* -------------------------------------------------------------------------- */
+.md-rawblock:hover .md-rawblock-container,
+.md-rawblock:hover .md-rawblock-tooltip {
+    animation: none;
+    transition: none;
+}
+
+.md-rawblock .md-rawblock-tooltip,
+.md-rawblock:hover .md-rawblock-tooltip {
+    background: var(--code-language-background);
+}
+
+.md-rawblock-tooltip,
+.md-rawblock-tooltip-btn,
+.md-rawblock-tooltip-name {
+    margin: 0;
+    padding: 0;
+    color: var(--code-language-color);
+    font-family: var(--font-family-sans);
+    font-size: var(--font-size-s);
+    line-height: calc(var(--font-size-mono) * var(--line-height));
+    opacity: 1;
+}
+
+.md-rawblock:hover .md-rawblock-container {
+    background: var(--code-background);
+    color: var(--code-text-color);
+}
+
+.md-rawblock .md-rawblock-control:not(.md-rawblock-tooltip) {
+    background: none;
+}
+
+.md-rawblock .md-rawblock-input {
+    padding: 0;
+}
+
+.md-rawblock .md-rawblock-tooltip {
+    inset: auto 1rem auto auto;
+    z-index: 1;
+    height: auto;
+    padding: 0 1rem;
+    border-radius: var(--border-radius-s);
+    transform: translateY(-50%);
+}
+
+.md-rawblock-tooltip-name ~ .md-rawblock-tooltip-btn {
+    width: auto;
+    margin-left: 0.25em;
+}

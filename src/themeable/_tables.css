@@ -1,0 +1,180 @@
+/* ========================================================================== */
+/* Tables
+/* ========================================================================== */
+figure.md-table-fig {
+    margin: 2rem 0 2rem 0;
+}
+
+thead {
+    border-width: var(--thead-border-width, 0);
+    border-color: var(--thead-border-color);
+}
+
+tbody {
+    border-width: var(--tbody-border-width, 0);
+    border-color: var(--tbody-border-color);
+}
+
+tbody tr {
+    border-width: var(--tr-border-width, 0);
+    border-color: var(--tr-border-color);
+}
+
+tbody tr:nth-child(even) {
+    background: var(--tr-alt-background);
+}
+
+th {
+    padding: var(--th-padding);
+    border-width: var(--th-border-width, 0);
+    border-color: var(--th-border-color);
+    font-weight: var(--th-font-weight);
+    color: var(--th-color)
+}
+
+td {
+    padding: var(--td-padding);
+    border-width: var(--td-border-width, 0);
+    border-color: var(--td-border-color);
+}
+
+/* Editing Bar
+/* -------------------------------------------------------------------------- */
+.md-table-edit {
+    --item-hover-bg-color  : var(--theme-mono-300);
+    --item-hover-text-color: var(--theme-mono-50);
+
+    z-index: 1;
+    transform: translate(0, -0.30rem);
+    padding: 0 5px;
+    border-radius: var(--border-radius);
+    background: var(--table-editor-background);
+}
+
+.md-table-edit {
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.md-table-edit .right-th-button {
+    float: none;
+}
+
+.md-table-edit > span.right-th-button {
+    margin-left: auto;
+}
+
+.md-table-edit > span.right-th-button ~ .right-th-button  {
+    margin-left: 0;
+}
+
+.md-table-edit > span[class] button[class].btn {
+    margin: 0;
+    padding: 3px 8px 3px 8px;
+    border: 0;
+    border-radius: 0;
+    font-size: inherit;
+    line-height: 1.4;
+}
+
+.md-table-edit > span[class] button[class].active {
+    background: var(--theme-mono-500);
+    box-shadow: none;
+}
+
+.md-table-edit .ty-icon {
+    color: var(--theme-mono-500);
+}
+
+.md-table-edit button.active .ty-icon {
+    color: var(--theme-mono-50);
+}
+
+.md-table-edit .md-table-more {
+    display: inline-block;
+}
+
+.md-table-edit .md-table-more .ty-icon {
+    margin: 0 3px !important;
+}
+
+.md-table-edit .md-table-more-label {
+    display: none !important;
+}
+
+/* Resize Popover
+/* -------------------------------------------------------------------------- */
+.md-table-resize-popover[class] {
+    width: auto;
+    transform: translate(10px, 2px);
+    padding: 0;
+    border: 0;
+    background: var(--background-color);
+    box-shadow: none;
+    filter: var(--drop-shadow);
+}
+
+.md-table-resize-popover[class] .arrow,
+.md-table-resize-popover[class] .arrow:after {
+    border-bottom-color: var(--background-color);
+}
+
+.md-grid-board-wrap {
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    background: var(--background-color);
+}
+
+table.md-grid-board {
+    margin: auto;
+    border-spacing: 3px;
+}
+
+table.md-grid-board td {
+    overflow: hidden;
+    border-radius: 2px;
+}
+
+table.md-grid-board a {
+    border-color: var(--theme-mono-300);
+    background: var(--form-element-background);
+}
+
+table.md-grid-board .md-grid-ext,
+table.md-grid-board .md-grid-ext a {
+    border-color: var(--theme-mono-500);
+    background: var(--theme-mono-500);
+}
+
+table.md-grid-board:hover .md-grid-ext,
+table.md-grid-board:hover .md-grid-ext a {
+    border-color: var(--theme-mono-300);
+    background: var(--theme-mono-300);
+}
+
+table.md-grid-board:hover a:hover,
+table.md-grid-board:hover a.md-active {
+    border-color: var(--theme-primary);
+    background: var(--theme-primary);
+}
+
+.md-grid-board-wrap #md-grid-width,
+.md-grid-board-wrap #md-grid-height {
+    margin: 0 0.2rem;
+    border-color: var(--theme-mono-300);
+    border-radius: 2px;
+    background: var(--form-element-background);
+    line-height: 1.6;
+    text-align: center;
+}
+
+.md-grid-board-wrap .popover-title {
+    margin: 0.5rem 0 0 0;
+    padding: 0;
+    border: 0;
+}
+
+.md-grid-board-wrap .popover-title button {
+    display: none !important;
+}

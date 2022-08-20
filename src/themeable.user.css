@@ -1,36 +1,23 @@
 /* ========================================================================== */
 /* Imports
 /* ========================================================================== */
-/* Monochrome Palette */
-/* @import url("themeable/mono-100.css"); */
-/* @import url("themeable/mono-200.css"); */
-/* @import url("themeable/mono-300.css"); */
-/* @import url("themeable/mono-500.css"); */
-
 /* Code Theme */
 /* @import url("themeable/code-material.css"); */
-/* @import url("themeable/code-vscode.css"); */
 
 /* Diagrams */
-/* @import url("themeable/mermaid-pie-colors.css"); */
+/* @import url("themeable/mermaid-pie.css"); */
 
 
 /* ========================================================================== */
 /* Variables
 /* ========================================================================== */
 :root {
-    /* Diagrams: Mermaid */
-    --mermaid-theme: neutral; /* default, base, dark, forest, neutral, night */
-    --mermaid-sequence-numbers: off;
-    --mermaid-flowchart-curve: basis;
-    --mermaid--gantt-left-padding: 75;
+    /* Mermaid (diagrams) - https://support.typora.io/Draw-Diagrams-With-Markdown/#mermaid-options */
+    /* --mermaid-theme: neutral; */
+    /* --mermaid-sequence-numbers: off; */
+    /* --mermaid-flowchart-curve: basis; */
+    /* --mermaid--gantt-left-padding: 75; */
 
-    /* Diagrams: Sequence */
-    --sequence-theme: simple; /* simple, hand */
-
-    /* TESTING */
-    /* --outline-background  : var(--blue-500); */
-    /* --outline-border-color: var(--blue-200); */
-    /* --outline-border-width: 2px; */
-    /* --outline-color       : yellow; */
+    /* Sequence (diagrams) - https://support.typora.io/Draw-Diagrams-With-Markdown/#sequence-diagrams-options */
+    /* --sequence-theme: simple; */
 }

@@ -1,0 +1,18 @@
+/* ========================================================================== */
+/* Variables: Typora Overrides
+/* ========================================================================== */
+:root {
+    --active-file-bg-color    : var(--sidebar-active-background);
+    --active-file-text-color  : var(--sidebar-active-color);
+    --bg-color                : var(--background-color);
+    --control-text-color      : var(--sidebar-text-color);
+    --control-text-hover-color: var(--sidebar-hover-color);
+    --md-char-color           : var(--md-brackets-expanded);
+    --meta-content-color      : inherit;
+    --monospace               : var(--font-family-mono);
+    --search-select-bg-color  : var(--theme-mono-500);
+    --search-select-text-color: #fff;
+    --select-text-bg-color    : var(--selection-background);
+    --select-text-font-color  : var(--selection-color);
+    --window-border           : 1px solid var(--border-color);
+}
