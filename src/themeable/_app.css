@@ -59,3 +59,20 @@ body:not([class*="seamless"]) :is(#typora-sidebar, content) {
     background: var(--search-select-bg-color);
     color: var(--search-select-text-color);
 }
+
+
+/* ========================================================================== */
+/* Content Area
+/* ========================================================================== */
+#write {
+    max-width: var(--max-width);
+    color: var(--text-color);
+}
+
+#write > :first-child {
+    margin-top: 0;
+}
+
+#write > :last-child {
+    margin-bottom: 0;
+}
