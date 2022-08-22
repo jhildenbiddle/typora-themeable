@@ -371,38 +371,40 @@
 }
 
 .file-list-item-count {
-    height: 1.5em;
-    width: 1.5em;
+    --size: 1.75em;
+
+    height: var(--size);
+    width: var(--size);
     border-radius: 50%;
-    background-color: var(--theme-mono-300);
+    background-color: var(--active-background);
+    color: var(--active-color);
+    font-size: var(--font-size-app-s);
+    font-weight: var(--strong-font-weight);
+    line-height: var(--size);
     text-align: center;
-    line-height: 1.5;
 }
 
 /* Footer Menu
 /* -------------------------------------------------------------------------- */
 #sidebar-files-menu {
-    border: var(--sidebar-border-width) solid var(--sidebar-border-color);
+    border-color: var(--border-color);
+    background: var(--menu-background);
 }
 
-#ty-sidebar-footer,
+#ty-sidebar-footer {
+    border-color: var(--sidebar-border-color);
+}
+
 #sidebar-files-menu > .show + .menuitem-group-label.show {
-    border-top: var(--sidebar-border-width) solid var(--sidebar-border-color);
+    border-color: var(--border-color);
 }
 
-.dropdown-menu > li > a {
-    color: var(--sidebar-text-color);
-}
-
-.footer-item:hover,
-.sidebar-footer-item:hover,
-.dropdown-menu > li > a:focus,
-.dropdown-menu > li > a:hover {
+.sidebar-footer-item:hover {
     background: var(--sidebar-hover-background);
     color: var(--sidebar-hover-color);
 }
 
-.dropdown-menu .folder-menu-item i {
+#sidebar-files-menu .folder-menu-item i {
     margin-right: 6px;
 }
 
@@ -416,7 +418,7 @@
     display: none;
 }
 
-.dropdown-menu .selected-folder-menu-item a::after {
+#sidebar-files-menu .selected-folder-menu-item a::after {
     content: "";
     position: absolute;
     top: calc(50% - 4px);
@@ -427,21 +429,16 @@
     background: var(--theme-secondary);
 }
 
-.dropdown-menu .ty-icon {
-    font-size: var(--font-size-app-s);
-    font-size: revert;
-}
-
-.dropdown-menu .ty-icon.active {
-    background: var(--active-background);
-    color: var(--active-color);
-}
-
-.ty-side-sort-btn {
+#sidebar-files-menu .ty-side-sort-btn {
     border-radius: var(--border-radius-s);
 }
 
-.ty-side-sort-btn:hover {
-    background: var(--sidebar-hover-background);
-    color: var(--sidebar-hover-color);
+#sidebar-files-menu .ty-side-sort-btn:hover {
+    background: var(--menu-hover-background);
+    color: var(--menu-hover-color);
+}
+
+#sidebar-files-menu .ty-side-sort-btn.active {
+    background: var(--menu-active-background);
+    color: var(--menu-active-color);
 }

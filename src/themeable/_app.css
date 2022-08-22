@@ -1,11 +1,18 @@
 /* ========================================================================== */
 /* App
 /* ========================================================================== */
+/* Tabs */
+body:not([class*="seamless"]) :is(#typora-sidebar, content) {
+    border-top: 1px solid var(--border-color);
+}
+
+/* Blink Effect (ex: rename file) */
 .blink-area {
   -webkit-animation: none;
           animation: none;
 }
 
+/* Buttons */
 .btn-primary,
 .btn-primary:hover {
     background: var(--active-background);
@@ -16,16 +23,32 @@
     filter: contrast(1.2);
 }
 
-/* Context Menu (e.g., table context menu and... ???)*/
-.context-menu {
-    width: 250px;
+/* Context Menus */
+.context-menu,
+.dropdown-menu,
+:is(.context-menu, .dropdown-menu) > li > a {
+    color: var(--menu-color);
 }
+
+.context-menu,
+.dropdown-menu {
+    background: var(--menu-background);
+    font-size: var(--font-size-app);
+}
+
 .context-menu .divider {
     border-top: var(--border-width) solid var(--border-color);
     opacity: 1;
 }
-.context-menu .ty-menu-shortcut {
+
+:is(.context-menu, .dropdown-menu) .ty-menu-shortcut {
     font-family: var(--font-family-sans);
+}
+
+.context-menu.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:hover {
+    background: var(--menu-hover-background);
+    color: var(--menu-hover-color);
 }
 
 /* Tooltips */
@@ -33,12 +56,7 @@
     color: unset;
 }
 
-/* Tabs */
-body:not([class*="seamless"]) :is(#typora-sidebar, content) {
-    border-top: 1px solid var(--border-color);
-}
-
-/* Auto-suggest (code fence language selection and... ???) */
+/* Auto-suggest (ex: code fence language selection) */
 #ty-auto-suggest {
     border-radius: var(--border-radius);
     font-size: var(--font-size-s);
@@ -52,7 +70,7 @@ body:not([class*="seamless"]) :is(#typora-sidebar, content) {
 .md-search-select,
 .md-search-hit {
     border-radius: var(--border-radius-xs);
-    box-shadow: 0 0 0 1px var(--theme-mono-500);
+    box-shadow: 0 0 0 1px var(--search-select-background);
 }
 
 .md-search-hit {

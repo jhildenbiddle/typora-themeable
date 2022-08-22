@@ -41,14 +41,11 @@ td {
 /* Editing Bar
 /* -------------------------------------------------------------------------- */
 .md-table-edit {
-    --item-hover-bg-color  : var(--theme-mono-300);
-    --item-hover-text-color: var(--theme-mono-50);
-
     z-index: 1;
     transform: translate(0, -0.30rem);
     padding: 0 5px;
     border-radius: var(--border-radius);
-    background: var(--table-editor-background);
+    background: var(--table-edit-background);
 }
 
 .md-table-edit {
@@ -74,21 +71,22 @@ td {
     padding: 3px 8px 3px 8px;
     border: 0;
     border-radius: 0;
+    background: var(--table-edit-background);
+    color: var(--table-edit-color);
     font-size: inherit;
     line-height: 1.4;
 }
 
-.md-table-edit > span[class] button[class].active {
-    background: var(--theme-mono-500);
-    box-shadow: none;
+.md-table-edit > span[class] button[class]:hover {
+    background: var(--table-edit-hover-background);
+    color: var(--table-edit-hover-color);
 }
 
-.md-table-edit .ty-icon {
-    color: var(--theme-mono-500);
-}
-
+.md-table-edit > span[class] button[class].active,
 .md-table-edit button.active .ty-icon {
-    color: var(--theme-mono-50);
+    background: var(--table-edit-active-background);
+    color: var(--table-edit-active-color);
+    box-shadow: none;
 }
 
 .md-table-edit .md-table-more {
@@ -137,32 +135,32 @@ table.md-grid-board td {
 }
 
 table.md-grid-board a {
-    border-color: var(--theme-mono-300);
+    border-color: var(--border-color);
     background: var(--form-element-background);
 }
 
 table.md-grid-board .md-grid-ext,
 table.md-grid-board .md-grid-ext a {
-    border-color: var(--theme-mono-500);
-    background: var(--theme-mono-500);
+    border-color: var(--table-edit-active-background);
+    background: var(--table-edit-active-background);
 }
 
 table.md-grid-board:hover .md-grid-ext,
 table.md-grid-board:hover .md-grid-ext a {
-    border-color: var(--theme-mono-300);
-    background: var(--theme-mono-300);
+    border-color: var(--table-edit-hover-background);
+    background: var(--table-edit-hover-background);
 }
 
 table.md-grid-board:hover a:hover,
 table.md-grid-board:hover a.md-active {
-    border-color: var(--theme-primary);
     background: var(--theme-primary);
+    border-color: var(--theme-primary);
 }
 
 .md-grid-board-wrap #md-grid-width,
 .md-grid-board-wrap #md-grid-height {
     margin: 0 0.2rem;
-    border-color: var(--theme-mono-300);
+    border-color: var(--border-color);
     border-radius: 2px;
     background: var(--form-element-background);
     line-height: 1.6;
@@ -177,4 +175,10 @@ table.md-grid-board:hover a.md-active {
 
 .md-grid-board-wrap .popover-title button {
     display: none !important;
+}
+
+/* "More" context menu
+/* -------------------------------------------------------------------------- */
+#table-menu {
+    width: 30ch;
 }

@@ -45,9 +45,9 @@ li.task-list-item > input[type=checkbox] {
     width: var(--checkbox-size);
     height: var(--checkbox-size);
     padding: 0;
-    border: 1px solid var(--theme-mono-300);
+    border: 1px solid var(--border-color);
     border-radius: var(--checkbox-border-radius);
-    background: var(--theme-mono-100);
+    background: var(--checkbox-background);
 }
 
 #write input[type=checkbox][checked] {

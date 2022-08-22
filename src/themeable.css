@@ -47,18 +47,26 @@
     --line-height     : 1.6;
 
     /* App */
-    --background-color       : var(--theme-mono-50);
-    --border-color           : var(--theme-mono-200);
-    --border-radius          : 6px;
-    --border-radius-s        : 3px;
-    --border-radius-xs       : 1px;
-    --border-width           : 1px;
-    --drop-shadow            : drop-shadow(0 3px 5px rgba(0, 0, 0, 0.15));
-    --form-element-background: #fff;
-    --max-width              : 75ch;
-    --selection-background   : #c2e8fb;
-    --selection-color        : ;
-    --text-color             : var(--theme-mono-700);
+    --background-color        : var(--theme-mono-50);
+    --border-color            : var(--theme-mono-200);
+    --border-radius           : 6px;
+    --border-radius-s         : 3px;
+    --border-radius-xs        : 1px;
+    --border-width            : 1px;
+    --drop-shadow             : drop-shadow(0 3px 5px rgba(0, 0, 0, 0.15));
+    --form-element-background : #fff;
+    --max-width               : 75ch;
+    --menu-active-background  : var(--active-background);
+    --menu-active-color       : var(--active-color);
+    --menu-background         : var(--theme-mono-50);
+    --menu-color              : inherit;
+    --menu-hover-background   : var(--hover-background);
+    --menu-hover-color        : var(--hover-color);
+    --search-select-background: var(--theme-mono-500);
+    --search-select-color     : var(--theme-mono-500);
+    --user-select-background  : #c2e8fb;
+    --user-select-color       : var(--text-color);
+    --text-color              : var(--theme-mono-700);
 
     /* Sidebar */
     --sidebar-active-background      : var(--hover-background);
@@ -114,6 +122,7 @@
     --strong-font-weight     : 700;
 
     /* Lists */
+    --checkbox-background   : var(--theme-mono-100);
     --checkbox-border-radius: 4px;
     --checkbox-size         : 1.2rem;
     --checkbox-icon         : url("data:image/svg+xml,%3Csvg width='24' height='24' fill='white' xmlns='http://www.w3.org/2000/svg' fill-rule='evenodd' clip-rule='evenodd'%3E%3Cpath d='M21 6.285l-11.16 12.733-6.84-6.018 1.319-1.49 5.341 4.686 9.865-11.196 1.475 1.285z'/%3E%3C/svg%3E");
@@ -126,23 +135,30 @@
     --md-tags             : var(--theme-mono-400);
     --md-tags-expanded    : var(--theme-secondary);
 
+    /* Table / TOC Edit Bar */
+    --table-edit-background       : var(--theme-mono-200);
+    --table-edit-color            : var(--theme-mono-600);
+    --table-edit-active-background: var(--theme-primary);
+    --table-edit-active-color     : var(--theme-mono-50);
+    --table-edit-hover-background : var(--theme-mono-300);
+    --table-edit-hover-color      : var(--table-edit-color);
+
     /* Tables */
-    --table-editor-background: var(--theme-mono-200);
-    --thead-border-color     : var(--theme-mono-300);
-    --thead-border-width     : 0 0 2px 0;
-    --th-border-color        : unset;
-    --th-border-width        : unset;
-    --th-color               : var(--strong-color);
-    --th-font-weight         : var(--strong-font-weight);
-    --th-padding             : 0 0.75rem 0.5rem 0.75rem;
-    --tbody-border-color     : unset;
-    --tbody-border-width     : unset;
-    --tr-alt-background      : var(--theme-mono-100);
-    --tr-border-color        : var(--theme-mono-200);
-    --tr-border-width        : 0 0 1px 0;
-    --td-border-color        : unset;
-    --td-border-width        : unset;
-    --td-padding             : 0.5rem 0.75rem;
+    --thead-border-color: var(--theme-mono-300);
+    --thead-border-width: 0 0 2px 0;
+    --th-border-color   : unset;
+    --th-border-width   : unset;
+    --th-color          : var(--strong-color);
+    --th-font-weight    : var(--strong-font-weight);
+    --th-padding        : 0 0.75rem 0.5rem 0.75rem;
+    --tbody-border-color: unset;
+    --tbody-border-width: unset;
+    --tr-alt-background : var(--theme-mono-100);
+    --tr-border-color   : var(--theme-mono-200);
+    --tr-border-width   : 0 0 1px 0;
+    --td-border-color   : unset;
+    --td-border-width   : unset;
+    --td-padding        : 0.5rem 0.75rem;
 
     /* Code */
     --code-inline-background: var(--theme-mono-200);
@@ -169,8 +185,8 @@
     --code-operator-color       : var(--rose-600);
     --code-property-color       : var(--sky-600);
     --code-qualifier-color      : var(--emerald-600);
-    --code-selected-background  : var(--selection-background);
-    --code-selected-color       : var(--selection-color);
+    --code-selected-background  : var(--user-select-background);
+    --code-selected-color       : var(--user-select-color);
     --code-string-2-color       : ;
     --code-string-color         : ;
     --code-tag-color            : var(--violet-500);

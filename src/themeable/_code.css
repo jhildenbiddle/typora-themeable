@@ -216,7 +216,7 @@
     border-bottom-right-radius: var(--border-radius);
     border-width: 2px 0 0 0;
     border-color: var(--code-activeline-background);
-    background: var(--theme-mono-100);
+    background: var(--code-background);
 }
 
 .md-diagram-panel-preview svg,

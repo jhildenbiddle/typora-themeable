@@ -23,37 +23,37 @@
     /* --title-bar-height    : 20px; */
 
     /* Typography */
-    --monospace: "Lucida Console", Consolas, "Courier", monospace;
+    /* --monospace: "Times New Roman", Times, serif; */
 
     /* Colors */
-    --bg-color                 : red;
-    --select-text-bg-color     : red;
-    --select-text-font-color   : red;
-    --text-color               : red;
-    --active-file-bg-color     : red;
-    --active-file-border-color : red;
-    --active-file-text-color   : red;
-    --active-toggle-btn-color  : red;
-    --blur-text-color          : red;
-    --color-popover-bg-color   : red;
-    --control-text-color       : red;
-    --control-text-hover-color : red;
-    --drag-placeholder-color   : red;
-    --focus-ring-color         : red;
-    --heading-char-color       : red;
-    --item-hover-bg-color      : red;
-    --item-hover-text-color    : red;
-    --md-char-color            : red;
-    --meta-content-color       : red;
-    --panel-border-color       : red;
-    --primary-btn-border-color : red;
-    --primary-btn-text-color   : red;
-    --primary-color            : red;
-    --rawblock-edit-panel-bd   : red;
-    --search-select-bg-color   : red;
-    --search-select-text-color : red;
-    --side-bar-bg-color        : red;
-    --side-bar-menu-active-tint: red;
-    --table-border-color       : red;
-    --window-border            : 1px solid red;
+    /* --bg-color                 : red; */
+    /* --select-text-bg-color     : red; */
+    /* --select-text-font-color   : red; */
+    /* --text-color               : red; */
+    /* --active-file-bg-color     : red; */
+    /* --active-file-border-color : red; */
+    /* --active-file-text-color   : red; */
+    /* --active-toggle-btn-color  : red; */
+    /* --blur-text-color          : red; */
+    /* --color-popover-bg-color   : red; */
+    /* --control-text-color       : red; */
+    /* --control-text-hover-color : red; */
+    /* --drag-placeholder-color   : red; */
+    /* --focus-ring-color         : red; */
+    /* --heading-char-color       : red; */
+    /* --item-hover-bg-color      : red; */
+    /* --item-hover-text-color    : red; */
+    /* --md-char-color            : red; */
+    /* --meta-content-color       : red; */
+    /* --panel-border-color       : red; */
+    /* --primary-btn-border-color : red; */
+    /* --primary-btn-text-color   : red; */
+    /* --primary-color            : red; */
+    /* --rawblock-edit-panel-bd   : red; */
+    /* --search-select-bg-color   : red; */
+    /* --search-select-text-color : red; */
+    /* --side-bar-bg-color        : red; */
+    /* --side-bar-menu-active-tint: red; */
+    /* --table-border-color       : red; */
+    /* --window-border            : 1px solid red; */
 }

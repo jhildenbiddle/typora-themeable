@@ -50,7 +50,7 @@
     padding: 0 8px;
     border: 0;
     border-radius: var(--border-radius);
-    background: var(--table-editor-background);
+    background: var(--table-edit-background);
     font-size: var(--font-size-s);
     line-height: calc(var(--font-size-m) * var(--line-height));
 }
