@@ -62,9 +62,10 @@
     --menu-color              : inherit;
     --menu-hover-background   : var(--hover-background);
     --menu-hover-color        : var(--hover-color);
-    --search-select-background: var(--theme-mono-500);
-    --search-select-color     : var(--theme-mono-500);
-    --user-select-background  : #c2e8fb;
+    --search-hit-background   : var(--pink-100);
+    --search-hit-border-color : var(--pink-500);
+    --search-hit-color        : black;
+    --user-select-background  : var(--sky-200);
     --user-select-color       : var(--text-color);
     --text-color              : var(--theme-mono-700);
 
@@ -116,7 +117,7 @@
     --hr-color               : var(--theme-mono-300);
     --hr-width               : 2px;
     --link-color             : var(--theme-primary);
-    --marked-background      : #ffde67;
+    --marked-background      : var(--yellow-300);
     --marked-color           : inherit;
     --strong-color           : var(--theme-mono-800);
     --strong-font-weight     : 700;

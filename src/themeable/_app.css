@@ -65,17 +65,16 @@ body:not([class*="seamless"]) :is(#typora-sidebar, content) {
 }
 
 /* Search Hits */
-.cm-search-hit.CodeMirror-selectedtext,
+.md-search-hit,
 .md-search-hit.md-search-select,
 .md-search-select,
-.md-search-hit {
+:is(#write, #typora-source) .cm-search-hit,
+:is(#write, #typora-source) .CodeMirror-selectedtext {
     border-radius: var(--border-radius-xs);
-    box-shadow: 0 0 0 1px var(--search-select-background);
-}
-
-.md-search-hit {
-    background: var(--search-select-bg-color);
-    color: var(--search-select-text-color);
+    background-color: unset !important;
+    background: var(--search-hit-background) !important;
+    box-shadow: 0 0 0 2px var(--search-hit-border-color);
+    color: var(--search-hit-color) !important;
 }
 
 

@@ -54,8 +54,8 @@
     color: var(--code-linenumber-color);
 }
 
-:is(#write, #typora-source) .CodeMirror-selected,
-:is(#write, #typora-source) .CodeMirror-selectedtext {
+:is(#write, #typora-source) .CodeMirror-selected:not(.cm-search-hit),
+:is(#write, #typora-source) .CodeMirror-selectedtext:not(.cm-search-hit) {
     background: var(--code-selected-background) !important;
     color: var(--code-selected-color) !important;
 }
