@@ -153,8 +153,8 @@ table.md-grid-board:hover .md-grid-ext a {
 
 table.md-grid-board:hover a:hover,
 table.md-grid-board:hover a.md-active {
-    background: var(--theme-primary);
-    border-color: var(--theme-primary);
+    background: var(--active-background);
+    border-color: var(--active-background);
 }
 
 .md-grid-board-wrap #md-grid-width,
