@@ -6,10 +6,13 @@
 /* ========================================================================== */
 :root {
     /* Palette - Color */
+    /* Color: red, orange, amber, yellow, lime, green, emerald, teal, cyan, */
+    /*        sky, blue, indigo, violet, purple, fuchsia, pink, rose */
     --theme-primary  : var(--sky-600);
     --theme-secondary: var(--violet-500);
 
     /* Palette - Monochrome (Grayscale) */
+    /* Options: slate, gray, zinc, neutral, stone */
     --theme-mono-50 : var(--neutral-50);
     --theme-mono-100: var(--neutral-100);
     --theme-mono-200: var(--neutral-200);

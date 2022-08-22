@@ -69,7 +69,8 @@ body:not([class*="seamless"]) :is(#typora-sidebar, content) {
 .md-search-hit.md-search-select,
 .md-search-select,
 :is(#write, #typora-source) .cm-search-hit,
-:is(#write, #typora-source) .CodeMirror-selectedtext {
+:is(#write, #typora-source) .CodeMirror-selectedtext,
+.ty-file-search-match-text {
     border-radius: var(--border-radius-xs);
     background-color: unset !important;
     background: var(--search-hit-background) !important;

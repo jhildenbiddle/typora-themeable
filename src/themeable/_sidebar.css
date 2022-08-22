@@ -41,7 +41,7 @@
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    background: var(--theme-secondary);
+    background: var(--active-background);
 }
 
 /* Headers
@@ -363,13 +363,6 @@
     border-bottom: var(--sidebar-border-width) solid var(--sidebar-border-color);
 }
 
-.ty-file-search-match-text {
-    border-radius: var(--border-radius-xs);
-    box-shadow: 0 0 0 1px var(--marked-background);
-    background: var(--marked-background);
-    color: var(--marked-color);
-}
-
 .file-list-item-count {
     --size: 1.75em;
 
@@ -426,7 +419,7 @@
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    background: var(--theme-secondary);
+    background: var(--active-background);
 }
 
 #sidebar-files-menu .ty-side-sort-btn {
