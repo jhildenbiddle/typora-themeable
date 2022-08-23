@@ -5,32 +5,30 @@
 /* Theme Variables
 /* ========================================================================== */
 :root {
-    /* Palette - Color */
-    /* Color: red, orange, amber, yellow, lime, green, emerald, teal, cyan, */
+    /* Color palette */
+    /* Names: red, orange, amber, yellow, lime, green, emerald, teal, cyan, */
     /*        sky, blue, indigo, violet, purple, fuchsia, pink, rose */
-    --theme-primary  : var(--sky-600);
-    --theme-secondary: var(--violet-500);
+    --color-primary        : var(--sky-600);
+    --color-primary-content: #fff;
 
     /* Palette - Monochrome (Grayscale) */
     /* Options: slate, gray, zinc, neutral, stone */
-    --theme-mono-50 : var(--neutral-50);
-    --theme-mono-100: var(--neutral-100);
-    --theme-mono-200: var(--neutral-200);
-    --theme-mono-300: var(--neutral-300);
-    --theme-mono-400: var(--neutral-400);
-    --theme-mono-500: var(--neutral-500);
-    --theme-mono-600: var(--neutral-600);
-    --theme-mono-700: var(--neutral-700);
-    --theme-mono-800: var(--neutral-800);
-    --theme-mono-900: var(--neutral-900);
+    --mono-50 : var(--neutral-50);
+    --mono-100: var(--neutral-100);
+    --mono-200: var(--neutral-200);
+    --mono-300: var(--neutral-300);
+    --mono-400: var(--neutral-400);
+    --mono-500: var(--neutral-500);
+    --mono-600: var(--neutral-600);
+    --mono-700: var(--neutral-700);
+    --mono-800: var(--neutral-800);
+    --mono-900: var(--neutral-900);
 
     /* State */
-    --active-background: var(--theme-primary);
-    --active-color     : #fff;
-    --hover-background : var(--theme-mono-200);
-    --hover-color      : inherit;
-    --status-background: var(--theme-mono-500);
-    --status-color     : #fff;
+    --color-hover         : var(--mono-200);
+    --color-hover-content : inherit;
+    --color-status        : var(--mono-500);
+    --color-status-content: #fff;
 
     /* Typography */
     --root-font-size  : 16px;
@@ -39,7 +37,7 @@
     --font-family-sans: "Inter var", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
     --font-size-app   : 0.875rem; /* 14px */
     --font-size-app-s : 0.75rem; /* 12px */
-    --font-size-app-xs: 0.6875rem; /* 12px */
+    --font-size-app-xs: 0.6875rem; /* 11px */
     --font-size-mono  : max(var(--font-size-s), 0.9375rem);
     --font-size-xxl   : calc(var(--font-size-xl) * var(--modular-scale)); /* 45px (28 * 1.414) */
     --font-size-xl    : calc(var(--font-size-l) * var(--modular-scale)); /* 32px (21 * 1.414) */
@@ -52,58 +50,53 @@
     --line-height     : 1.6;
 
     /* App */
-    --background-color            : var(--theme-mono-50);
-    --border-color                : var(--theme-mono-200);
+    --background-color            : var(--mono-50);
+    --border-color                : var(--mono-200);
     --border-radius               : 6px;
     --border-radius-s             : 3px;
     --border-radius-xs            : 1px;
     --border-width                : 1px;
     --btn-toggle-active-background: ;
-    --btn-toggle-active-color     : var(--theme-primary);
+    --btn-toggle-active-color     : var(--color-primary);
     --btn-toggle-background       : ;
-    --btn-toggle-color            : var(--theme-mono-400);
-    --btn-toggle-hover-background : var(--hover-background);
-    --btn-toggle-hover-color      : inherit;
+    --btn-toggle-color            : var(--mono-400);
+    --btn-toggle-hover-background : var(--color-hover);
+    --btn-toggle-hover-color      : var(--color-hover-content);
     --drop-shadow                 : drop-shadow(0 3px 5px rgba(0, 0, 0, 0.15));
     --input-background            : #fff;
     --input-border-color          : var(--border-color);
-    --input-focus-color           : var(--theme-primary);
+    --input-focus-color           : var(--color-primary);
     --input-color                 : var(--text-color);
-    --input-placeholder-color     : var(--theme-mono-400);
+    --input-placeholder-color     : var(--mono-400);
     --max-width                   : 75ch;
-    --menu-background             : var(--theme-mono-50);
+    --menu-background             : var(--mono-50);
     --menu-color                  : inherit;
-    --menu-item-hover-background  : var(--hover-background);
-    --menu-item-hover-color       : inherit;
+    --menu-item-hover-background  : var(--color-hover);
+    --menu-item-hover-color       : var(--color-hover-content);
     --search-match-background     : var(--pink-100);
     --search-match-border-color   : var(--pink-500);
-    --search-match-color          : black;
+    --search-match-color          : var(--text-color);
     --selection-background        : var(--sky-200);
     --selection-color             : var(--text-color);
-    --text-color                  : var(--theme-mono-700);
+    --text-color                  : var(--mono-700);
 
     /* Sidebar */
-    --sidebar-active-background      : var(--hover-background);
-    --sidebar-active-color           : var(--hover-color);
-    --sidebar-background             : var(--theme-mono-100);
-    --sidebar-border-color           : var(--theme-mono-200);
-    --sidebar-border-width           : 1px;
-    --sidebar-hover-background       : var(--hover-background);
-    --sidebar-hover-color            : var(--hover-color);
-    --sidebar-text-color             : var(--theme-mono-700);
-
-    /* Search Bar (CMD/CTRL+F) */
-    --search-background        : var(--sidebar-background);
-    --search-border-color      : var(--sidebar-border-color);
-    --search-color             : ;
+    --sidebar-active-background: var(--color-hover);
+    --sidebar-active-color     : var(--color-hover-content);
+    --sidebar-background       : var(--mono-100);
+    --sidebar-border-color     : var(--mono-200);
+    --sidebar-border-width     : 1px;
+    --sidebar-color            : var(--mono-700);
+    --sidebar-hover-background : var(--color-hover);
+    --sidebar-hover-color      : var(--color-hover-content);
 
     /* Elements */
-    --blockquote-background  : unset;
-    --blockquote-border-color: var(--theme-primary);
+    --blockquote-background  : var(--mono-100);
+    --blockquote-border-color: var(--color-primary);
     --blockquote-border-width: 0 0 0 4px;
-    --blockquote-color       : unset;
-    --blockquote-padding     : 0 0 0 1.5rem;
-    --heading-color          : var(--theme-mono-800);
+    --blockquote-color       : inherit;
+    --blockquote-padding     : 1rem 1.5rem 1rem 1.5rem;
+    --heading-color          : var(--mono-800);
     --heading-font-weight    : 800;
     --h1-font-size           : var(--font-size-xxl);
     --h2-font-size           : var(--font-size-xl);
@@ -111,16 +104,17 @@
     --h4-font-size           : var(--font-size-m);
     --h5-font-size           : var(--font-size-m);
     --h6-font-size           : var(--font-size-s);
-    --hr-color               : var(--theme-mono-300);
-    --hr-width               : 2px;
-    --link-color             : var(--theme-primary);
+    --hr-color               : var(--mono-300);
+    --hr-height              : 2px;
+    --link-color             : var(--color-primary);
     --marked-background      : var(--yellow-300);
     --marked-color           : inherit;
-    --strong-color           : var(--theme-mono-800);
-    --strong-font-weight     : 700;
+    --strong-color           : var(--mono-800);
+    --strong-font-weight     : 800;
 
     /* Lists */
-    --checkbox-background   : var(--theme-mono-100);
+    --checkbox-background   : var(--mono-100);
+    --checkbox-border-color : var(--mono-300);
     --checkbox-border-radius: 4px;
     --checkbox-size         : 1.2rem;
     --checkbox-icon         : url("data:image/svg+xml,%3Csvg width='24' height='24' fill='white' xmlns='http://www.w3.org/2000/svg' fill-rule='evenodd' clip-rule='evenodd'%3E%3Cpath d='M21 6.285l-11.16 12.733-6.84-6.018 1.319-1.49 5.341 4.686 9.865-11.196 1.475 1.285z'/%3E%3C/svg%3E");
@@ -128,13 +122,13 @@
     --marker-color          : inherit;
 
     /* Markdown Meta */
-    --md-brackets         : var(--theme-mono-400);
-    --md-brackets-expanded: var(--theme-secondary);
-    --md-tags             : var(--theme-mono-400);
-    --md-tags-expanded    : var(--theme-secondary);
+    --md-brackets         : var(--mono-400);
+    --md-brackets-expanded: var(--violet-500);
+    --md-tags             : var(--md-brackets);
+    --md-tags-expanded    : var(--md-brackets-expanded);
 
     /* Tables */
-    --thead-border-color: var(--theme-mono-300);
+    --thead-border-color: var(--mono-300);
     --thead-border-width: 0 0 2px 0;
     --th-border-color   : unset;
     --th-border-width   : unset;
@@ -143,40 +137,40 @@
     --th-padding        : 0 0.75rem 0.5rem 0.75rem;
     --tbody-border-color: unset;
     --tbody-border-width: unset;
-    --tr-alt-background : var(--theme-mono-100);
-    --tr-border-color   : var(--theme-mono-200);
+    --tr-alt-background : var(--mono-100);
+    --tr-border-color   : var(--mono-200);
     --tr-border-width   : 0 0 1px 0;
     --td-border-color   : unset;
     --td-border-width   : unset;
     --td-padding        : 0.5rem 0.75rem;
 
     /* Table / TOC Edit Bar */
-    --table-edit-background       : var(--theme-mono-200);
-    --table-edit-color            : var(--theme-mono-600);
-    --table-edit-active-background: var(--theme-mono-500);
-    --table-edit-active-color     : var(--theme-mono-50);
-    --table-edit-hover-background : var(--theme-mono-300);
+    --table-edit-background       : var(--mono-200);
+    --table-edit-color            : var(--mono-600);
+    --table-edit-active-background: var(--mono-500);
+    --table-edit-active-color     : var(--mono-50);
+    --table-edit-hover-background : var(--mono-300);
     --table-edit-hover-color      : var(--table-edit-color);
 
     /* Code */
-    --code-inline-background: var(--theme-mono-200);
+    --code-inline-background: var(--mono-200);
     --code-inline-color     : var(--strong-color);
 
     /* Code Fences */
-    --code-activeline-background: var(--theme-mono-200);
+    --code-activeline-background: var(--mono-200);
     --code-atom-color           : var(--amber-500);
     --code-attribute-color      : var(--sky-600);
-    --code-background           : var(--theme-mono-100);
-    --code-bracket-color        : var(--theme-mono-400);
+    --code-background           : var(--mono-100);
+    --code-bracket-color        : var(--mono-400);
     --code-builtin-color        : var(--emerald-600);
-    --code-comment-color        : var(--theme-mono-400);
-    --code-cursor-border        : 2px solid var(--theme-primary);
+    --code-comment-color        : var(--mono-400);
+    --code-cursor-border        : 2px solid var(--color-primary);
     --code-def-color            : var(--violet-500);
     --code-error-color          : var(--red-500);
     --code-keyword-color        : var(--sky-600);
     --code-language-background  : var(--code-activeline-background);
     --code-language-color       : var(--code-text-color);
-    --code-linenumber-color     : var(--theme-mono-400);
+    --code-linenumber-color     : var(--mono-400);
     --code-link-color           : ;
     --code-meta-color           : var(--rose-600);
     --code-number-color         : ;
@@ -188,7 +182,7 @@
     --code-string-2-color       : ;
     --code-string-color         : ;
     --code-tag-color            : var(--violet-500);
-    --code-text-color           : var(--theme-mono-700);
+    --code-text-color           : var(--mono-700);
     --code-type-color           : var(--rose-600);
     --code-variable-2-color     : var(--cyan-500);
     --code-variable-3-color     : var(--emerald-500);

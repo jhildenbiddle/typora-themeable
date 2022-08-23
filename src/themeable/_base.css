@@ -17,7 +17,7 @@ body {
 }
 
 html {
-    accent-color: var(--theme-primary);
+    accent-color: var(--color-primary);
     font-family: var(--font-family-sans);
     font-size: var(--root-font-size);
     font-weight: var(--font-weight);
@@ -63,7 +63,7 @@ pre {
 
 hr {
     border-color: var(--hr-color);
-    border-top-width: var(--hr-width);
+    border-top-width: var(--hr-height);
 }
 
 input::placeholder,

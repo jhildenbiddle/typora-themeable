@@ -5,7 +5,7 @@
     --active-file-bg-color    : var(--sidebar-active-background);
     --active-file-text-color  : var(--sidebar-active-color);
     --bg-color                : var(--background-color);
-    --control-text-color      : var(--sidebar-text-color);
+    --control-text-color      : var(--sidebar-color);
     --control-text-hover-color: var(--sidebar-hover-color);
     --md-char-color           : var(--md-brackets-expanded);
     --meta-content-color      : inherit;

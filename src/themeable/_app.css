@@ -15,8 +15,8 @@ body:not([class*="seamless"]) :is(#typora-sidebar, content) {
 /* Buttons */
 .btn-primary,
 .btn-primary:hover {
-    background: var(--active-background);
-    color: var(--active-color);
+    background: var(--color-primary);
+    color: var(--color-primary-content);
 }
 
 .btn-primary:hover {

@@ -4,7 +4,7 @@
 #typora-sidebar {
     border-right: var(--sidebar-border-width) solid var(--sidebar-border-color);
     background: var(--sidebar-background);
-    color: var(--sidebar-text-color);
+    color: var(--sidebar-color);
 }
 
 #typora-sidebar,
@@ -26,8 +26,8 @@
 }
 
 .ty-search-item-line:hover {
-    background-color: var(--hover-background);
-    color: var(--hover-color);
+    background-color: var(--sidebar-hover-background);
+    color: var(--sidebar-hover-color);
 }
 
 /* Selection Dot */
@@ -41,7 +41,7 @@
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    background: var(--active-background);
+    background: var(--color-primary);
 }
 
 /* Headers
@@ -372,8 +372,8 @@
     height: var(--size);
     width: var(--size);
     border-radius: 50%;
-    background-color: var(--status-background);
-    color: var(--status-color);
+    background-color: var(--color-status);
+    color: var(--color-status-content);
     font-size: var(--font-size-app-s);
     font-weight: var(--strong-font-weight);
     line-height: var(--size);
@@ -422,7 +422,7 @@
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    background: var(--active-background);
+    background: var(--color-primary);
 }
 
 #sidebar-files-menu .ty-side-sort-btn {

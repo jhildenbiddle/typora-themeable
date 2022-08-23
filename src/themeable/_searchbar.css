@@ -6,9 +6,9 @@
 }
 
 #md-searchpanel {
-    border-bottom: 1px solid var(--search-border-color);
-    background: var(--search-background);
-    color: var(--search-color);
+    border-bottom: 1px solid var(--sidebar-border-color);
+    background: var(--sidebar-background);
+    color: var(--sidebar-color);
     box-shadow: none;
     filter: var(--drop-shadow);
 }
@@ -62,6 +62,6 @@
 #search-panel-status .error-message {
     padding: 0.25em 0.5em;
     border-radius: var(--border-radius-s);
-    background: var(--status-background);
-    color: var(--status-color);
+    background: var(--color-status);
+    color: var(--color-status-content);
 }
