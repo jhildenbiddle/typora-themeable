@@ -17,42 +17,44 @@
 #md-searchpanel .btn,
 #searchpanel-msg {
     border-radius: var(--border-radius-s);
+    font-size: var(--font-size-app-s);
 }
 
 #md-searchpanel input {
-    background: var(--search-input-background);
-    border-color: var(--search-input-border-color);
-    color: var(--search-input-color);
+    background: var(--input-background);
+    border-color: var(--input-border-color);
+    color: var(--input-color);
 }
 
 #md-searchpanel input:focus,
 #md-searchpanel input:not(:placeholder-shown) {
-    border-color: var(--search-active-background);
+    border-color: var(--input-focus-color);
 }
 
 #md-searchpanel .btn:not(.close-btn):hover {
     box-shadow: none;
 }
 
-.searchpanel-search-option-btn {
-    top: 4px;
-    padding: 3px 2px;
-    border: 0;
-    color: var(--search-input-color);
-    opacity: 0.5;
-}
-
+.searchpanel-search-option-btn,
 .searchpanel-search-option-btn:hover,
 .searchpanel-search-option-btn.active {
     opacity: 1;
 }
 
+.searchpanel-search-option-btn {
+    top: 4px;
+    padding: 3px 2px;
+    border: 0;
+    background: var(--btn-toggle-background);
+    color: var(--btn-toggle-color);
+}
+
 .searchpanel-search-option-btn:hover {
-    background: var(--search-hover-background);
-    color: var(--search-hover-color);
+    background: var(--btn-toggle-hover-background);
+    color: var(--btn-toggle-hover-color);
 }
 
 .searchpanel-search-option-btn.active {
-    background: var(--search-active-background);
-    color: var(--search-active-color);
+    background: var(--btn-toggle-active-background);
+    color: var(--btn-toggle-active-color);
 }

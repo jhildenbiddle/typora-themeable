@@ -68,7 +68,7 @@ hr {
 
 input::placeholder,
 textarea::placeholder {
-    color: var(--sidebar-input-placeholder-color);
+    color: var(--input-placeholder-color) !important;
 }
 
 mark {

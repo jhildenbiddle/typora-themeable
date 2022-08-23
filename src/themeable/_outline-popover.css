@@ -3,11 +3,11 @@
 /* ========================================================================== */
 #toc-dropmenu {
     right: 0;
-    border-width: var(--outline-border-width) 0 var(--outline-border-width) var(--outline-border-width);
-    border-color: var(--outline-border-color);
+    border-width: var(--sidebar-border-width) 0 var(--sidebar-border-width) var(--sidebar-border-width);
+    border-color: var(--sidebar-border-color);
     border-radius: var(--border-radius) 0 0 var(--border-radius);
-    background: var(--outline-background);
-    color: var(--outline-color);
+    background: var(--sidebar-background);
+    color: var(--sidebar-color);
     box-shadow: none;
     filter: var(--drop-shadow);
 }
@@ -22,7 +22,7 @@
 
 #toc-dropmenu .divider {
     margin: 5px 0;
-    border-top: var(--outline-border-width) solid var(--outline-border-color);
+    border-top: var(--sidebar-border-width) solid var(--sidebar-border-color);
     opacity: 1;
 }
 

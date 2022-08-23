@@ -136,7 +136,7 @@ table.md-grid-board td {
 
 table.md-grid-board a {
     border-color: var(--border-color);
-    background: var(--form-element-background);
+    background: var(--input-background);
 }
 
 table.md-grid-board .md-grid-ext,
@@ -162,7 +162,7 @@ table.md-grid-board:hover a.md-active {
     margin: 0 0.2rem;
     border-color: var(--border-color);
     border-radius: 2px;
-    background: var(--form-element-background);
+    background: var(--input-background);
     line-height: 1.6;
     text-align: center;
 }

@@ -14,8 +14,8 @@
 
 #typora-sidebar input {
     border-radius: var(--border-radius-s);
-    background: var(--sidebar-input-background);
-    color: var(--sidebar-input-color);
+    background: var(--input-background);
+    color: var(--input-color);
 }
 
 .file-list-item-time,
@@ -355,8 +355,8 @@
 #file-library-search-input:not(:placeholder-shown),
 #file-library-search-input:focus {
     border-color: var(--active-background);
-    background: var(--sidebar-input-background);
-    color: var(--sidebar-input-color);
+    background: var(--input-background);
+    color: var(--input-color);
 }
 
 .ty-search-item {
@@ -430,19 +430,19 @@
     margin-top: 6px;
     margin-bottom: 6px;
     border-radius: var(--border-radius-s);
-    background: var(--menu-item-inactive-background);
-    color: var(--menu-item-inactive-color);
+    background: var(--btn-toggle-background);
+    color: var(--btn-toggle-color);
     font-size: 13px;
     line-height: var(--size);
     opacity: 1;
 }
 
 #sidebar-files-menu .ty-side-sort-btn:hover {
-    background: var(--menu-item-hover-background);
-    color: var(--menu-item-hover-color);
+    background: var(--btn-toggle-hover-background);
+    color: var(--btn-toggle-hover-color);
 }
 
 #sidebar-files-menu .ty-side-sort-btn.active {
-    background: var(--menu-item-active-background);
-    color: var(--menu-item-active-color);
+    background: var(--btn-toggle-active-background);
+    color: var(--btn-toggle-active-color);
 }

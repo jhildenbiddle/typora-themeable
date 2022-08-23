@@ -193,7 +193,7 @@
 
 .md-fences > .code-tooltip .ty-cm-lang-input:focus {
     border-color: var(--theme-primary);
-    background: var(--form-element-background);
+    background: var(--input-background);
     color: var(--text-color);
 }
 

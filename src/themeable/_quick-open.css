@@ -2,12 +2,12 @@
 /* Quick Open
 /* ========================================================================== */
 #typora-quick-open {
+    top: calc(var(--title-bar-height) + 5px);
     padding: 0;
-    border-width: var(--outline-border-width);
-    border-color: var(--outline-border-color);
+    border: var(--sidebar-border-width) solid var(--sidebar-border-color);
     border-radius: var(--border-radius);
-    background: var(--outline-background);
-    color: var(--outline-color);
+    background: var(--sidebar-background);
+    color: var(--sidebar-color);
     box-shadow: none;
     filter: var(--drop-shadow);
 }
@@ -20,10 +20,16 @@
 #typora-quick-open-input input {
     max-height: unset;
     overflow: unset;
-    border-color: var(--outline-border-color);
+    border-color: var(--input-border-color);
     border-radius: var(--border-radius-s);
+    background: var(--input-background);
+    color: var(--input-color);
     font-size: var(--font-size-app);
     line-height: 2;
+}
+
+#typora-quick-open-input input:focus {
+    border-color: var(--input-focus-color);
 }
 
 .ty-quick-open-category-title,

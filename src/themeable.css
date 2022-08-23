@@ -50,29 +50,35 @@
     --line-height     : 1.6;
 
     /* App */
-    --background-color             : var(--theme-mono-50);
-    --border-color                 : var(--theme-mono-200);
-    --border-radius                : 6px;
-    --border-radius-s              : 3px;
-    --border-radius-xs             : 1px;
-    --border-width                 : 1px;
-    --drop-shadow                  : drop-shadow(0 3px 5px rgba(0, 0, 0, 0.15));
-    --form-element-background      : #fff;
-    --max-width                    : 75ch;
-    --menu-background              : var(--theme-mono-50);
-    --menu-color                   : inherit;
-    --menu-item-active-background  : ;
-    --menu-item-active-color       : var(--theme-primary);
-    --menu-item-hover-background   : var(--hover-background);
-    --menu-item-hover-color        : inherit;
-    --menu-item-inactive-background: ;
-    --menu-item-inactive-color     : var(--theme-mono-400);
-    --search-hit-background        : var(--pink-100);
-    --search-hit-border-color      : var(--pink-500);
-    --search-hit-color             : black;
-    --selection-background         : var(--sky-200);
-    --selection-color              : var(--text-color);
-    --text-color                   : var(--theme-mono-700);
+    --background-color            : var(--theme-mono-50);
+    --border-color                : var(--theme-mono-200);
+    --border-radius               : 6px;
+    --border-radius-s             : 3px;
+    --border-radius-xs            : 1px;
+    --border-width                : 1px;
+    --btn-toggle-active-background: ;
+    --btn-toggle-active-color     : var(--theme-primary);
+    --btn-toggle-background       : ;
+    --btn-toggle-color            : var(--theme-mono-400);
+    --btn-toggle-hover-background : var(--hover-background);
+    --btn-toggle-hover-color      : inherit;
+    --drop-shadow                 : drop-shadow(0 3px 5px rgba(0, 0, 0, 0.15));
+    --input-background            : #fff;
+    --input-border-color          : var(--border-color);
+    --input-focus-color           : var(--theme-primary);
+    --input-color                 : var(--text-color);
+    --input-placeholder-color     : var(--theme-mono-400);
+    --max-width                   : 75ch;
+    --menu-background             : var(--theme-mono-50);
+    --menu-color                  : inherit;
+    --menu-item-hover-background  : var(--hover-background);
+    --menu-item-hover-color       : inherit;
+    --search-hit-background       : var(--pink-100);
+    --search-hit-border-color     : var(--pink-500);
+    --search-hit-color            : black;
+    --selection-background        : var(--sky-200);
+    --selection-color             : var(--text-color);
+    --text-color                  : var(--theme-mono-700);
 
     /* Sidebar */
     --sidebar-active-background      : var(--hover-background);
@@ -82,28 +88,12 @@
     --sidebar-border-width           : 1px;
     --sidebar-hover-background       : var(--hover-background);
     --sidebar-hover-color            : var(--hover-color);
-    --sidebar-input-background       : #fff;
-    --sidebar-input-color            : var(--theme-mono-700);
-    --sidebar-input-placeholder-color: var(--theme-mono-400);
     --sidebar-text-color             : var(--theme-mono-700);
 
     /* Search Bar (CMD/CTRL+F) */
-    --search-active-background : var(--active-background);
-    --search-active-color      : var(--active-color);
     --search-background        : var(--sidebar-background);
     --search-border-color      : var(--sidebar-border-color);
     --search-color             : ;
-    --search-input-background  : var(--sidebar-input-background);
-    --search-input-border-color: var(--border-color);
-    --search-input-color       : var(--sidebar-input-color);
-    --search-hover-background  : var(--hover-background);
-    --search-hover-color       : var(--hover-color);
-
-    /* Outline Popover */
-    --outline-background  : var(--theme-mono-100);
-    --outline-border-color: var(--theme-mono-200);
-    --outline-border-width: 1px;
-    --outline-color       : ;
 
     /* Elements */
     --blockquote-background  : unset;
