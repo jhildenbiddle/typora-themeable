@@ -52,9 +52,19 @@ li.task-list-item > input[type=checkbox] {
 
 #write input[type=checkbox][checked] {
     border-color: var(--color-primary);
-    background:
-        var(--checkbox-icon) center center / 85% no-repeat,
-        var(--color-primary);
+    background: var(--color-primary);
+}
+
+#write input[type=checkbox][checked]::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: calc(50% - 0.05em);
+    height: calc(var(--checkbox-size) * 0.52);
+    width: calc(var(--checkbox-size) * 0.3125);
+    border-width: 0 2px 2px 0;
+    border-color: var(--checkbox-check-color);
+    transform: translate(-50%, -50%) rotate(40deg);
 }
 
 li.task-list-item > input[type=checkbox] {
