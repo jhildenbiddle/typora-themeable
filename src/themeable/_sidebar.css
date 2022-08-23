@@ -357,7 +357,7 @@
 
 #file-library-search-input:not(:placeholder-shown),
 #file-library-search-input:focus {
-    border-color: var(--active-background);
+    border-color: var(--input-focus-color);
     background: var(--input-background);
     color: var(--input-color);
 }
