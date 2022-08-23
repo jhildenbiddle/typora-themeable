@@ -29,6 +29,8 @@
     --active-color     : #fff;
     --hover-background : var(--theme-mono-200);
     --hover-color      : inherit;
+    --status-background: var(--theme-mono-500);
+    --status-color     : #fff;
 
     /* Typography */
     --root-font-size  : 16px;
@@ -76,8 +78,6 @@
     --search-match-background     : var(--pink-100);
     --search-match-border-color   : var(--pink-500);
     --search-match-color          : black;
-    --search-nomatch-background   : var(--theme-mono-500);
-    --search-nomatch-color        : #fff;
     --selection-background        : var(--sky-200);
     --selection-color             : var(--text-color);
     --text-color                  : var(--theme-mono-700);

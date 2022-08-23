@@ -62,6 +62,6 @@
 #search-panel-status .error-message {
     padding: 0.25em 0.5em;
     border-radius: var(--border-radius-s);
-    background: var(--search-nomatch-background);
-    color: var(--search-nomatch-color);
+    background: var(--status-background);
+    color: var(--status-color);
 }

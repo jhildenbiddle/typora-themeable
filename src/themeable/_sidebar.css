@@ -323,16 +323,19 @@
 #ty-sidebar-search-tabs .searchpanel-search-option-btn {
     top: 1em;
     padding: 3px 1px;
+    background: var(--btn-toggle-background);
+    color: var(--btn-toggle-color);
+    opacity: 1;
 }
 
-.ty-sidebar-search-panel .searchpanel-search-option-btn:hover {
-    background: var(--hover-background);
-    color: var(--hover-color);
+#ty-sidebar-search-tabs .searchpanel-search-option-btn:hover {
+    background: var(--btn-toggle-hover-background);
+    color: var(--btn-toggle-hover-color);
 }
 
-.ty-sidebar-search-panel .searchpanel-search-option-btn.select {
-    background: var(--active-background);
-    color: var(--active-color);
+#ty-sidebar-search-tabs .searchpanel-search-option-btn.select {
+    background: var(--btn-toggle-active-background);
+    color: var(--btn-toggle-active-color);
 }
 
 #filesearch-case-option-btn {
@@ -364,13 +367,13 @@
 }
 
 .file-list-item-count {
-    --size: 1.75em;
+    --size: 1.65em;
 
     height: var(--size);
     width: var(--size);
     border-radius: 50%;
-    background-color: var(--active-background);
-    color: var(--active-color);
+    background-color: var(--status-background);
+    color: var(--status-color);
     font-size: var(--font-size-app-s);
     font-weight: var(--strong-font-weight);
     line-height: var(--size);
