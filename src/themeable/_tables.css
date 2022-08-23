@@ -114,7 +114,7 @@ td {
 }
 
 .md-table-resize-popover[class] .arrow,
-.md-table-resize-popover[class] .arrow:after {
+.md-table-resize-popover[class] .arrow::after {
     border-bottom-color: var(--background-color);
 }
 

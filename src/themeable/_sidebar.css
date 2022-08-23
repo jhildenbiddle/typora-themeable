@@ -106,7 +106,7 @@
 }
 
 .outline-expander,
-.outline-expander:before {
+.outline-expander::before {
     --icon-width: 10px;
 
     width: calc(var(--icon-width) * 2);

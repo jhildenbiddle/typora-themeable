@@ -31,10 +31,10 @@ sup.md-footnote {
 }
 
 /* Footnote Brackets */
-.md-def-name:before,
-.md-def-name:after,
-.md-def-title:before,
-.md-def-title:after,
+.md-def-name::before,
+.md-def-name::after,
+.md-def-title::before,
+.md-def-title::after,
 /* Link Brackets */
 .md-link .md-meta.md-before,
 .md-link .md-meta.md-after {
@@ -80,7 +80,7 @@ sup.md-footnote {
 }
 
 /* Image Icon */
-.md-image > .md-meta:before,
+.md-image > .md-meta::before,
 /* HTML tags */
 .md-raw-inline:not(.md-br-content) {
     opacity: 1 !important;
