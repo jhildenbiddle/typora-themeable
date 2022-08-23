@@ -423,15 +423,26 @@
 }
 
 #sidebar-files-menu .ty-side-sort-btn {
+    --size: 24px;
+
+    width: var(--size);
+    height: var(--size);
+    margin-top: 6px;
+    margin-bottom: 6px;
     border-radius: var(--border-radius-s);
+    background: var(--menu-item-inactive-background);
+    color: var(--menu-item-inactive-color);
+    font-size: 13px;
+    line-height: var(--size);
+    opacity: 1;
 }
 
 #sidebar-files-menu .ty-side-sort-btn:hover {
-    background: var(--menu-hover-background);
-    color: var(--menu-hover-color);
+    background: var(--menu-item-hover-background);
+    color: var(--menu-item-hover-color);
 }
 
 #sidebar-files-menu .ty-side-sort-btn.active {
-    background: var(--menu-active-background);
-    color: var(--menu-active-color);
+    background: var(--menu-item-active-background);
+    color: var(--menu-item-active-color);
 }

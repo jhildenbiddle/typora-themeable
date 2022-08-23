@@ -50,27 +50,29 @@
     --line-height     : 1.6;
 
     /* App */
-    --background-color       : var(--theme-mono-50);
-    --border-color           : var(--theme-mono-200);
-    --border-radius          : 6px;
-    --border-radius-s        : 3px;
-    --border-radius-xs       : 1px;
-    --border-width           : 1px;
-    --drop-shadow            : drop-shadow(0 3px 5px rgba(0, 0, 0, 0.15));
-    --form-element-background: #fff;
-    --max-width              : 75ch;
-    --menu-active-background : var(--active-background);
-    --menu-active-color      : var(--active-color);
-    --menu-background        : var(--theme-mono-50);
-    --menu-color             : inherit;
-    --menu-hover-background  : var(--hover-background);
-    --menu-hover-color       : var(--hover-color);
-    --search-hit-background  : var(--pink-100);
-    --search-hit-border-color: var(--pink-500);
-    --search-hit-color       : black;
-    --selection-background   : var(--sky-200);
-    --selection-color        : var(--text-color);
-    --text-color             : var(--theme-mono-700);
+    --background-color             : var(--theme-mono-50);
+    --border-color                 : var(--theme-mono-200);
+    --border-radius                : 6px;
+    --border-radius-s              : 3px;
+    --border-radius-xs             : 1px;
+    --border-width                 : 1px;
+    --drop-shadow                  : drop-shadow(0 3px 5px rgba(0, 0, 0, 0.15));
+    --form-element-background      : #fff;
+    --max-width                    : 75ch;
+    --menu-background              : var(--theme-mono-50);
+    --menu-color                   : inherit;
+    --menu-item-active-background  : ;
+    --menu-item-active-color       : var(--theme-primary);
+    --menu-item-hover-background   : var(--hover-background);
+    --menu-item-hover-color        : inherit;
+    --menu-item-inactive-background: ;
+    --menu-item-inactive-color     : var(--theme-mono-400);
+    --search-hit-background        : var(--pink-100);
+    --search-hit-border-color      : var(--pink-500);
+    --search-hit-color             : black;
+    --selection-background         : var(--sky-200);
+    --selection-color              : var(--text-color);
+    --text-color                   : var(--theme-mono-700);
 
     /* Sidebar */
     --sidebar-active-background      : var(--hover-background);

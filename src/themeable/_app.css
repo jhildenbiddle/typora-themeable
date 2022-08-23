@@ -47,8 +47,8 @@ body:not([class*="seamless"]) :is(#typora-sidebar, content) {
 
 .context-menu.dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:hover {
-    background: var(--menu-hover-background);
-    color: var(--menu-hover-color);
+    background: var(--menu-item-hover-background);
+    color: var(--menu-item-hover-color);
 }
 
 /* Tooltips */
