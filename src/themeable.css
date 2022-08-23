@@ -110,7 +110,7 @@
     --marked-background      : var(--yellow-300);
     --marked-color           : inherit;
     --strong-color           : var(--mono-800);
-    --strong-font-weight     : 800;
+    --strong-font-weight     : 700;
 
     /* Lists */
     --checkbox-background   : var(--mono-100);
