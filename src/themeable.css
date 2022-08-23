@@ -141,14 +141,6 @@
     --md-tags             : var(--theme-mono-400);
     --md-tags-expanded    : var(--theme-secondary);
 
-    /* Table / TOC Edit Bar */
-    --table-edit-background       : var(--theme-mono-200);
-    --table-edit-color            : var(--theme-mono-600);
-    --table-edit-active-background: var(--theme-primary);
-    --table-edit-active-color     : var(--theme-mono-50);
-    --table-edit-hover-background : var(--theme-mono-300);
-    --table-edit-hover-color      : var(--table-edit-color);
-
     /* Tables */
     --thead-border-color: var(--theme-mono-300);
     --thead-border-width: 0 0 2px 0;
@@ -165,6 +157,14 @@
     --td-border-color   : unset;
     --td-border-width   : unset;
     --td-padding        : 0.5rem 0.75rem;
+
+    /* Table / TOC Edit Bar */
+    --table-edit-background       : var(--theme-mono-200);
+    --table-edit-color            : var(--theme-mono-600);
+    --table-edit-active-background: var(--theme-mono-500);
+    --table-edit-active-color     : var(--theme-mono-50);
+    --table-edit-hover-background : var(--theme-mono-300);
+    --table-edit-hover-color      : var(--table-edit-color);
 
     /* Code */
     --code-inline-background: var(--theme-mono-200);
