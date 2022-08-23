@@ -73,9 +73,11 @@
     --menu-color                  : inherit;
     --menu-item-hover-background  : var(--hover-background);
     --menu-item-hover-color       : inherit;
-    --search-hit-background       : var(--pink-100);
-    --search-hit-border-color     : var(--pink-500);
-    --search-hit-color            : black;
+    --search-match-background     : var(--pink-100);
+    --search-match-border-color   : var(--pink-500);
+    --search-match-color          : black;
+    --search-nomatch-background   : var(--theme-mono-500);
+    --search-nomatch-color        : #fff;
     --selection-background        : var(--sky-200);
     --selection-color             : var(--text-color);
     --text-color                  : var(--theme-mono-700);

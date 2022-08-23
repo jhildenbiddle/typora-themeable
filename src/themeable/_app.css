@@ -73,9 +73,9 @@ body:not([class*="seamless"]) :is(#typora-sidebar, content) {
 .ty-file-search-match-text {
     border-radius: var(--border-radius-xs);
     background-color: unset !important;
-    background: var(--search-hit-background) !important;
-    box-shadow: 0 0 0 2px var(--search-hit-border-color);
-    color: var(--search-hit-color) !important;
+    background: var(--search-match-background) !important;
+    box-shadow: 0 0 0 2px var(--search-match-border-color);
+    color: var(--search-match-color) !important;
 }
 
 

@@ -10,8 +10,8 @@
     --md-char-color           : var(--md-brackets-expanded);
     --meta-content-color      : inherit;
     --monospace               : var(--font-family-mono);
-    --search-select-bg-color  : var(--search-hit-background);
-    --search-select-text-color: var(--search-hit-color);
+    --search-select-bg-color  : var(--search-match-background);
+    --search-select-text-color: var(--search-match-color);
     --select-text-bg-color    : var(--selection-background);
     --select-text-font-color  : var(--selection-color);
     --window-border           : 1px solid var(--border-color);
