@@ -37,7 +37,7 @@ body:not([class*="seamless"]) :is(#typora-sidebar, content) {
 }
 
 .context-menu .divider {
-    border-top: var(--border-width) solid var(--border-color);
+    border-top: 1px solid var(--border-color);
     opacity: 1;
 }
 
