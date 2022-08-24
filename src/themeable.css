@@ -233,8 +233,8 @@
         --menu-background : var(--mono-100);
 
         /* Elements */
-        --kbd-background  : var(--mono-200);
-        --kbd-border-color: var(--mono-300);
+        --kbd-background  : var(--mono-100);
+        --kbd-border-color: var(--border-color);
         --marked-color    : var(--mono-200);
 
         /* Diagrams */
