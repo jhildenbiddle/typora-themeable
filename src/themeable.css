@@ -120,15 +120,15 @@
 
     /* Syntax */
     --code-activeline-background: var(--mono-200);
-    --code-atom-color           : var(--amber-500);
+    --code-atom-color           : var(--amber-600);
     --code-attribute-color      : var(--sky-600);
     --code-background           : var(--mono-100);
     --code-bracket-color        : var(--mono-400);
     --code-builtin-color        : var(--emerald-600);
     --code-comment-color        : var(--mono-400);
     --code-cursor-border        : 2px solid var(--color-primary);
-    --code-def-color            : var(--violet-500);
-    --code-error-color          : var(--red-500);
+    --code-def-color            : var(--violet-600);
+    --code-error-color          : var(--red-600);
     --code-keyword-color        : var(--sky-600);
     --code-language-background  : var(--code-activeline-background);
     --code-language-color       : var(--code-text-color);
@@ -142,12 +142,12 @@
     --code-selected-background  : var(--selection-background);
     --code-string-2-color       : ;
     --code-string-color         : ;
-    --code-tag-color            : var(--violet-500);
+    --code-tag-color            : var(--violet-600);
     --code-text-color           : var(--mono-700);
     --code-type-color           : var(--rose-600);
-    --code-variable-2-color     : var(--cyan-500);
-    --code-variable-3-color     : var(--emerald-500);
-    --code-variable-color       : var(--cyan-500);
+    --code-variable-2-color     : var(--cyan-600);
+    --code-variable-3-color     : var(--emerald-600);
+    --code-variable-color       : var(--cyan-600);
 
     /* Elements */
     /* ---------------------------------------------------------------------- */
@@ -231,6 +231,23 @@
         /* App */
         --input-background: var(--mono-50);
         --menu-background : var(--mono-100);
+
+        /* Code - Syntax */
+        --code-atom-color      : var(--amber-400);
+        --code-attribute-color : var(--sky-400);
+        --code-builtin-color   : var(--emerald-400);
+        --code-def-color       : var(--violet-400);
+        --code-error-color     : var(--red-400);
+        --code-keyword-color   : var(--sky-400);
+        --code-meta-color      : var(--rose-400);
+        --code-operator-color  : var(--rose-400);
+        --code-property-color  : var(--sky-400);
+        --code-qualifier-color : var(--emerald-400);
+        --code-tag-color       : var(--violet-400);
+        --code-type-color      : var(--rose-400);
+        --code-variable-2-color: var(--cyan-400);
+        --code-variable-3-color: var(--emerald-400);
+        --code-variable-color  : var(--cyan-400);
 
         /* Elements */
         --kbd-background  : var(--mono-100);
