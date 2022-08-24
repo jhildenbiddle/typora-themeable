@@ -52,6 +52,12 @@ body:not([class*="seamless"]) :is(#typora-sidebar, content) {
     opacity: 1;
 }
 
+/* Form Controls */
+.form-control:focus {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+}
+
 /* Tooltips */
 .code-tooltip-content * {
     color: unset;
