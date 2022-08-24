@@ -28,7 +28,7 @@
     font-family: var(--font-family-mono);
     font-size: var(--font-size-mono);
     font-weight: var(--font-weight-mono);
-    color: var(--code-text-color);
+    color: var(--code-text-color) !important;
 }
 
 #write .cm-s-inner {
@@ -57,107 +57,106 @@
 :is(#write, #typora-source) .CodeMirror-selected:not(.cm-search-hit),
 :is(#write, #typora-source) .CodeMirror-selectedtext:not(.cm-search-hit) {
     background: var(--code-selected-background) !important;
-    color: var(--code-selected-color) !important;
 }
 
 /* Syntax Highlighting
 /* -------------------------------------------------------------------------- */
 #typora-source .cm-atom {
-    color: inherit;
+    color: inherit !important;
 }
 
 #write .cm-atom {
-    color: var(--code-atom-color);
+    color: var(--code-atom-color) !important;
 }
 
 :is(#write, #typora-source) .cm-attribute {
-    color: var(--code-attribute-color);
+    color: var(--code-attribute-color) !important;
 }
 
 :is(#write, #typora-source) .cm-builtin {
-    color: var(--code-builtin-color);
+    color: var(--code-builtin-color) !important;
 }
 
 :is(#write, #typora-source) .cm-comment {
-    color: var(--code-comment-color);
+    color: var(--code-comment-color) !important;
     opacity: 1 !important;
 }
 
 :is(#write, #typora-source) .cm-def {
-    color: var(--code-def-color);
+    color: var(--code-def-color) !important;
 }
 
 :is(#write, #typora-source) .cm-error {
-    color: var(--code-error-color);
+    color: var(--code-error-color) !important;
 }
 
 #typora-source .cm-header {
-    color: var(--heading-color);
+    color: var(--heading-color) !important;
 }
 
 :is(#write, #typora-source) .cm-keyword {
-    color: var(--code-keyword-color);
+    color: var(--code-keyword-color) !important;
 }
 
 #write .cm-link {
-    color: var(--code-link-color);
+    color: var(--code-link-color) !important;
 }
 
 #typora-source .cm-link {
-    color: var(--link-color);
+    color: var(--link-color) !important;
 }
 
 #write .cm-meta {
-    color: var(--code-meta-color);
+    color: var(--code-meta-color) !important;
 }
 
 :is(#write, #typora-source) .cm-number {
-    color: var(--code-number-color);
+    color: var(--code-number-color) !important;
 }
 
 :is(#write, #typora-source) .cm-operator {
-    color: var(--code-operator-color);
+    color: var(--code-operator-color) !important;
 }
 
 :is(#write, #typora-source) .cm-property {
-    color: var(--code-property-color);
+    color: var(--code-property-color) !important;
 }
 
 :is(#write, #typora-source) .cm-qualifier {
-    color: var(--code-qualifier-color);
+    color: var(--code-qualifier-color) !important;
 }
 
 :is(#write, #typora-source) .cm-string {
-    color: var(--code-string-color);
+    color: var(--code-string-color) !important;
 }
 
 :is(#write, #typora-source) .cm-string-2 {
-    color: var(--code-string-2-color);
+    color: var(--code-string-2-color) !important;
 }
 
 :is(#write, #typora-source) .cm-tag {
-    color: var(--code-tag-color);
+    color: var(--code-tag-color) !important;
 }
 
 :is(#write, #typora-source) .cm-type {
-    color: var(--code-type-color);
+    color: var(--code-type-color) !important;
 }
 
 :is(#write, #typora-source) .cm-s-inner .cm-variable {
-    color: var(--code-variable-color);
+    color: var(--code-variable-color) !important;
 }
 
 :is(#write, #typora-source) .cm-s-inner .cm-variable-2 {
-    color: var(--code-variable-2-color);
+    color: var(--code-variable-2-color) !important;
 }
 
 :is(#write, #typora-source) .cm-s-inner .cm-variable-3 {
-    color: var(--code-variable-3-color);
+    color: var(--code-variable-3-color) !important;
 }
 
 /* Note: must come after other classes */
 :is(#write, #typora-source) .cm-bracket {
-    color: var(--code-bracket-color);
+    color: var(--code-bracket-color) !important;
 }
 
 /* Language Selector
@@ -228,7 +227,7 @@ mjx-container svg {
 .md-fences-adv-panel,
 .md-diagram-panel-preview svg *,
 mjx-container {
-    font-family: var(--font-family-sans);
+    font-family: var(--mermaid-font-family, var(--font-family-sans));
 }
 
 /* Errors */

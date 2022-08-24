@@ -17,7 +17,7 @@
 #md-searchpanel .btn,
 #searchpanel-msg {
     border-radius: var(--border-radius-s);
-    font-size: var(--font-size-app-s);
+    font-size: var(--font-size-ui-s);
 }
 
 #md-searchpanel input {

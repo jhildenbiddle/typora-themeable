@@ -9,7 +9,7 @@
 
 #typora-sidebar,
 #sidebar-files-menu.dropdown-menu > li {
-    font-size: var(--font-size-app);
+    font-size: var(--font-size-ui);
 }
 
 #typora-sidebar input {
@@ -183,7 +183,7 @@
 .file-list-item-parent-loc,
 .file-list-item-time {
     margin-bottom: 3px;
-    font-size: var(--font-size-app-s);
+    font-size: var(--font-size-ui-s);
 }
 
 .file-list-item {
@@ -195,6 +195,10 @@
     color: var(--sidebar-hover-color);
 }
 
+.file-list-item:not(.active) {
+    opacity: 1;
+}
+
 .file-list-item.active {
     background: var(--sidebar-active-background);
     color: var(--sidebar-active-color);
@@ -203,11 +207,12 @@
 .file-list-item-file-name {
     position: relative;
     margin-bottom: 4px;
+    font-weight: var(--strong-font-weight);
+    color: var(--strong-color);
 }
 
 .active .file-list-item-file-name {
     padding-right: 20px;
-    font-weight: var(--strong-font-weight);
 }
 
 /* Selection Dot */
@@ -219,11 +224,11 @@
     height: auto;
     max-height: calc(3 * 0.95em * var(--line-height));
     line-height: inherit;
-    font-size: var(--font-size-app-s);
+    font-size: var(--font-size-ui-s);
 }
 
 .file-list-item-time {
-    font-size: var(--font-size-app-s);
+    font-size: var(--font-size-ui-s);
 }
 
 /* Files List
@@ -370,11 +375,11 @@
     --size: 1.65em;
 
     height: var(--size);
-    width: var(--size);
+    min-width: var(--size);
     border-radius: 50%;
     background-color: var(--color-status);
     color: var(--color-status-content);
-    font-size: var(--font-size-app-s);
+    font-size: var(--font-size-ui-s);
     font-weight: var(--strong-font-weight);
     line-height: var(--size);
     text-align: center;

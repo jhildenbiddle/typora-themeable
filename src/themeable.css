@@ -2,17 +2,52 @@
 @import url("https://rsms.me/inter/inter.css");
 
 
-/* Theme Variables
+/* Basic
 /* ========================================================================== */
 :root {
-    /* Color palette */
-    /* Names: red, orange, amber, yellow, lime, green, emerald, teal, cyan, */
-    /*        sky, blue, indigo, violet, purple, fuchsia, pink, rose */
-    --color-primary        : var(--sky-600);
-    --color-primary-content: #fff;
+    /* Colors: red, orange, amber, yellow, lime, green, emerald, teal, cyan, sky, blue, indigo, violet, purple, fuchsia, pink, rose */
+    --color-primary            : var(--sky-600);
+    --color-secondary          : var(--violet-500);
+    --marked-background        : var(--yellow-300);
+    --search-match-background  : var(--pink-100);
+    --search-match-border-color: var(--pink-500);
+    --selection-background     : var(--sky-100);
 
-    /* Palette - Monochrome (Grayscale) */
-    /* Options: slate, gray, zinc, neutral, stone */
+    /* Typography */
+    --font-family-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --font-family-sans: "Inter var", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    --font-size       : 16px;
+    --font-size-mono  : max(var(--font-size-s), 0.9375rem);
+    --font-size-ui    : 14px;
+    --font-weight     : 400;
+    --font-weight-mono: 500;
+}
+
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+    :root[lang] {
+        --color-primary            : var(--sky-500);
+        --color-secondary          : var(--violet-400);
+        --marked-background        : var(--yellow-400);
+        --search-match-background  : var(--pink-900);
+        --search-match-border-color: var(--pink-600);
+        --selection-background     : var(--sky-800);
+    }
+}
+
+
+/* Advanced
+/* ========================================================================== */
+:root {
+    /* Palette */
+    /* ---------------------------------------------------------------------- */
+    --color-hover          : var(--mono-200);
+    --color-hover-content  : inherit;
+    --color-primary-content: #fff;
+    --color-status         : var(--mono-500);
+    --color-status-content : #fff;
+
+    /* Monochrome: slate, gray, zinc, neutral, stone */
     --mono-50 : var(--neutral-50);
     --mono-100: var(--neutral-100);
     --mono-200: var(--neutral-200);
@@ -24,32 +59,21 @@
     --mono-800: var(--neutral-800);
     --mono-900: var(--neutral-900);
 
-    /* State */
-    --color-hover         : var(--mono-200);
-    --color-hover-content : inherit;
-    --color-status        : var(--mono-500);
-    --color-status-content: #fff;
-
     /* Typography */
-    --root-font-size  : 16px;
-    --modular-scale   : 1.414; /* 1.067, 1.125, 1.200, 1.250, 1.333, 1.414, 1.500, 1.618 */
-    --font-family-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-    --font-family-sans: "Inter var", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-    --font-size-app   : 0.875rem; /* 14px */
-    --font-size-app-s : 0.75rem; /* 12px */
-    --font-size-app-xs: 0.6875rem; /* 11px */
-    --font-size-mono  : max(var(--font-size-s), 0.9375rem);
-    --font-size-xxl   : calc(var(--font-size-xl) * var(--modular-scale)); /* 45px (28 * 1.414) */
-    --font-size-xl    : calc(var(--font-size-l) * var(--modular-scale)); /* 32px (21 * 1.414) */
-    --font-size-l     : calc(1rem * var(--modular-scale)); /* 23px (16 * 1.414) */
-    --font-size-m     : 1rem; /* 16px */
-    --font-size-s     : max(0.75rem, calc(1rem / var(--modular-scale))); /* 12px (13 > (16 / 1.414 = 11) */
-    --font-size-xs    : max(0.6875rem, calc(var(--font-size-s) / var(--modular-scale))); /* 11px (11 > (13 / 1.414 = 9) */
-    --font-weight     : 400;
-    --font-weight-mono: 500;
-    --line-height     : 1.6;
+    /* ---------------------------------------------------------------------- */
+    --font-size-ui-s : calc(var(--font-size-ui) * 0.857); /* 12px*/
+    --font-size-ui-xs: calc(var(--font-size-ui) * 0.7857); /* 11px*/
+    --font-size-xxl  : calc(var(--font-size-xl) * var(--modular-scale)); /* 47px (33 * 1.414) */
+    --font-size-xl   : calc(var(--font-size-l) * var(--modular-scale)); /* 33px (23 * 1.414) */
+    --font-size-l    : calc(1rem * var(--modular-scale)); /* 23px (16 * 1.414) */
+    --font-size-m    : 1rem; /* 16px */
+    --font-size-s    : max(0.75rem, calc(1rem / var(--modular-scale))); /* 12px ((16 * 0.75 = 12) > (16 / 1.414 = 11) */
+    --font-size-xs   : max(0.6875rem, calc(var(--font-size-s) / var(--modular-scale))); /* 11px ((16 * 0.6875 = 11) > (12 / 1.414 = 8) */
+    --line-height    : 1.6;
+    --modular-scale  : 1.414; /* 1.067, 1.125, 1.200, 1.250, 1.333, 1.414, 1.500, 1.618 */
 
     /* App */
+    /* ---------------------------------------------------------------------- */
     --background-color            : var(--mono-50);
     --border-color                : var(--mono-200);
     --border-radius               : 6px;
@@ -67,95 +91,34 @@
     --input-focus-color           : var(--color-primary);
     --input-color                 : var(--text-color);
     --input-placeholder-color     : var(--mono-400);
+    --kbd-background              : var(--mono-600);
+    --kbd-border-color            : transparent;
+    --kbd-color                   : #fff;
     --max-width                   : 75ch;
-    --menu-background             : var(--mono-50);
+    --md-brackets                 : var(--mono-400);
+    --md-brackets-expanded        : var(--color-secondary);
+    --md-tags                     : var(--md-brackets);
+    --md-tags-expanded            : var(--md-brackets-expanded);
+    --menu-background             : #fff;
     --menu-color                  : inherit;
-    --menu-item-hover-background  : var(--color-hover);
-    --menu-item-hover-color       : var(--color-hover-content);
-    --search-match-background     : var(--pink-100);
-    --search-match-border-color   : var(--pink-500);
     --search-match-color          : var(--text-color);
-    --selection-background        : var(--sky-200);
-    --selection-color             : var(--text-color);
+    --selection-color             : ;
+    --sidebar-active-background   : var(--color-hover);
+    --sidebar-active-color        : var(--color-hover-content);
+    --sidebar-background          : var(--mono-100);
+    --sidebar-border-color        : var(--mono-200);
+    --sidebar-border-width        : 1px;
+    --sidebar-color               : var(--mono-700);
+    --sidebar-hover-background    : var(--color-hover);
+    --sidebar-hover-color         : var(--color-hover-content);
     --text-color                  : var(--mono-700);
 
-    /* Sidebar */
-    --sidebar-active-background: var(--color-hover);
-    --sidebar-active-color     : var(--color-hover-content);
-    --sidebar-background       : var(--mono-100);
-    --sidebar-border-color     : var(--mono-200);
-    --sidebar-border-width     : 1px;
-    --sidebar-color            : var(--mono-700);
-    --sidebar-hover-background : var(--color-hover);
-    --sidebar-hover-color      : var(--color-hover-content);
-
-    /* Elements */
-    --blockquote-background  : var(--mono-100);
-    --blockquote-border-color: var(--color-primary);
-    --blockquote-border-width: 0 0 0 4px;
-    --blockquote-color       : inherit;
-    --blockquote-padding     : 1rem 1.5rem 1rem 1.5rem;
-    --heading-color          : var(--mono-800);
-    --heading-font-weight    : 800;
-    --h1-font-size           : var(--font-size-xxl);
-    --h2-font-size           : var(--font-size-xl);
-    --h3-font-size           : var(--font-size-l);
-    --h4-font-size           : var(--font-size-m);
-    --h5-font-size           : var(--font-size-m);
-    --h6-font-size           : var(--font-size-s);
-    --hr-color               : var(--mono-300);
-    --hr-height              : 2px;
-    --link-color             : var(--color-primary);
-    --marked-background      : var(--yellow-300);
-    --marked-color           : inherit;
-    --strong-color           : var(--mono-800);
-    --strong-font-weight     : 700;
-
-    /* Lists */
-    --checkbox-background   : var(--mono-100);
-    --checkbox-border-color : var(--mono-300);
-    --checkbox-border-radius: 4px;
-    --checkbox-check-color  : #fff;
-    --checkbox-size         : 1.2rem;
-    --counter-color         : inherit;
-    --marker-color          : inherit;
-
-    /* Markdown Meta */
-    --md-brackets         : var(--mono-400);
-    --md-brackets-expanded: var(--violet-500);
-    --md-tags             : var(--md-brackets);
-    --md-tags-expanded    : var(--md-brackets-expanded);
-
-    /* Tables */
-    --thead-border-color: var(--mono-300);
-    --thead-border-width: 0 0 2px 0;
-    --th-border-color   : unset;
-    --th-border-width   : unset;
-    --th-color          : var(--strong-color);
-    --th-font-weight    : var(--strong-font-weight);
-    --th-padding        : 0 0.75rem 0.5rem 0.75rem;
-    --tbody-border-color: unset;
-    --tbody-border-width: unset;
-    --tr-alt-background : var(--mono-100);
-    --tr-border-color   : var(--mono-200);
-    --tr-border-width   : 0 0 1px 0;
-    --td-border-color   : unset;
-    --td-border-width   : unset;
-    --td-padding        : 0.5rem 0.75rem;
-
-    /* Table / TOC Edit Bar */
-    --table-edit-background       : var(--mono-200);
-    --table-edit-color            : var(--mono-600);
-    --table-edit-active-background: var(--mono-500);
-    --table-edit-active-color     : var(--mono-50);
-    --table-edit-hover-background : var(--mono-300);
-    --table-edit-hover-color      : var(--table-edit-color);
-
     /* Code */
+    /* ---------------------------------------------------------------------- */
     --code-inline-background: var(--mono-200);
     --code-inline-color     : var(--strong-color);
 
-    /* Code Fences */
+    /* Syntax */
     --code-activeline-background: var(--mono-200);
     --code-atom-color           : var(--amber-500);
     --code-attribute-color      : var(--sky-600);
@@ -177,7 +140,6 @@
     --code-property-color       : var(--sky-600);
     --code-qualifier-color      : var(--emerald-600);
     --code-selected-background  : var(--selection-background);
-    --code-selected-color       : var(--selection-color);
     --code-string-2-color       : ;
     --code-string-color         : ;
     --code-tag-color            : var(--violet-500);
@@ -186,6 +148,98 @@
     --code-variable-2-color     : var(--cyan-500);
     --code-variable-3-color     : var(--emerald-500);
     --code-variable-color       : var(--cyan-500);
+
+    /* Elements */
+    /* ---------------------------------------------------------------------- */
+    --blockquote-background       : var(--mono-100);
+    --blockquote-border-color     : var(--color-primary);
+    --blockquote-border-width     : 0 0 0 4px;
+    --blockquote-color            : inherit;
+    --blockquote-padding          : 1rem 1.5rem 1rem 1.5rem;
+    --checkbox-background         : var(--mono-100);
+    --checkbox-border-color       : var(--mono-300);
+    --checkbox-border-radius      : var(--border-radius-s);
+    --checkbox-check-color        : var(--color-primary-content);
+    --checkbox-size               : 1.2rem;
+    --counter-color               : inherit;
+    --h1-font-size                : var(--font-size-xxl);
+    --h1-letter-spacing           : -0.03em;
+    --h2-font-size                : var(--font-size-xl);
+    --h2-letter-spacing           : -0.02em;
+    --h3-font-size                : var(--font-size-l);
+    --h3-letter-spacing           : -0.01em;
+    --h4-font-size                : var(--font-size-m);
+    --h5-font-size                : var(--font-size-m);
+    --h6-font-size                : var(--font-size-s);
+    --heading-color               : var(--mono-800);
+    --heading-font-weight         : 800;
+    --hr-color                    : var(--mono-300);
+    --hr-height                   : 2px;
+    --link-color                  : var(--color-primary);
+    --marked-color                : inherit;
+    --marker-color                : inherit;
+    --strong-color                : var(--mono-800);
+    --strong-font-weight          : 600;
+    --table-edit-active-background: var(--mono-500);
+    --table-edit-active-color     : var(--mono-50);
+    --table-edit-background       : var(--mono-200);
+    --table-edit-color            : var(--mono-600);
+    --table-edit-hover-background : var(--mono-300);
+    --table-edit-hover-color      : var(--table-edit-color);
+    --tbody-border-color          : unset;
+    --tbody-border-width          : unset;
+    --td-border-color             : unset;
+    --td-border-width             : unset;
+    --td-padding                  : 0.5rem 0.75rem;
+    --th-border-color             : unset;
+    --th-border-width             : unset;
+    --th-color                    : var(--strong-color);
+    --th-font-weight              : var(--strong-font-weight);
+    --th-padding                  : 0 0.75rem 0.5rem 0.75rem;
+    --thead-border-color          : var(--mono-300);
+    --thead-border-width          : 0 0 2px 0;
+    --tr-alt-background           : var(--mono-100);
+    --tr-border-color             : var(--mono-200);
+    --tr-border-width             : 0 0 1px 0;
+
+    /* Diagrams */
+    --mermaid-theme              : neutral; /* base, dark, forest, neutral, night */
+    --mermaid-font-family        : ;
+    --mermaid-flowchart-curve    : basis; /* basis, linear, natural, step */
+    --mermaid-sequence-numbers   : off; /* off, on */
+    --mermaid--gantt-left-padding: 75;
+    --sequence-theme             : simple; /* hand, simple */
+}
+
+/* Dark Mode
+/* ========================================================================== */
+@media (prefers-color-scheme: dark) {
+    :root {
+        /* Palette */
+        --color-status: var(--mono-300);
+        --mono-50     : var(--zinc-900);
+        --mono-100    : var(--zinc-800);
+        --mono-200    : var(--zinc-700);
+        --mono-300    : var(--zinc-600);
+        --mono-400    : var(--zinc-500);
+        --mono-500    : var(--zinc-400);
+        --mono-600    : var(--zinc-300);
+        --mono-700    : var(--zinc-200);
+        --mono-800    : var(--zinc-100);
+        --mono-900    : var(--zinc-50);
+
+        /* App */
+        --input-background: var(--mono-50);
+        --menu-background : var(--mono-100);
+
+        /* Elements */
+        --kbd-background  : var(--mono-200);
+        --kbd-border-color: var(--mono-300);
+        --marked-color    : var(--mono-200);
+
+        /* Diagrams */
+        --mermaid-theme: dark;
+    }
 }
 
 

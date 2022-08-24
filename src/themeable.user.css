@@ -1,10 +1,7 @@
 /* ========================================================================== */
 /* Imports
 /* ========================================================================== */
-/* Code Theme */
 /* @import url("themeable/code-material.css"); */
-
-/* Diagrams */
 /* @import url("themeable/mermaid-pie.css"); */
 
 
@@ -12,12 +9,11 @@
 /* Variables
 /* ========================================================================== */
 :root {
-    /* Mermaid (diagrams) - https://support.typora.io/Draw-Diagrams-With-Markdown/#mermaid-options */
-    /* --mermaid-theme: neutral; */
-    /* --mermaid-sequence-numbers: off; */
-    /* --mermaid-flowchart-curve: basis; */
-    /* --mermaid--gantt-left-padding: 75; */
 
-    /* Sequence (diagrams) - https://support.typora.io/Draw-Diagrams-With-Markdown/#sequence-diagrams-options */
-    /* --sequence-theme: simple; */
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+
+    }
 }

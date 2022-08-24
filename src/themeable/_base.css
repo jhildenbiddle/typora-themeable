@@ -19,7 +19,7 @@ body {
 html {
     accent-color: var(--color-primary);
     font-family: var(--font-family-sans);
-    font-size: var(--root-font-size);
+    font-size: var(--font-size);
     font-weight: var(--font-weight);
     font-family: var(--font-family-sans);
 }
@@ -53,6 +53,16 @@ kbd,
 samp,
 pre {
     font-family: var(--font-family-mono);
+    font-size: var(--font-size-mono);
+}
+
+kbd {
+    padding: .2em .75em .3em .75em;
+    border-color: var(--kbd-border-color);
+    border-radius: var(--border-radius);
+    background: var(--kbd-background);
+    color: var(--kbd-color);
+    box-shadow: none;
 }
 
 code,

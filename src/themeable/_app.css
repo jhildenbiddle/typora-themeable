@@ -33,22 +33,23 @@ body:not([class*="seamless"]) :is(#typora-sidebar, content) {
 .context-menu,
 .dropdown-menu {
     background: var(--menu-background);
-    font-size: var(--font-size-app);
+    font-size: var(--font-size-ui);
 }
 
-.context-menu .divider {
-    border-top: 1px solid var(--border-color);
-    opacity: 1;
+@media (prefers-color-scheme: dark) {
+    .context-menu,
+    .dropdown-menu {
+        border: 1px solid var(--border-color);
+    }
 }
 
 :is(.context-menu, .dropdown-menu) .ty-menu-shortcut {
     font-family: var(--font-family-sans);
 }
 
-.context-menu.dropdown-menu > li > a:hover,
-.dropdown-menu > li > a:hover {
-    background: var(--menu-item-hover-background);
-    color: var(--menu-item-hover-color);
+.context-menu .divider {
+    border-top: 1px solid var(--border-color);
+    opacity: 1;
 }
 
 /* Tooltips */
@@ -68,8 +69,7 @@ body:not([class*="seamless"]) :is(#typora-sidebar, content) {
 .md-search-hit,
 .md-search-hit.md-search-select,
 .md-search-select,
-:is(#write, #typora-source) .cm-search-hit,
-:is(#write, #typora-source) .CodeMirror-selectedtext,
+body :is(#write, #typora-source) .cm-search-hit,
 .ty-file-search-match-text {
     border-radius: var(--border-radius-xs);
     background-color: unset !important;
