@@ -134,7 +134,7 @@
 }
 
 .outline-item-active {
-    position: relative
+    position: relative;
     padding-right: 8px;
     color: var(--sidebar-active-color);
 }

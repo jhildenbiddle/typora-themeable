@@ -1,2 +1,2 @@
-@import "themeable-light.css";
-@import "themeable-dark.css" screen and (prefers-color-scheme: dark);
+@import "core/_import.css";
+@import "core/vars-dark.css" screen and (prefers-color-scheme: dark);

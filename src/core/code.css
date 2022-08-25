@@ -278,7 +278,7 @@ mjx-container {
     padding: var(--code-padding-tb) var(--code-padding-lr);
     border-radius: var(--border-radius);
     background: var(--code-error-color);
-    color: #fff;;
+    color: #fff;
     font-size: var(--font-size-s);
     font-weight: calc(var(--font-weight) + 100);
 }

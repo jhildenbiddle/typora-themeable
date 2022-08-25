@@ -17,28 +17,34 @@
     "markdown",
     "theme",
     "themeable",
+    "dark",
+    "light",
     "custom",
     "properties",
     "variables",
     "typography"
   ],
-  "main": "dist/typora-themeable.css",
+  "files": [
+    "dist"
+  ],
+  "style": "dist/themeable.css",
   "scripts": {
-    "build": "sass src:dist --style=expanded --no-source-map",
+    "build": "postcss {src,src/themeable}/*.css --dir dist --base src",
     "clean": "rimraf dist/*",
-    "_postbuild": "cpy dist/themeable.css ~/Library/Application Support/abnerworks.Typora/themes/ --rename=themeable-dev.css",
+    "lint": "markdownlint . --ignore node_modules",
     "prepare": "npm run clean && npm run build",
     "serve": "node server.js",
-    "start": "npm run serve npm run watch",
-    "version": "npm run build && git add -A docs",
+    "start": "npm run serve & npm run watch",
+    "version": "npm run lint && npm run prepare",
     "watch": "npm run build -- -w"
   },
   "devDependencies": {
     "browser-sync": "^2.27.10",
-    "compression": "^1.7.4",
-    "cpy-cli": "^4.1.0",
     "markdownlint-cli": "^0.32.1",
-    "rimraf": "^3.0.2",
-    "sass": "^1.54.0"
+    "postcss-banner": "^4.0.1",
+    "postcss-cli": "^10.0.0",
+    "postcss-discard-comments": "^5.1.2",
+    "postcss-import": "^14.1.0",
+    "rimraf": "^3.0.2"
   }
 }
