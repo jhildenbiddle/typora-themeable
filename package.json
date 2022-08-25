@@ -25,6 +25,7 @@
     "typography"
   ],
   "files": [
+    "DEMO.md",
     "dist"
   ],
   "style": "dist/themeable.css",
