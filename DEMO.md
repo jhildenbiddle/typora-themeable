@@ -6,7 +6,7 @@ description: >
   customized using CSS custom properties
 ---
 
-# Typora-Themeable
+# Typora Themeable
 
 ## Color Palette
 
