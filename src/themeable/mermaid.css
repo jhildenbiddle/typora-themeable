@@ -8,19 +8,18 @@
     --mermaid-pie-color7 : var(--blue-500);
     --mermaid-pie-color8 : var(--violet-500);
     --mermaid-pie-color9 : var(--fuchsia-500);
-
-    --mermaid-pie-color10 : var(--red-400);
-    --mermaid-pie-color11 : var(--orange-400);
-    --mermaid-pie-color12 : var(--amber-400);
-    --mermaid-pie-color13 : var(--lime-400);
-    --mermaid-pie-color14 : var(--emerald-400);
-    --mermaid-pie-color15 : var(--cyan-400);
-    --mermaid-pie-color16 : var(--blue-400);
-    --mermaid-pie-color17 : var(--violet-400);
-    --mermaid-pie-color18 : var(--fuchsia-400);
+    --mermaid-pie-color10: var(--red-400);
+    --mermaid-pie-color11: var(--orange-400);
+    --mermaid-pie-color12: var(--amber-400);
+    --mermaid-pie-color13: var(--lime-400);
+    --mermaid-pie-color14: var(--emerald-400);
+    --mermaid-pie-color15: var(--cyan-400);
+    --mermaid-pie-color16: var(--blue-400);
+    --mermaid-pie-color17: var(--violet-400);
+    --mermaid-pie-color18: var(--fuchsia-400);
 }
 
-@media (prefers-color-scheme: dark) {
+@media screen and (prefers-color-scheme: dark) {
     :root {
         --mermaid-pie-color1 : var(--red-600);
         --mermaid-pie-color2 : var(--orange-600);
@@ -31,16 +30,15 @@
         --mermaid-pie-color7 : var(--blue-600);
         --mermaid-pie-color8 : var(--violet-600);
         --mermaid-pie-color9 : var(--fuchsia-600);
-
-        --mermaid-pie-color10 : var(--red-700);
-        --mermaid-pie-color11 : var(--orange-700);
-        --mermaid-pie-color12 : var(--amber-700);
-        --mermaid-pie-color13 : var(--lime-700);
-        --mermaid-pie-color14 : var(--emerald-700);
-        --mermaid-pie-color15 : var(--cyan-700);
-        --mermaid-pie-color16 : var(--blue-700);
-        --mermaid-pie-color17 : var(--violet-700);
-        --mermaid-pie-color18 : var(--fuchsia-700);
+        --mermaid-pie-color10: var(--red-700);
+        --mermaid-pie-color11: var(--orange-700);
+        --mermaid-pie-color12: var(--amber-700);
+        --mermaid-pie-color13: var(--lime-700);
+        --mermaid-pie-color14: var(--emerald-700);
+        --mermaid-pie-color15: var(--cyan-700);
+        --mermaid-pie-color16: var(--blue-700);
+        --mermaid-pie-color17: var(--violet-700);
+        --mermaid-pie-color18: var(--fuchsia-700);
     }
 }
 

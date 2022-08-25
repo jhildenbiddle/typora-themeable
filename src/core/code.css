@@ -1,6 +1,43 @@
 /* ========================================================================== */
 /* Code
 /* ========================================================================== */
+/* YAML Front Matter */
+/* -------------------------------------------------------------------------- */
+#write pre.md-meta-block:first-child {
+    position: relative;
+    overflow: visible;
+    margin-bottom: 2.5rem;
+    padding: var(--code-padding-tb) var(--code-padding-lr);
+    border-radius: var(--border-radius);
+    background: var(--code-background);
+    color: var(--code-text-color);
+    font-size: var(--font-size-mono);
+    font-weight: var(--font-weight-mono);
+}
+
+#write pre.md-meta-block:first-child::after {
+    content: 'YAML Front Matter';
+    position: absolute;
+    z-index: 1;
+    inset: auto var(--code-padding-lr) 100% auto;
+    padding: 0 1em;
+    border-radius: var(--border-radius-s);
+    background: var(--code-language-background);
+    color: var(--code-language-color);
+    font-size: var(--font-size-s);
+    line-height: calc(var(--font-size-mono) * var(--line-height));
+    transform: translateY(50%);
+}
+
+#write pre.md-meta-block:first-child:empty {
+    line-height: 1.15;
+}
+
+#write pre.md-meta-block:first-child:empty::before {
+    content: 'Insert YAML front matter here...';
+    color: var(--code-comment-color);
+}
+
 /* Inline
 /* -------------------------------------------------------------------------- */
 [md-inline="code"] {
@@ -31,9 +68,13 @@
     color: var(--code-text-color) !important;
 }
 
+#write .cm-s-inner,
+.md-rawblock-container {
+    border-radius: var(--border-radius);
+}
+
 #write .cm-s-inner {
     padding: var(--code-padding-tb) var(--code-padding-lr);
-    border-radius: var(--border-radius);
     background: var(--code-background);
 }
 

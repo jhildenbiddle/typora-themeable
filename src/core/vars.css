@@ -1,6 +1,27 @@
+/* Typora Overrides *
+/* ========================================================================== */
+:root {
+    --active-file-bg-color: var(--sidebar-active-background);
+    --active-file-text-color: var(--sidebar-active-color);
+    --bg-color: var(--background-color);
+    --control-text-color: var(--sidebar-color);
+    --control-text-hover-color: var(--sidebar-hover-color);
+    --item-hover-bg-color: var(--color-hover);
+    --item-hover-text-color: var(--color-hover-content);
+    --md-char-color: var(--md-brackets-expanded);
+    --meta-content-color: inherit;
+    --monospace: var(--font-family-mono);
+    --search-select-bg-color: var(--search-match-background);
+    --search-select-text-color: var(--search-match-color);
+    --select-text-bg-color: var(--selection-background);
+    --window-border: 1px solid var(--border-color);
+}
+
+/* Palette *
+/* Credit: https://tailwindcss.com/docs/customizing-colors */
+/* ========================================================================== */
 :root {
     /* Color */
-    /* Credit: https://tailwindcss.com/docs/customizing-colors */
     /* ---------------------------------------------------------------------- */
     --red-50 : #fef2f2;
     --red-100: #fee2e2;
@@ -189,7 +210,7 @@
     --rose-800: #9f1239;
     --rose-900: #881337;
 
-    /* Monochrome / Grayscale (cool => warm) */
+    /* Monochrome (cool => warm) */
     /* ---------------------------------------------------------------------- */
     --slate-50 : #f8fafc;
     --slate-100: #f1f5f9;
@@ -245,4 +266,12 @@
     --stone-700: #44403c;
     --stone-800: #292524;
     --stone-900: #1c1917;
+}
+
+/* Print */
+/* ========================================================================== */
+@media print {
+    :root {
+        --background-color: #fff;
+    }
 }

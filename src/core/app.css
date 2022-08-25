@@ -32,15 +32,9 @@ body:not([class*="seamless"]) :is(#typora-sidebar, content) {
 
 .context-menu,
 .dropdown-menu {
+    border: var(--menu-border-width) solid var(--border-color);
     background: var(--menu-background);
     font-size: var(--font-size-ui);
-}
-
-@media (prefers-color-scheme: dark) {
-    .context-menu,
-    .dropdown-menu {
-        border: 1px solid var(--border-color);
-    }
 }
 
 :is(.context-menu, .dropdown-menu) .ty-menu-shortcut {
