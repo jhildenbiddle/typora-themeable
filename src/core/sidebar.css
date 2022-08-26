@@ -22,7 +22,7 @@
 .file-list-item-parent-loc,
 .file-list-item-summary,
 .ty-search-item-line {
-    font-family: var(--font-family-sans);
+    font-family: var(--font-family-ui);
 }
 
 .ty-search-item-line:hover {

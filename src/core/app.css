@@ -38,7 +38,7 @@ body:not([class*="seamless"]) :is(#typora-sidebar, content) {
 }
 
 :is(.context-menu, .dropdown-menu) .ty-menu-shortcut {
-    font-family: var(--font-family-sans);
+    font-family: var(--font-family-ui);
 }
 
 .context-menu .divider {
@@ -85,6 +85,7 @@ body :is(#write, #typora-source) .cm-search-hit,
 #write {
     max-width: var(--max-width);
     color: var(--text-color);
+    font-family: var(--font-family);
 }
 
 #write > :first-child {

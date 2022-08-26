@@ -25,11 +25,12 @@
     --mono-900: var(--neutral-900);
 
     /* Typography */
+    --font-family     : "Inter var", "Inter", system, -apple-system, ".SFNSText-Regular", "San Francisco", "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
     --font-family-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-    --font-family-sans: "Inter var", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
     --font-size       : 16px;
-    --font-size-mono  : max(var(--font-size-s), 0.9375rem);
-    --font-size-ui    : 14px;
+    --font-size-mono  : 0.9375rem; /* 15px */
+    --font-size-ui    : 16px;
+    --font-size-ui-s  : 12px;
     --font-weight     : 400;
     --font-weight-mono: 500;
 }
@@ -45,16 +46,16 @@
     --color-status-content : #fff;
 
     /* Typography */
-    --font-size-ui-s : calc(var(--font-size-ui) * 0.857); /* 12px*/
-    --font-size-ui-xs: calc(var(--font-size-ui) * 0.7857); /* 11px*/
-    --font-size-xxl  : calc(var(--font-size-xl) * var(--modular-scale)); /* 47px (33 * 1.414) */
-    --font-size-xl   : calc(var(--font-size-l) * var(--modular-scale)); /* 33px (23 * 1.414) */
-    --font-size-l    : calc(1rem * var(--modular-scale)); /* 23px (16 * 1.414) */
-    --font-size-m    : 1rem; /* 16px */
-    --font-size-s    : max(0.75rem, calc(1rem / var(--modular-scale))); /* 12px ((16 * 0.75 = 12) > (16 / 1.414 = 11) */
-    --font-size-xs   : max(0.6875rem, calc(var(--font-size-s) / var(--modular-scale))); /* 11px ((16 * 0.6875 = 11) > (12 / 1.414 = 8) */
-    --line-height    : 1.6;
-    --modular-scale  : 1.414; /* 1.067, 1.125, 1.200, 1.250, 1.333, 1.414, 1.500, 1.618 */
+    --font-family-diagram: var(--font-family);
+    --font-family-ui     : var(--font-family);
+    --font-size-xxl      : calc(var(--font-size-xl) * var(--modular-scale)); /* 47px (33 * 1.414) */
+    --font-size-xl       : calc(var(--font-size-l) * var(--modular-scale)); /* 33px (23 * 1.414) */
+    --font-size-l        : calc(1rem * var(--modular-scale)); /* 23px (16 * 1.414) */
+    --font-size-m        : 1rem; /* 16px */
+    --font-size-s        : max(0.75rem, calc(1rem / var(--modular-scale))); /* 12px ((16 * 0.75 = 12) > (16 / 1.414 = 11) */
+    --font-size-xs       : max(0.6875rem, calc(var(--font-size-s) / var(--modular-scale))); /* 11px ((16 * 0.6875 = 11) > (12 / 1.414 = 8) */
+    --line-height        : 1.6;
+    --modular-scale      : 1.414; /* 1.067, 1.125, 1.200, 1.250, 1.333, 1.414, 1.500, 1.618 */
 
     /* App */
     --background-color            : var(--mono-50);

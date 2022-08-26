@@ -18,10 +18,9 @@ body {
 
 html {
     accent-color: var(--color-primary);
-    font-family: var(--font-family-sans);
+    font-family: var(--font-family-ui);
     font-size: var(--font-size);
     font-weight: var(--font-weight);
-    font-family: var(--font-family-sans);
 }
 
 a,

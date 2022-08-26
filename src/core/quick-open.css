@@ -40,7 +40,7 @@
 .ty-quick-open-category-title {
     margin-top: 0.5rem;
     margin-bottom: 0.15rem;
-    font-size: var(--font-size-ui-xs);
+    font-size: 0.9em;
     height: auto;
     line-height: var(--line-height);
     text-transform: uppercase;

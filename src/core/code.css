@@ -216,7 +216,7 @@
 #write .md-fences > .code-tooltip,
 #write .md-fences > .code-tooltip .ty-cm-lang-input {
     border-radius: var(--border-radius-s);
-    font-family: var(--font-family-sans);
+    font-family: var(--font-family-ui);
     font-size: var(--font-size-s);
     line-height: var(--line-height);
 }
@@ -277,9 +277,10 @@ mjx-container svg {
 }
 
 .md-fences-adv-panel,
-.md-diagram-panel-preview svg *,
-mjx-container {
-    font-family: var(--mermaid-font-family, var(--font-family-sans));
+.md-diagram-panel-preview svg text,
+.md-diagram-panel-preview svg .label,
+.md-diagram-panel-preview svg .nodeLabel {
+    font-family: var(--font-family-diagram) !important;
 }
 
 /* Errors */
@@ -394,7 +395,7 @@ pre.md-fences[lang="sequence"] .md-diagram-panel {
     margin: 0;
     padding: 0;
     color: var(--code-language-color);
-    font-family: var(--font-family-sans);
+    font-family: var(--font-family-ui);
     font-size: var(--font-size-s);
     line-height: calc(var(--font-size-mono) * var(--line-height));
     opacity: 1;

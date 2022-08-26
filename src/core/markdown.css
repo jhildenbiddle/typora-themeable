@@ -76,7 +76,7 @@ sup.md-footnote {
 /* Images */
 .md-image > .md-meta {
     color: inherit;
-    font-family: var(--font-family-sans);
+    font-family: var(--font-family-ui);
 }
 
 /* Image Icon */
