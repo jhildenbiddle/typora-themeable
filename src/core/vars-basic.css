@@ -1,0 +1,38 @@
+/* Themeable - Basic */
+/* ========================================================================== */
+:root {
+    /* Colors */
+    /* - red, orange, amber, yellow, lime, green, emerald, teal, cyan, sky, */
+    /*   blue, indigo, violet, purple, fuchsia, pink, rose */
+    /* - 50 (light), 100, 200, ... 900 (dark) */
+    --color-primary: var(--sky-600);
+    --color-secondary: var(--violet-500);
+    --marked-background: var(--yellow-300);
+    --search-match-background: var(--pink-100);
+    --search-match-border-color: var(--pink-500);
+    --selection-background: var(--sky-100);
+
+    /* Monochrome */
+    /* - slate, gray, zinc, neutral, stone */
+    /* - 50 (light), 100, 200, ... 900 (dark) */
+    --mono-50: var(--neutral-50);
+    --mono-100: var(--neutral-100);
+    --mono-200: var(--neutral-200);
+    --mono-300: var(--neutral-300);
+    --mono-400: var(--neutral-400);
+    --mono-500: var(--neutral-500);
+    --mono-600: var(--neutral-600);
+    --mono-700: var(--neutral-700);
+    --mono-800: var(--neutral-800);
+    --mono-900: var(--neutral-900);
+
+    /* Typography */
+    --font-family: "Inter var", "Inter", system, -apple-system, ".SFNSText-Regular", "San Francisco", "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    --font-family-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --font-size: 16px;
+    --font-size-mono: 0.9375rem; /* 15px */
+    --font-size-ui: 16px;
+    --font-size-ui-s: 12px;
+    --font-weight: 400;
+    --font-weight-mono: 500;
+}

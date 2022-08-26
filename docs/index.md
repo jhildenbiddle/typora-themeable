@@ -43,7 +43,9 @@ git clone https://github.com/jhildenbiddle/typora-themeable.git
 
 ## Customization
 
-TBD
+### Basic Customization
+
+[_app.css](https://raw.githubusercontent.com/jhildenbiddle/docsify-themeable/master/src/scss/themes/defaults/_app.css ':include')
 
 ## Contact & Support
 
