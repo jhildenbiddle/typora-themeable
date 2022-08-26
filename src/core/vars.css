@@ -114,6 +114,7 @@
     --code-cursor-border        : 2px solid var(--color-primary);
     --code-def-color            : var(--violet-600);
     --code-error-color          : var(--red-600);
+    --code-gutter-border-color  : var(--mono-200);
     --code-keyword-color        : var(--sky-600);
     --code-language-background  : var(--code-activeline-background);
     --code-language-color       : var(--code-text-color);

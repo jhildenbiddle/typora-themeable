@@ -69,13 +69,28 @@
 }
 
 #write .cm-s-inner,
+#write .CodeMirror-scroll,
 .md-rawblock-container {
     border-radius: var(--border-radius);
 }
 
 #write .cm-s-inner {
-    padding: var(--code-padding-tb) var(--code-padding-lr);
+    overflow: hidden;
     background: var(--code-background);
+}
+
+#write .CodeMirror-lines {
+    padding: var(--code-padding-tb) var(--code-padding-lr);
+}
+
+#write .CodeMirror-gutters {
+    border-color: var(--code-gutter-border-color);
+    background: var(--code-background);
+}
+
+.CodeMirror-linenumber {
+    margin-left: calc(0px - var(--code-padding-lr));
+    min-width: 2.25em;
 }
 
 :is(#write, #typora-source) .CodeMirror-cursor {
@@ -85,10 +100,6 @@
 :is(#write, #typora-source) .CodeMirror-focused .CodeMirror-activeline:not(:only-child) .CodeMirror-activeline-background {
     border-radius: var(--border-radius-s);
     background: var(--code-activeline-background);
-}
-
-#write .CodeMirror-gutters {
-    border-right: 0;
 }
 
 :is(#write, #typora-source) .CodeMirror-linenumber {
@@ -213,10 +224,9 @@
 #write .md-fences > .code-tooltip {
     bottom: 100%;
     right: var(--code-padding-lr);
-    z-index: 1;
+    z-index: 3;
     padding: 0;
     border: 0;
-    background: var(--code-language-background);
     color: var(--code-language-color);
     box-shadow: none;
     opacity: 1;
@@ -226,8 +236,9 @@
 .md-fences > .code-tooltip .ty-cm-lang-input {
     min-width: 17ch;
     margin: 0;
-    padding: 0;
+    padding: 0.15em;
     border: 1px solid transparent;
+    background: var(--code-language-background);
     line-height: calc(var(--font-size-mono) * var(--line-height));
 }
 
