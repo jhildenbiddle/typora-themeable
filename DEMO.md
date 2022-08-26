@@ -413,6 +413,15 @@ This is `inline code` and this is a [`linked inline code`](https://google.com).
   margin: 1em;
   background: url('path/to/image.png');
 }
+
+@keyframes spinning {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 ```
 
 ```javascript
@@ -437,7 +446,7 @@ const mergedObj = mergician({
 
 console.log(mergedObj); 
 
-// Results: { a: [1, 2], b: { c: 2 }, hello: 'world' }
+// Output: { a: [1, 2], b: { c: 2 }, hello: 'world' }
 ```
 
 ```html
@@ -445,12 +454,12 @@ console.log(mergedObj);
 <html lang="">
 <head>
   <meta charset="utf-8">
-  <title>Document Title</title>
-  <meta name="description" content="A test document">
+  <title>My Site</title>
+  <meta name="description" content="My web site">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <p>Hello world!</p>
+  <div id="app">Loading...</p>
   <script src="js/app.js"></script>
 </body>
 </html>
