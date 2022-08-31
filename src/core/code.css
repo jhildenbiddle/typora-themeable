@@ -416,7 +416,7 @@ pre.md-fences[lang="sequence"] .md-diagram-panel {
 
 .md-rawblock .md-rawblock-tooltip {
     inset: auto 1rem auto auto;
-    z-index: 1;
+    z-index: 4;
     height: auto;
     padding: 0 1rem;
     border-radius: var(--border-radius-s);
