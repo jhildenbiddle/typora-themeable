@@ -46,6 +46,28 @@
 
 /* Headers
 /* -------------------------------------------------------------------------- */
+/* Linux/Windows */
+.info-panel-tab-border {
+    border-radius: 100vw;
+}
+
+.active-tab-files #info-panel-tab-file,
+.active-tab-files #info-panel-tab-file:hover,
+.active-tab-outline #info-panel-tab-outline,
+.active-tab-outline #info-panel-tab-outline:hover,
+.ty-show-search #info-panel-tab-search {
+    font-weight: var(--strong-font-weight);
+    color: var(--strong-color);
+}
+
+.active-tab-files #info-panel-tab-file .info-panel-tab-border,
+.active-tab-outline #info-panel-tab-outline .info-panel-tab-border,
+.ty-show-search #info-panel-tab-search .info-panel-tab-border {
+    height: 3px;
+    background-color: var(--color-primary);
+}
+
+/* macOS */
 .sidebar-tabs {
     border-bottom: var(--sidebar-border-width) solid var(--sidebar-border-color);
 }
@@ -355,6 +377,7 @@
 }
 
 #file-library-search-input {
+    height: auto;
     padding: 0.5em 0.75em;
     border: 1px solid currentColor;
     border-color: var(--sidebar-border-color);
