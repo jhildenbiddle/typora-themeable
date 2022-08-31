@@ -32,8 +32,9 @@
   "scripts": {
     "build": "postcss {src,src/themeable}/*.css --dir dist --base src",
     "clean": "rimraf dist/*",
+    "copy": "cpy 'src/themeable/fonts/*' 'dist/themeable/fonts/'",
     "lint": "markdownlint . --ignore node_modules",
-    "prepare": "npm run clean && npm run build",
+    "prepare": "npm run clean && npm run build && npm run copy",
     "serve": "node server.js",
     "start": "npm run serve & npm run watch",
     "version": "npm run lint && npm run prepare",
@@ -41,6 +42,7 @@
   },
   "devDependencies": {
     "browser-sync": "^2.27.10",
+    "cpy-cli": "^4.2.0",
     "markdownlint-cli": "^0.32.1",
     "postcss-banner": "^4.0.1",
     "postcss-cli": "^10.0.0",
