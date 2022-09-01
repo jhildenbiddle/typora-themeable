@@ -3,18 +3,20 @@
 @media screen {
     /* Themeable - Basic */
     :root {
+        /* Colors */
+        /* - red, orange, amber, yellow, lime, green, emerald, teal, cyan, sky, */
+        /*   blue, indigo, violet, purple, fuchsia, pink, rose */
+        /* - 50 (light), 100, 200 ... 900 (dark) */
         --color-primary: var(--sky-500);
         --color-secondary: var(--violet-400);
         --marked-background: var(--yellow-400);
         --search-match-background: var(--pink-900);
         --search-match-border-color: var(--pink-600);
         --selection-background: var(--sky-800);
-    }
 
-    /* Themeable - Advanced */
-    :root {
-        /* Colors */
-        --color-status: var(--mono-300);
+        /* Monochrome */
+        /* - slate, gray, zinc, neutral, stone */
+        /* - 50 (light), 100, 200 ... 900 (dark) */
         --mono-50: var(--zinc-900);
         --mono-100: var(--zinc-800);
         --mono-200: var(--zinc-700);
@@ -25,6 +27,12 @@
         --mono-700: var(--zinc-200);
         --mono-800: var(--zinc-100);
         --mono-900: var(--zinc-50);
+    }
+
+    /* Themeable - Advanced */
+    :root {
+        /* Colors */
+        --color-status: var(--mono-300);
 
         /* App */
         --input-background: var(--mono-50);

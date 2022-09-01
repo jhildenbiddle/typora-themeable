@@ -4,7 +4,7 @@
     /* Colors */
     /* - red, orange, amber, yellow, lime, green, emerald, teal, cyan, sky, */
     /*   blue, indigo, violet, purple, fuchsia, pink, rose */
-    /* - 50 (light), 100, 200, ... 900 (dark) */
+    /* - 50 (light), 100, 200 ... 900 (dark) */
     --color-primary: var(--sky-600);
     --color-secondary: var(--violet-500);
     --marked-background: var(--yellow-300);
@@ -14,7 +14,7 @@
 
     /* Monochrome */
     /* - slate, gray, zinc, neutral, stone */
-    /* - 50 (light), 100, 200, ... 900 (dark) */
+    /* - 50 (light), 100, 200 ... 900 (dark) */
     --mono-50: var(--neutral-50);
     --mono-100: var(--neutral-100);
     --mono-200: var(--neutral-200);
