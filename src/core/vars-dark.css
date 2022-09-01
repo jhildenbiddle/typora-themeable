@@ -1,70 +1,68 @@
 /* ========================================================================== */
 /* Themeable - Dark */
 /* ========================================================================== */
-@media screen {
-    /* Themeable - Basic */
-    /* ---------------------------------------------------------------------- */
-    :root {
-        /* Colors */
-        /* - red, orange, amber, yellow, lime, green, emerald, teal, cyan, sky, */
-        /*   blue, indigo, violet, purple, fuchsia, pink, rose */
-        /* - 50 (light), 100, 200 ... 900 (dark) */
-        --color-primary: var(--sky-500);
-        --color-secondary: var(--violet-400);
-        --marked-background: var(--yellow-400);
-        --search-match-background: var(--pink-900);
-        --search-match-border-color: var(--pink-600);
-        --selection-background: var(--sky-800);
+/* Basic */
+/* ---------------------------------------------------------------------- */
+:root {
+    /* Colors */
+    /* - red, orange, amber, yellow, lime, green, emerald, teal, cyan, sky, */
+    /*   blue, indigo, violet, purple, fuchsia, pink, rose */
+    /* - 50 (light), 100, 200 ... 900 (dark) */
+    --color-primary: var(--sky-500);
+    --color-secondary: var(--violet-400);
+    --marked-background: var(--yellow-400);
+    --search-match-background: var(--pink-900);
+    --search-match-border-color: var(--pink-600);
+    --selection-background: var(--sky-800);
 
-        /* Monochrome */
-        /* - slate, gray, zinc, neutral, stone */
-        /* - 50 (light), 100, 200 ... 900 (dark) */
-        --mono-50: var(--neutral-900);
-        --mono-100: var(--neutral-800);
-        --mono-200: var(--neutral-700);
-        --mono-300: var(--neutral-600);
-        --mono-400: var(--neutral-500);
-        --mono-500: var(--neutral-400);
-        --mono-600: var(--neutral-300);
-        --mono-700: var(--neutral-200);
-        --mono-800: var(--neutral-100);
-        --mono-900: var(--neutral-50);
-    }
+    /* Monochrome */
+    /* - slate, gray, zinc, neutral, stone */
+    /* - 50 (light), 100, 200 ... 900 (dark) */
+    --mono-50: var(--neutral-900);
+    --mono-100: var(--neutral-800);
+    --mono-200: var(--neutral-700);
+    --mono-300: var(--neutral-600);
+    --mono-400: var(--neutral-500);
+    --mono-500: var(--neutral-400);
+    --mono-600: var(--neutral-300);
+    --mono-700: var(--neutral-200);
+    --mono-800: var(--neutral-100);
+    --mono-900: var(--neutral-50);
+}
 
-    /* Themeable - Advanced */
-    /* ---------------------------------------------------------------------- */
-    :root {
-        /* Colors */
-        --color-status: var(--mono-300);
+/* Advanced */
+/* ---------------------------------------------------------------------- */
+:root {
+    /* Colors */
+    --color-status: var(--mono-300);
 
-        /* App */
-        --input-background: var(--mono-50);
-        --menu-background: var(--mono-100);
-        --menu-border-width: 1px;
+    /* App */
+    --input-background: var(--mono-50);
+    --menu-background: var(--mono-100);
+    --menu-border-width: 1px;
 
-        /* Code - Syntax */
-        --code-atom-color: var(--amber-400);
-        --code-attribute-color: var(--sky-400);
-        --code-builtin-color: var(--emerald-400);
-        --code-def-color: var(--violet-400);
-        --code-error-color: var(--red-400);
-        --code-keyword-color: var(--sky-400);
-        --code-meta-color: var(--rose-400);
-        --code-operator-color: var(--rose-400);
-        --code-property-color: var(--sky-400);
-        --code-qualifier-color: var(--emerald-400);
-        --code-tag-color: var(--violet-400);
-        --code-type-color: var(--rose-400);
-        --code-variable-2-color: var(--cyan-400);
-        --code-variable-3-color: var(--emerald-400);
-        --code-variable-color: var(--cyan-400);
+    /* Code - Syntax */
+    --code-atom-color: var(--amber-400);
+    --code-attribute-color: var(--sky-400);
+    --code-builtin-color: var(--emerald-400);
+    --code-def-color: var(--violet-400);
+    --code-error-color: var(--red-400);
+    --code-keyword-color: var(--sky-400);
+    --code-meta-color: var(--rose-400);
+    --code-operator-color: var(--rose-400);
+    --code-property-color: var(--sky-400);
+    --code-qualifier-color: var(--emerald-400);
+    --code-tag-color: var(--violet-400);
+    --code-type-color: var(--rose-400);
+    --code-variable-2-color: var(--cyan-400);
+    --code-variable-3-color: var(--emerald-400);
+    --code-variable-color: var(--cyan-400);
 
-        /* Elements */
-        --kbd-background: var(--mono-100);
-        --kbd-border-color: var(--border-color);
-        --marked-color: var(--mono-200);
+    /* Elements */
+    --kbd-background: var(--mono-100);
+    --kbd-border-color: var(--border-color);
+    --marked-color: var(--mono-200);
 
-        /* Mermaid */
-        --mermaid-theme: dark;
-    }
+    /* Mermaid */
+    --mermaid-theme: dark;
 }
