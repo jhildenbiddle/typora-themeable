@@ -8,7 +8,9 @@
 }
 
 #typora-sidebar,
-#sidebar-files-menu.dropdown-menu > li {
+#sidebar-files-menu.dropdown-menu > li,
+.sidebar-content-content,
+.ty-search-item-line {
     font-size: var(--font-size-ui);
 }
 
@@ -79,6 +81,14 @@
 
 /* Outline */
 /* -------------------------------------------------------------------------- */
+#outline-content {
+    line-height: var(--line-height);
+}
+
+.outline-content {
+    padding-top: 0;
+}
+
 .pin-outline #outline-content .outline-active strong,
 .pin-outline .outline-active {
     font-weight: var(--strong-font-weight);
@@ -374,6 +384,11 @@
 
 #filesearch-word-option-btn {
     transform: translateX(-4px);
+}
+
+.ty-show-outline-filter #file-library-search,
+.ty-show-search #file-library-search {
+    height: calc(2em + 32px);
 }
 
 #file-library-search-input {

@@ -83,12 +83,28 @@ body:not([class*="seamless"]) :is(#typora-sidebar, content) {
 .md-search-hit.md-search-select,
 .md-search-select,
 body :is(#write, #typora-source) .cm-search-hit,
-.ty-file-search-match-text {
-    border-radius: var(--border-radius-xs);
+.ty-file-search-match-text,
+.ty-outline-hit[class] {
     background-color: unset !important;
     background: var(--search-match-background) !important;
-    box-shadow: 0 0 0 2px var(--search-match-border-color);
     color: var(--search-match-color) !important;
+}
+
+.md-search-hit,
+.md-search-hit.md-search-select,
+.md-search-select,
+body :is(#write, #typora-source) .cm-search-hit {
+    border-radius: var(--border-radius-xs);
+    box-shadow: 0 0 0 2px var(--search-match-border-color);
+}
+
+.ty-file-search-match-text,
+.ty-outline-hit[class] {
+    padding-right: 1px;
+    padding-left: 1px;
+    border: 2px solid var(--search-match-border-color);
+    border-radius: var(--border-radius-s);
+    font-weight: var(--font-weight);
 }
 
 
