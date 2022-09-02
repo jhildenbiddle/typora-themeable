@@ -2,23 +2,18 @@
 /* Themeable - Dark */
 /* ========================================================================== */
 /* Basic */
-/* ---------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
 :root {
     /* Colors */
-    /* - red, orange, amber, yellow, lime, green, emerald, teal, cyan, sky, */
-    /*   blue, indigo, violet, purple, fuchsia, pink, rose */
-    /* - 50 (light), 100, 200 ... 900 (dark) */
-    --color-primary: var(--sky-500);
-    --color-secondary: var(--violet-400);
-    --marked-background: var(--yellow-400);
-    --search-match-background: var(--pink-900);
+    --color-primary            : var(--sky-500);
+    --color-secondary          : var(--violet-400);
+    --marked-background        : var(--yellow-400);
+    --search-match-background  : var(--pink-900);
     --search-match-border-color: var(--pink-600);
-    --selection-background: var(--sky-800);
+    --selection-background     : var(--sky-800);
 
     /* Monochrome */
-    /* - slate, gray, zinc, neutral, stone */
-    /* - 50 (light), 100, 200 ... 900 (dark) */
-    --mono-50: var(--neutral-900);
+    --mono-50 : var(--neutral-900);
     --mono-100: var(--neutral-800);
     --mono-200: var(--neutral-700);
     --mono-300: var(--neutral-600);
@@ -31,37 +26,37 @@
 }
 
 /* Advanced */
-/* ---------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
 :root {
     /* Colors */
     --color-status: var(--mono-300);
 
     /* App */
-    --input-background: var(--mono-50);
-    --menu-background: var(--mono-100);
+    --input-background : var(--mono-50);
+    --menu-background  : var(--mono-100);
     --menu-border-width: 1px;
 
     /* Code - Syntax */
-    --code-atom-color: var(--amber-400);
-    --code-attribute-color: var(--sky-400);
-    --code-builtin-color: var(--emerald-400);
-    --code-def-color: var(--violet-400);
-    --code-error-color: var(--red-400);
-    --code-keyword-color: var(--sky-400);
-    --code-meta-color: var(--rose-400);
-    --code-operator-color: var(--rose-400);
-    --code-property-color: var(--sky-400);
-    --code-qualifier-color: var(--emerald-400);
-    --code-tag-color: var(--violet-400);
-    --code-type-color: var(--rose-400);
+    --code-atom-color      : var(--amber-400);
+    --code-attribute-color : var(--sky-400);
+    --code-builtin-color   : var(--emerald-400);
+    --code-def-color       : var(--violet-400);
+    --code-error-color     : var(--red-400);
+    --code-keyword-color   : var(--sky-400);
+    --code-meta-color      : var(--rose-400);
+    --code-operator-color  : var(--rose-400);
+    --code-property-color  : var(--sky-400);
+    --code-qualifier-color : var(--emerald-400);
+    --code-tag-color       : var(--violet-400);
+    --code-type-color      : var(--rose-400);
     --code-variable-2-color: var(--cyan-400);
     --code-variable-3-color: var(--emerald-400);
-    --code-variable-color: var(--cyan-400);
+    --code-variable-color  : var(--cyan-400);
 
     /* Elements */
-    --kbd-background: var(--mono-100);
+    --kbd-background  : var(--mono-100);
     --kbd-border-color: var(--border-color);
-    --marked-color: var(--mono-200);
+    --marked-color    : var(--mono-200);
 
     /* Mermaid */
     --mermaid-theme: dark;
