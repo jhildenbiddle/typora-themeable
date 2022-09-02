@@ -9,6 +9,7 @@
     --code-cursor-border        : 1px solid #ffcc00;
     --code-def-color            : #82aaff;
     --code-error-color          : #ff5370;
+    --code-gutter-border-color  : #546e7a;
     --code-keyword-color        : #c792ea;
     --code-language-background  : var(--code-activeline-background);
     --code-language-color       : var(--code-text-color);
