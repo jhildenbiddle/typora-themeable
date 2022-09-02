@@ -21,15 +21,12 @@ browserSync.init({
         baseDir: [
             './docs/'
         ],
-        middleware: [
-        ],
         routes: {
+            '/dist': './dist/',
+            '/src': './src/',
             '/CHANGELOG.md': './CHANGELOG.md'
         }
     },
-    serveStatic: [
-        './dist/'
-    ],
     rewriteRules: [
         // Replace CDN URLs with local paths
         {
