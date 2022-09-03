@@ -18,6 +18,7 @@
     --font-size-m        : 1rem; /* 16px */
     --font-size-s        : max(0.75rem, calc(1rem / var(--modular-scale))); /* 12px ((16 * 0.75 = 12) > (16 / 1.414 = 11) */
     --font-size-xs       : max(0.6875rem, calc(var(--font-size-s) / var(--modular-scale))); /* 11px ((16 * 0.6875 = 11) > (12 / 1.414 = 8) */
+    --font-size-ui-s     : max(12px, calc(var(--font-size-ui) * 0.857)); /* 12px */
     --line-height        : 1.6;
     --modular-scale      : 1.414; /* 1.067, 1.125, 1.200, 1.250, 1.333, 1.414, 1.500, 1.618 */
 
