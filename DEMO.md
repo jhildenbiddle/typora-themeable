@@ -1,9 +1,9 @@
 ---
 title: Typora Themeable
 author: John Hildenbiddle
-description: > 
-  A clean, typography-focused Typora theme easily
-  customized using CSS custom properties
+description: >
+  A beautiful, customizable, typography-focused theme
+  for the markdown editor Typora
 ---
 
 # Typora Themeable
@@ -323,14 +323,14 @@ Body text
 
 <small>Small Text</small>
 
-This is <sup>superscript</sup> text
+This is ^superscript^ text
 
-This is <sub>subscript</sub> text
+This is ~subscript~ text
 
 ## Blockquotes
 
 > Cras aliquet nulla quis metus tincidunt, sed placerat enim cursus. Etiam turpis nisl, posuere eu condimentum ut, interdum a risus. Sed non luctus mi. Quisque malesuada risus sit amet tortor aliquet, a posuere ex iaculis. Vivamus ultrices enim dui, eleifend porttitor elit aliquet sed.
-> 
+>
 > \- Quote Source
 
 ## Links
@@ -345,52 +345,31 @@ person@email.com
 
 [link1]: https://google.com	"This an optional title"
 
-## Footnotes
-
-Lorem ipsum dolor sit amet [^footnote].
-
-[^footnote]: This is a *footnote* with **bold text**.
-
 ## Lists
 
-### Ordered Lists
+### Ordered
 
 1. Ordered 1
 1. Ordered 2
    1. Ordered 2a
    1. Ordered 2b
-   1. Ordered 2c
 1. Ordered 3
 
-### Unordered Lists
+### Unordered
 
 - Unordered 1
 - Unordered 2
   - Unordered 2a
   - Unordered 2b
-  - Unordered 2c
 - Unordered 3
 
-### Task Lists
+## Task Lists
 
 - [x] Task 1
 - [ ] Task 2
   - [x] Subtask A
   - [ ] Subtask B
 - [ ] Task 3
-
-## Horizontal Rule
-
----
-
-## HTML
-
-<p>
-  This is an HTML block. Click to edit.
-</p>
-<!-- This is an HTML comment -->
-
-<br>
 
 ## Tables
 
@@ -444,7 +423,7 @@ const mergedObj = mergician({
     }
 })(obj1, obj2, obj3);
 
-console.log(mergedObj); 
+console.log(mergedObj);
 
 // Output: { a: [1, 2], b: { c: 2 }, hello: 'world' }
 ```
@@ -464,6 +443,25 @@ console.log(mergedObj);
 </body>
 </html>
 ```
+
+## HTML
+
+<p>
+  This is an HTML block. Click to edit.
+</p>
+<!-- This is an HTML comment -->
+
+<br>
+
+## Horizontal Rule
+
+---
+
+## Footnotes
+
+Lorem ipsum dolor sit amet [^footnote].
+
+[^footnote]: This is a *footnote* with **bold text**.
 
 ## Keyboard
 
