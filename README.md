@@ -5,31 +5,12 @@
 
 A beautiful, customizable, typography-focused theme for the markdown editor, [Typora](https://typora.io).
 
-- [Documentation](https://jhildenbiddle.github.io/typora-themeable/)
-
-## Installation
-
-**NPM**
-
-```shell
-npm install typora-themeable
-```
-
-**CDN**
-
-This library is available on [jsdelivr](https://www.jsdelivr.com/package/npm/typora-themeable) (below), [unpkg](https://unpkg.com/browse/typora-themeable/), and other CDN services that auto-publish npm packages.
-
-```css
-@import url("https://cdn.jsdelivr.net/npm/typora-themeable@1");
-```
-
-> 💡 Note the `@` version number lock in the URL above. This prevents breaking changes in future releases from affecting your project and is therefore the safest method of loading dependencies from a CDN. When a new major version is released, you will need to manually update your CDN URLs by changing the version number after the @ symbol.
-
-**Git**
-
-```shell
-git clone https://github.com/jhildenbiddle/typora-themeable.git
-```
+<a href="https://jhildenbiddle.github.io/typora-themeable/">
+    <picture>
+        <source srcset="https://raw.githubusercontent.com/jhildenbiddle/css-device-frames/master/docs/assets/img/screenshot-dark.webp" media="(prefers-color-scheme:dark)">
+        <img src="https://raw.githubusercontent.com/jhildenbiddle/css-device-frames/master/docs/assets/img/screenshot-light.webp">
+    </picture>
+</a>
 
 ## Installation & Customization
 
