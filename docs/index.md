@@ -10,8 +10,8 @@
 A beautiful, customizable, typography-focused theme for the markdown editor, [Typora](https://typora.io).
 
 <picture>
-    <source srcset="assets/img/screenshot-dark.webp" media="(prefers-color-scheme:dark)">
-    <img src="assets/img/screenshot-light.webp">
+    <source srcset="assets/img/screenshot-dark.webp" width="800" media="(prefers-color-scheme:dark)">
+    <img src="assets/img/screenshot-light.webp" width="800">
 </picture>
 
 ## Features
