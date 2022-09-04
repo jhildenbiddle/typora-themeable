@@ -3,7 +3,7 @@
 [![NPM](https://img.shields.io/npm/v/typora-themeable.svg?style=flat-square)](https://www.npmjs.com/package/typora-themeable)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://github.com/jhildenbiddle/typora-themeable/blob/master/LICENSE)
 
-A beautiful, customizable, typography-focused theme for the markdown editor, [Typora](https://typora.io).
+A clean, customizable, typography-focused theme system for the markdown editor, [Typora](https://typora.io).
 
 <a href="https://jhildenbiddle.github.io/typora-themeable/">
     <picture>

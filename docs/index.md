@@ -7,7 +7,7 @@
 [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?url=https%3A%2F%2Fgithub.com%2Fjhildenbiddle%2Ftypora-themeable&hashtags=developers,frontend,javascript)
 <a class="github-button" href="https://github.com/jhildenbiddle/typora-themeable" data-icon="octicon-star" data-show-count="true" aria-label="Star jhildenbiddle/typora-themeable on GitHub">Star</a>
 
-A beautiful, customizable, typography-focused theme for the markdown editor, [Typora](https://typora.io).
+A clean, customizable, typography-focused theme for the markdown editor, [Typora](https://typora.io).
 
 <p align="center">
    <picture>
