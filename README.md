@@ -7,8 +7,8 @@ A beautiful, customizable, typography-focused theme for the markdown editor, [Ty
 
 <a href="https://jhildenbiddle.github.io/typora-themeable/">
     <picture>
-        <source srcset="https://raw.githubusercontent.com/jhildenbiddle/css-device-frames/master/docs/assets/img/screenshot-dark.webp" media="(prefers-color-scheme:dark)">
-        <img src="https://raw.githubusercontent.com/jhildenbiddle/css-device-frames/master/docs/assets/img/screenshot-light.webp">
+        <source srcset="docs/assets/img/screenshot-dark.webp" media="(prefers-color-scheme:dark)">
+        <img src="docs/assets/img/screenshot-light.webp">
     </picture>
 </a>
 
