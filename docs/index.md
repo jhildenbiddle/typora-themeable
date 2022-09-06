@@ -1,9 +1,7 @@
 # Typora Themeable
 
-[![NPM](https://img.shields.io/npm/v/typora-themeable.svg?style=flat-square)](https://www.npmjs.com/package/typora-themeable)
 [![GitHub Workflow Status (main)](https://img.shields.io/github/workflow/status/jhildenbiddle/typora-themeable/Build%20&%20Test/main?label=checks&style=flat-square)](https://github.com/jhildenbiddle/typora-themeable/actions?query=branch%3Amain+)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://github.com/jhildenbiddle/typora-themeable/blob/main/LICENSE)
-[![jsDelivr](https://data.jsdelivr.com/v1/package/npm/typora-themeable/badge)](https://www.jsdelivr.com/package/npm/typora-themeable)
 [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?url=https%3A%2F%2Fgithub.com%2Fjhildenbiddle%2Ftypora-themeable&hashtags=developers,frontend,javascript)
 <a class="github-button" href="https://github.com/jhildenbiddle/typora-themeable" data-icon="octicon-star" data-show-count="true" aria-label="Star jhildenbiddle/typora-themeable on GitHub">Star</a>
 
