@@ -1,2 +1,3 @@
 @import "core/_import.css";
-@import "core/vars-dark.css";
+@import "core/vars-palette-dark.css";
+@import "core/vars-theme-dark.css";

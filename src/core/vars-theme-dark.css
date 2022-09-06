@@ -11,18 +11,6 @@
     --search-match-background  : var(--pink-900);
     --search-match-border-color: var(--pink-600);
     --selection-background     : var(--sky-800);
-
-    /* Monochrome */
-    --mono-50 : var(--neutral-900);
-    --mono-100: var(--neutral-800);
-    --mono-200: var(--neutral-700);
-    --mono-300: var(--neutral-600);
-    --mono-400: var(--neutral-500);
-    --mono-500: var(--neutral-400);
-    --mono-600: var(--neutral-300);
-    --mono-700: var(--neutral-200);
-    --mono-800: var(--neutral-100);
-    --mono-900: var(--neutral-50);
 }
 
 /* Advanced */
@@ -36,7 +24,12 @@
     --menu-background  : var(--mono-100);
     --menu-border-width: 1px;
 
-    /* Code - Syntax */
+    /* Elements */
+    --kbd-background  : var(--mono-100);
+    --kbd-border-color: var(--border-color);
+    --marked-color    : var(--mono-200);
+
+    /* Syntax Highlighting */
     --code-atom-color      : var(--amber-400);
     --code-attribute-color : var(--sky-400);
     --code-builtin-color   : var(--emerald-400);
@@ -49,14 +42,9 @@
     --code-qualifier-color : var(--emerald-400);
     --code-tag-color       : var(--violet-400);
     --code-type-color      : var(--rose-400);
+    --code-variable-color  : var(--cyan-400);
     --code-variable-2-color: var(--cyan-400);
     --code-variable-3-color: var(--emerald-400);
-    --code-variable-color  : var(--cyan-400);
-
-    /* Elements */
-    --kbd-background  : var(--mono-100);
-    --kbd-border-color: var(--border-color);
-    --marked-color    : var(--mono-200);
 
     /* Mermaid */
     --mermaid-theme: dark;

@@ -10,6 +10,10 @@
     <link rel="stylesheet" media="(prefers-color-scheme: dark)" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css">
     <link rel="stylesheet" media="(prefers-color-scheme: light)" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">
 
+    <!-- Typora Themeable Palette -->
+    <link rel="stylesheet" href="assets/vars-palette.css">
+    <link rel="stylesheet" media="(prefers-color-scheme: dark)" href="assets/vars-palette-dark.css">
+
     <style>
         a[download] {
             position: relative;
@@ -23,6 +27,45 @@
             top: calc(50% - 0.45em);
             left: 0;
             line-height: 1;
+        }
+
+        .swatch-grid {
+            display: grid;
+            grid-template-columns: repeat(11, 1fr);
+            margin: 1em 0 1.5em 0;
+            line-height: 2.25; gap: 1px;
+            border-radius: 4px;
+        }
+
+        .swatch-grid > * {
+            border-radius: 2px;
+        }
+
+        .swatch-grid > :first-child {
+            min-width: 10ch;
+        }
+
+        .swatch-grid > :nth-child(-n+11) {
+            text-align: center;
+        }
+
+        .dark-mode {
+            display: none;
+        }
+
+        @media screen and (prefers-color-scheme: dark) {
+            .dark-mode {
+                display: block;
+            }
+
+            .light-mode {
+                display: none;
+            }
+        }
+
+        /* FIX: docsify-themeable  */
+        .markdown-section ol > li > p:first-child {
+            margin: 0;
         }
     </style>
 
@@ -55,8 +98,8 @@
                 '.*?/changelog': 'https://raw.githubusercontent.com/jhildenbiddle/typora-themeable/main/CHANGELOG.md',
             },
             auto2top: true,
-            maxLevel: 2,
-            subMaxLevel: 2,
+            maxLevel: 3,
+            subMaxLevel: 3,
 
             // PLUGINS
             // -----------------------------------------------------------------

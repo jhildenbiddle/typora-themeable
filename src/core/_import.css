@@ -1,6 +1,5 @@
-@import "vars-basic.css";
-@import "vars-advanced.css";
 @import "vars-palette.css";
+@import "vars-theme.css";
 @import "vars-typora.css";
 @import "base.css";
 @import "app.css";
