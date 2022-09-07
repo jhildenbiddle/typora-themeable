@@ -17,7 +17,7 @@ A clean, customizable, typography-focused theme system for the markdown editor, 
     <strong>Full page screenshots:</strong>
     <a href="https://raw.githubusercontent.com/jhildenbiddle/typora-themeable/main/docs/assets/img/screenshot-light-full.jpg">Light</a> /
     <a href="https://raw.githubusercontent.com/jhildenbiddle/typora-themeable/main/docs/assets/img/screenshot-dark-full.jpg">Dark</a>
-<div>
+</div>
 
 ## Features
 
