@@ -15,8 +15,8 @@ A clean, customizable, typography-focused theme system for the markdown editor, 
 
 <p align="center">
     <strong>Full page screenshots:</strong>
-    <a href="docs/assets/img/screenshot-light-full">Light</a> or
-    <a href="docs/assets/img/screenshot-dark-full">Dark</a>
+    <a href="docs/assets/img/screenshot-light-full.jpg">Light</a> or
+    <a href="docs/assets/img/screenshot-dark-full.jpg">Dark</a>
 </p>
 
 ## Features
