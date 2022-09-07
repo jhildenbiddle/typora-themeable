@@ -136,6 +136,24 @@ Typora provides built-in support for custom theme styles using a `[theme].user.c
    }
    ```
 
+### Add-ons
+
+Theme add-ons are stylesheets that contain ready-to-use styles for Typora Themeable. Add-ons are applied using a CSS `@import` rule within your `[theme].user.css` stylesheet (see [Setup](#setup) for details).
+
+?> Do you have a new add-on that you'd like to share? Add-on [contributions](https://github.com/jhildenbiddle/typora-themeable/pulls) are welcome!
+
+- **Material Design**: Dark syntax highlighting theme
+
+  ```css
+  @import "themeable/addons/code-material.css";
+  ```
+
+- **Mermaid:** Typora Themeable color palette applied to Mermaid diagrams (work-in-progress)
+
+  ```css
+  @import "themeable/addons/mermaid.css";
+  ```
+
 ### Color Palette
 
 Typora Themeable's color palette is based on the same [palette](https://tailwindcss.com/docs/customizing-colors) provided by [Tailwind CSS](https://tailwindcss.com). Color property names are based on the color name followed by a numeric value based on a color range ordered from light to dark (where 50 is light and 900 is dark):
@@ -543,10 +561,6 @@ Typora Themeable offers customizable [theme properties](#theme-properties) defin
 **Dark Mode / Themeable Dark**
 
 [vars-theme.css](src/core/vars-theme-dark.css ':include')
-
-### Addons
-
-TBD
 
 ## Contact & Support
 
