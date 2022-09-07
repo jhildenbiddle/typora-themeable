@@ -30,7 +30,7 @@
   ],
   "style": "dist/themeable.css",
   "scripts": {
-    "build": "postcss {src,src/themeable}/*.css --dir dist --base src",
+    "build": "postcss {src,src/themeable/**}/*.css --dir dist --base src",
     "clean": "rimraf dist/*",
     "copy": "cpy 'src/themeable/fonts/*' 'dist/themeable/fonts/' && cpy --flat 'src/core/vars-palette*.css' 'docs/assets'",
     "lint": "markdownlint . --ignore node_modules",
