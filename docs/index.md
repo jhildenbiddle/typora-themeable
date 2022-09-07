@@ -18,13 +18,12 @@ A clean, customizable, typography-focused theme for the markdown editor, [Typora
 
 - Fast and flexible customization using CSS custom properties
 - Light, dark, and auto-switching light/dark mode theme variants
-- Based on the [Inter](https://rsms.me/inter/) typeface family by [Rasmus Andersson](https://rsms.me) ([@rsms](https://twitter.com/rsms))
-- Includes color presets from [Tailwind CSS](https://tailwindcss.com/docs/customizing-colors)
+- Based on the [Inter](https://rsms.me/inter/) typeface family and the [Tailwind CSS](https://tailwindcss.com/docs/customizing-colors) color palette
 - Compatible with all Typora platforms (macOS, Windows, Linux)
 
 ## Installation
 
-1. Download Typora Themeable: <a href="https://github.com/jhildenbiddle/typora-themeable/archive/main.zip" download="typora-themeable.zip">typora-themeable.zip</a>
+1. Download the latest [release](https://github.com/jhildenbiddle/typora-themeable/releases) of Typora Themeable: <a href="https://github.com/jhildenbiddle/typora-themeable/archive/main.zip" download="typora-themeable.zip">typora-themeable.zip</a>
 2. Extract files from the archive
 3. Copy the contents of the `dist` directory into Typora's `themes` directory
    - Open Typora's preferences
@@ -102,7 +101,7 @@ Typora provides built-in support for custom theme styles using a `[theme].user.c
    - For **Themeable Dark**, create or download <a href="data:text/plain;charset=utf-8,%3Aroot%20%7B%0A%0A%7D%0A%0A%2F%2A%20Dark%20Mode%20%28OS-level%29%20%2A%2F%0A%40media%20screen%20and%20%28prefers-color-scheme%3A%20dark%29%20%7B%0A%20%20%3Aroot%20%7B%0A%0A%20%20%7D%0A%7D" download="themeable-dark.user.css" title="Download CSS">themeable-dark.user.css</a>
    - For **Themeable Light**, create or download <a href="data:text/plain;charset=utf-8,%3Aroot%20%7B%0A%0A%7D%0A%0A%2F%2A%20Dark%20Mode%20%28OS-level%29%20%2A%2F%0A%40media%20screen%20and%20%28prefers-color-scheme%3A%20dark%29%20%7B%0A%20%20%3Aroot%20%7B%0A%0A%20%20%7D%0A%7D" download="themeable-light.user.css" title="Download CSS">themeable-light.user.css</a>
 2. Review the [Color Palette](#color-palette) and [Theme Properties](#theme-properties) sections below.
-3. Set custom values using the `:root` selector. These values will be applied regardless of the operating system's light/dark mode setting.
+3. Set custom values within the `:root` selector. These values will be applied regardless of the operating system's light/dark mode setting.
 
    ```css
    :root {

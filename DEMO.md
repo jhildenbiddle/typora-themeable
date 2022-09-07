@@ -2,7 +2,7 @@
 title: Typora Themeable
 author: John Hildenbiddle
 description: >
-  A beautiful, customizable, typography-focused theme
+  A clean, customizable, typography-focused theme
   for the markdown editor Typora
 ---
 
