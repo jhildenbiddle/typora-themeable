@@ -1,5 +1,6 @@
 # typora-themeable
 
+[![GitHub Workflow Status (main)](https://img.shields.io/github/workflow/status/jhildenbiddle/typora-themeable/Build%20&%20Test/main?label=checks&style=flat-square)](https://github.com/jhildenbiddle/typora-themeable/actions?query=branch%3Amain+)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://github.com/jhildenbiddle/typora-themeable/blob/master/LICENSE)
 
 A clean, customizable, typography-focused theme system for the markdown editor, [Typora](https://typora.io).
