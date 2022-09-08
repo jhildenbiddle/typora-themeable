@@ -38,4 +38,4 @@ jobs:
         with:
           files: |
             DEMO.md
-            dist/typora-themeable.zip
+            ./dist/typora-themeable.zip
