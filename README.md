@@ -6,20 +6,15 @@
 
 A clean, customizable, typography-focused theme system for the markdown editor, [Typora](https://typora.io).
 
-<div align="center">
-    <a href="https://jhildenbiddle.github.io/typora-themeable/">
-        <picture>
-            <source srcset="docs/assets/img/screenshot-dark.webp" width="700" media="(prefers-color-scheme:dark)">
-            <img src="docs/assets/img/screenshot-light.webp" width="700">
-        </picture>
-    </a>
-</div>
-
-<div align="center">
-    <strong>Full page screenshots:</strong>
-    <a href="https://raw.githubusercontent.com/jhildenbiddle/typora-themeable/main/docs/assets/img/screenshot-light-full.jpg">Light</a> /
-    <a href="https://raw.githubusercontent.com/jhildenbiddle/typora-themeable/main/docs/assets/img/screenshot-dark-full.jpg">Dark</a>
-</div>
+<figure align="center">
+  <a href="https://jhildenbiddle.github.io/typora-themeable/">
+    <picture>
+      <source srcset="docs/assets/img/screenshot-dark.webp" width="700" media="(prefers-color-scheme:dark)">
+      <img src="docs/assets/img/screenshot-light.webp" width="700">
+    </picture>
+  </a>
+  <figcaption>Light and dark theme examples</figcaption>
+</figure>
 
 ## Features
 

@@ -8,18 +8,13 @@
 
 A clean, customizable, typography-focused theme for the markdown editor, [Typora](https://typora.io).
 
-<div align="center">
+<figure>
   <picture>
     <source srcset="assets/img/screenshot-dark.webp" width="700" media="(prefers-color-scheme:dark)">
     <img src="assets/img/screenshot-light.webp" width="700">
   </picture>
-</div>
-
-<div align="center">
-  <strong>Full page screenshots:</strong>
-  <a href="https://raw.githubusercontent.com/jhildenbiddle/typora-themeable/main/docs/assets/img/screenshot-light-full.jpg">Light</a> /
-  <a href="https://raw.githubusercontent.com/jhildenbiddle/typora-themeable/main/docs/assets/img/screenshot-dark-full.jpg">Dark</a>
-</div>
+  <figcaption>Light and dark theme examples</figcaption>
+</figure>
 
 ## Features
 
@@ -27,6 +22,16 @@ A clean, customizable, typography-focused theme for the markdown editor, [Typora
 - Light, dark, and auto-switching light/dark mode theme variants
 - Based on the [Inter](https://rsms.me/inter/) typeface family and the [Tailwind CSS](https://tailwindcss.com/docs/customizing-colors) color palette
 - Compatible with all Typora platforms (macOS, Windows, Linux)
+
+## Screenshots
+
+<figure>
+  <picture class="screenshot-scroll">
+    <source srcset="assets/img/screenshot-dark-full.jpg" width="871" media="(prefers-color-scheme:dark)">
+    <img src="assets/img/screenshot-light-full.jpg" width="872" loading="lazy">
+  </picture>
+  <figcaption>Typora Themeable markdown demo</figcaption>
+</figure>
 
 ## Installation
 
