@@ -343,7 +343,7 @@ www.some-domain.com
 
 person@email.com
 
-[link1]: https://google.com	"This an optional title"
+[link1]: https://google.com "This an optional title"
 
 ## Lists
 

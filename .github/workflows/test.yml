@@ -20,7 +20,7 @@ jobs:
         run: npm run build
 
   test:
-    name: Test
+    name: Build, Lint, & Prepare
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
