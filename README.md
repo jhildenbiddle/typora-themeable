@@ -18,9 +18,8 @@ A clean, customizable, typography-focused theme system for the markdown editor, 
 ## Features
 
 - Fast and flexible customization using CSS custom properties
-- Light mode, dark mode, and auto-switching theme variants
-- Based on the [Inter](https://rsms.me/inter/) typeface family by [Rasmus Andersson](https://rsms.me) ([@rsms](https://twitter.com/rsms))
-- Includes color presets from [Tailwind CSS](https://tailwindcss.com/docs/customizing-colors)
+- Light, dark, and auto-switching light/dark mode theme variants
+- Based on the [Inter](https://rsms.me/inter/) typeface family and the [Tailwind CSS](https://tailwindcss.com/docs/customizing-colors) color palette
 - Compatible with all Typora platforms (macOS, Windows, Linux)
 
 ## Installation & Customization
