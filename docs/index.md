@@ -574,3 +574,6 @@ Typora Themeable offers customizable [theme properties](#theme-properties) defin
 This project is licensed under the MIT License. See the [LICENSE](https://github.com/jhildenbiddle/typora-themeable/blob/master/LICENSE) for details.
 
 Copyright (c) John Hildenbiddle ([@jhildenbiddle](https://twitter.com/jhildenbiddle))
+
+<!-- GitHub Buttons -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
