@@ -34,3 +34,11 @@ jobs:
 
       - name: Prepare
         run: npm run prepare
+
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        if: startsWith(github.ref, 'refs/tags/')
+        with:
+          files: |
+            DEMO.md
+            dist/typora-themeable.zip

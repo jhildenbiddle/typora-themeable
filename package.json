@@ -31,14 +31,16 @@
   "style": "dist/themeable.css",
   "scripts": {
     "build": "postcss {src,src/themeable/**}/*.css --dir dist --base src",
+    "postbuild": "npm run copy && npm run zip",
     "clean": "rimraf dist/*",
     "copy": "cpy 'src/themeable/fonts/*' 'dist/themeable/fonts/' && cpy --flat 'src/core/vars-palette*.css' 'docs/assets'",
     "lint": "markdownlint . --ignore node_modules",
-    "prepare": "npm run clean && npm run build && npm run copy",
+    "prepare": "npm run clean && npm run build",
     "serve": "node server.js",
     "start": "npm run serve & npm run watch",
     "version": "npm run lint && npm run prepare",
-    "watch": "npm run build -- -w"
+    "watch": "npm run build -- -w",
+    "zip": "cd dist && zip -r typora-themeable.zip ./* && cd .."
   },
   "devDependencies": {
     "browser-sync": "^2.27.10",

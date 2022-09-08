@@ -3,6 +3,7 @@ node_modules
 
 # Files
 *.log
+*.zip
 
 # OS
 ._*
