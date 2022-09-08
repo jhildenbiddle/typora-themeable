@@ -25,6 +25,8 @@ A clean, customizable, typography-focused theme for the markdown editor, [Typora
 
 ## Screenshots
 
+The screenshot below illustrates how Typora Themeable renders various markdown elements. The markdown document used to create this screenshot is included with Typora Themeable.
+
 <figure>
   <picture class="screenshot-scroll">
     <source srcset="assets/img/screenshot-dark-full.jpg" width="871" media="(prefers-color-scheme:dark)">
