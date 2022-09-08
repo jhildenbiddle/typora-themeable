@@ -35,13 +35,13 @@ A clean, customizable, typography-focused theme for the markdown editor, [Typora
 
 ## Installation
 
-1. Download the latest [release](https://github.com/jhildenbiddle/typora-themeable/releases) of Typora Themeable: <a href="https://github.com/jhildenbiddle/typora-themeable/archive/main.zip" download="typora-themeable.zip">typora-themeable.zip</a>
-2. Extract files from the archive
-3. Copy the contents of the `dist` directory into Typora's `themes` directory
+1. Download the latest [release](https://github.com/jhildenbiddle/typora-themeable/releases) of Typora Themeable: <a href="https://github.com/jhildenbiddle/typora-themeable/releases/latest/download/typora-themeable.zip" download>typora-themeable.zip</a>
+2. Extract files from the ZIP archive
+3. Copy the extracted files (including the `themeable` directory) into Typora's `themes` directory
    - Open Typora's preferences
    - Select **Appearance**
    - Click **Open Theme Folder**
-4. Delete the archive and the remaining extracted files
+4. Delete the ZIP archive
 5. Restart Typora
 6. Select a **Themeable** theme  from Typora's **Preferences** or **Themes** menu
 
@@ -52,10 +52,11 @@ Alternatively, command line users can perform the same download, extract, copy, 
 #### **macOS**
 
 ```shell
-cd ~/Library/Application Support/abnerworks.Typora/themes/ \
-  && curl -L https://github.com/jhildenbiddle/typora-themeable/tarball/master -o themeable.tgz \
-  && tar -f themeable.tgz -xzv --strip-components=2 "*/dist/*" \
-  && rm themeable.tgz
+cd ~/Library/Application\ Support/abnerworks.Typora/themes/ \
+  && curl -L https://github.com/jhildenbiddle/typora-themeable/releases/latest/download/typora-themeable.zip -o typora-themeable.zip \
+  && unzip typora-themeable.zip \
+  && rm typora-themeable.zip \
+  && echo "\nInstallation complete. Please restart Typora."
 ```
 
 #### **Windows**
@@ -64,39 +65,43 @@ Command Prompt:
 
 ```shell
 cd /d "%USERPROFILE%\AppData\Roaming\Typora\themes" ^
-  && curl -L https://github.com/jhildenbiddle/typora-themeable/tarball/master -o themeable.tgz ^
-  && tar -f themeable.tgz -xzv --strip-components=2 "*/dist/*" ^
-  && rm themeable.tgz
+  && curl -L https://github.com/jhildenbiddle/typora-themeable/releases/latest/download/typora-themeable.zip -o typora-themeable.zip ^
+  && tar -xf typora-themeable.zip ^
+  && del typora-themeable.zip ^
+  && echo. && echo Installation complete. Please restart Typora.
 ```
 
 Powershell:
 
 ```shell
 cd ~\AppData\Roaming\Typora\themes;
-if ($?) { curl https://github.com/jhildenbiddle/typora-themeable/tarball/master -o themeable.tgz };
-if ($?) { tar -f themeable.tgz -xzv --strip-components=2 "*/dist/*" };
-if ($?) { rm themeable.tgz };
+if ($?) { curl https://github.com/jhildenbiddle/typora-themeable/releases/latest/download/typora-themeable.zip -o typora-themeable.zip };
+if ($?) { tar -xf typora-themeable.zip };
+if ($?) { rm typora-themeable.zip };
+if ($?) { echo "`nInstallation complete. Please restart Typora.`n" };
 ```
 
 #### **Linux**
 
-1. Determine the path to Typora's `themes` folder:
-   - Open Typora's preferences
-   - Select **Appearance**
-   - Click **Open Theme Folder**
-2. Navigate to Typora's `themes` folder
+If Typora was [installed](https://support.typora.io/Typora-on-Linux/) via `apt-get`:
 
-   ```shell
-   cd ~/path/to/Typora/themes/
-   ```
+```shell
+cd ~/.config/Typora/themes/ \
+  && curl -L https://github.com/jhildenbiddle/typora-themeable/releases/latest/download/typora-themeable.zip -o typora-themeable.zip \
+  && unzip typora-themeable.zip \
+  && rm typora-themeable.zip \
+  && echo -e "\nInstallation complete. Please restart Typora.\n"
+```
 
-3. Execute the following command
+If Typora was [installed](https://support.typora.io/Snap/#limitations-for-the-snap-version) via `snap`:
 
-   ```shell
-   curl -L https://github.com/jhildenbiddle/typora-themeable/tarball/master -o themeable.tgz \
-     && tar -f themeable.tgz -xzv --strip-components=2 "*/dist/*" \
-     && rm themeable.tgz
-   ```
+```shell
+cd ~/snap/typora/current/.config/Typora/themes/ \
+  && curl -L https://github.com/jhildenbiddle/typora-themeable/releases/latest/download/typora-themeable.zip -o typora-themeable.zip \
+  && unzip typora-themeable.zip \
+  && rm typora-themeable.zip \
+  && echo -e "\nInstallation complete. Please restart Typora.\n"
+```
 
 <!-- tabs:end -->
 
