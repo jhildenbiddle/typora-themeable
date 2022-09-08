@@ -1,6 +1,6 @@
 # Typora Themeable
 
-![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/jhildenbiddle/typora-themeable?label=version&sort=semver&style=flat-square)
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/jhildenbiddle/typora-themeable?style=flat-square)](https://github.com/jhildenbiddle/typora-themeable/releases)
 [![GitHub Workflow Status (main)](https://img.shields.io/github/workflow/status/jhildenbiddle/typora-themeable/Build%20&%20Test/main?label=checks&style=flat-square)](https://github.com/jhildenbiddle/typora-themeable/actions?query=branch%3Amain+)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://github.com/jhildenbiddle/typora-themeable/blob/main/LICENSE)
 [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?url=https%3A%2F%2Fgithub.com%2Fjhildenbiddle%2Ftypora-themeable&hashtags=developers,frontend,javascript)
