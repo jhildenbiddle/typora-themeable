@@ -38,7 +38,7 @@
     "prepare": "npm run clean && npm run build",
     "serve": "node server.js",
     "start": "npm run serve & npm run watch",
-    "version": "npm run lint && npm run prepare",
+    "version": "npm run lint && npm run prepare && git add -A",
     "watch": "npm run build -- -w",
     "zip": "cd dist && zip -r typora-themeable.zip ./* && cd .."
   },
