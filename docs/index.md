@@ -555,11 +555,11 @@ In dark mode or when using the **Themeable Dark** variant, monochrome color rang
 
 #### **CSS**
 
-[vars-palette.css](src/core/vars-palette.css ':include')
+[vars-palette.css](https://cdn.jsdelivr.net/gh/jhildenbiddle/typora-themeable/core/vars-palette.css ':include')
 
 **Dark Mode / Themeable Dark**
 
-[vars-palette-dark.css](src/core/vars-palette-dark.css ':include')
+[vars-palette-dark.css](https://cdn.jsdelivr.net/gh/jhildenbiddle/typora-themeable/core/vars-palette-dark.css ':include')
 
 <!-- tabs:end -->
 
@@ -567,11 +567,11 @@ In dark mode or when using the **Themeable Dark** variant, monochrome color rang
 
 Typora Themeable offers customizable [theme properties](#theme-properties) defined using [CSS custom properties](https://jhildenbiddle.github.io/docsify-themeable/#/customization). These properties allow style changes to be made without the need to navigate and modify complex CSS.
 
-[vars-theme.css](src/core/vars-theme.css ':include')
+[vars-theme.css](https://cdn.jsdelivr.net/gh/jhildenbiddle/typora-themeable/core/vars-theme.css ':include')
 
 **Dark Mode / Themeable Dark**
 
-[vars-theme.css](src/core/vars-theme-dark.css ':include')
+[vars-theme.css](https://cdn.jsdelivr.net/gh/jhildenbiddle/typora-themeable/core/vars-theme-dark.css ':include')
 
 ## Contact & Support
 
