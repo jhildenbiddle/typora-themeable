@@ -39,4 +39,5 @@ jobs:
         uses: softprops/action-gh-release@v1
         if: startsWith(github.ref, 'refs/tags/')
         with:
+          body: "See [CHANGELOG.md](https://github.com/jhildenbiddle/typora-themeable/blob/main/CHANGELOG.md) for details"
           files: dist/typora-themeable.zip
