@@ -28,7 +28,7 @@ ul > li::marker {
     color: var(--marker-color);
 }
 
-/* Task Lists
+/* Task Lists */
 /* -------------------------------------------------------------------------- */
 #write li.task-list-item {
     padding-left: 0.75em;

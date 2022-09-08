@@ -1,11 +1,12 @@
-/* ========================================================================== */
-/* Themeable - Basic */
-/* ========================================================================== */
+/* ================================================================ */
+/* Themeable - Common
+/* ================================================================ */
 :root {
     /* Colors */
-    /* - red, orange, amber, yellow, lime, green, emerald, teal, cyan, sky, */
-    /*   blue, indigo, violet, purple, fuchsia, pink, rose */
-    /* - 50 (light), 100, 200 ... 900 (dark) */
+    /* Names: red, orange, amber, yellow, lime, green, emerald, */
+    /*        teal, cyan, sky,blue, indigo, violet, purple, */
+    /*        fuchsia, pink, rose */
+    /* Range: 50 (light), 100, 200 ... 900 (dark) */
     --color-primary            : var(--sky-600);
     --color-secondary          : var(--violet-500);
     --marked-background        : var(--yellow-300);
@@ -14,8 +15,8 @@
     --selection-background     : var(--sky-100);
 
     /* Monochrome */
-    /* - slate, gray, zinc, neutral, stone */
-    /* - 50 (light), 100, 200 ... 900 (dark) */
+    /* Names: slate, gray, zinc, neutral, stone */
+    /* Range: 50 (light), 100, 200 ... 900 (dark) */
     --mono-50 : var(--neutral-50);
     --mono-100: var(--neutral-100);
     --mono-200: var(--neutral-200);
@@ -37,10 +38,9 @@
     --font-weight-mono: 500;
 }
 
-
-/* ========================================================================== */
-/* Themeable - Advanced */
-/* ========================================================================== */
+/* ================================================================ */
+/* Themeable - Advanced
+/* ================================================================ */
 :root {
     /* Colors */
     --color-hover          : var(--mono-200);
@@ -160,6 +160,8 @@
     --tr-border-width             : 0 0 1px 0;
 
     /* Syntax Highlighting */
+    /* NOTE: Typora uses CodeMirror for syntax highlight */
+    /* See https://codemirror.net for details and themes */
     --code-activeline-background: var(--mono-200);
     --code-atom-color           : var(--amber-600);
     --code-attribute-color      : var(--sky-600);
@@ -202,10 +204,9 @@
     --sequence-theme: simple; /* hand, simple */
 }
 
-
-/* ========================================================================== */
+/* ================================================================ */
 /* Print */
-/* ========================================================================== */
+/* ================================================================ */
 @media print {
     :root {
         --background-color: #fff;

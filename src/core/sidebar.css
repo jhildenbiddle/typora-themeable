@@ -46,7 +46,7 @@
     background: var(--color-primary);
 }
 
-/* Headers
+/* Headers */
 /* -------------------------------------------------------------------------- */
 /* Linux/Windows */
 .info-panel-tab-border {
@@ -179,7 +179,7 @@
     padding-right: 10px;
 }
 
-/* Articles & Files (Shared)
+/* Articles & Files (Shared) */
 /* -------------------------------------------------------------------------- */
 .file-node-icon.fa-folder::before {
     content: "\f114";
@@ -203,7 +203,7 @@
     font-size: 10px;
 }
 
-/* Articles
+/* Articles */
 /* -------------------------------------------------------------------------- */
 .file-list-item-file-ext-part,
 .file-list-item-parent-loc,
@@ -266,7 +266,7 @@
     font-size: var(--font-size-ui-s);
 }
 
-/* Files List
+/* Files List */
 /* -------------------------------------------------------------------------- */
 .file-library-file-node:not(.active):hover {
     color: var(--sidebar-hover-color);
@@ -350,7 +350,7 @@
     width: auto;
 }
 
-/* Search
+/* Search */
 /* -------------------------------------------------------------------------- */
 #sidebar-search-btn,
 #ty-sidebar-search-back-btn {
@@ -426,7 +426,7 @@
     text-align: center;
 }
 
-/* Footer Menu
+/* Footer Menu */
 /* -------------------------------------------------------------------------- */
 #sidebar-files-menu {
     border-color: var(--border-color);

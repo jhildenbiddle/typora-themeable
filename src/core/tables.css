@@ -38,7 +38,7 @@ td {
     border-color: var(--td-border-color);
 }
 
-/* Editing Bar
+/* Editing Bar */
 /* -------------------------------------------------------------------------- */
 .md-table-edit {
     z-index: 1;
@@ -101,7 +101,7 @@ td {
     display: none !important;
 }
 
-/* Resize Popover
+/* Resize Popover */
 /* -------------------------------------------------------------------------- */
 .md-table-resize-popover[class] {
     width: auto;
@@ -177,7 +177,7 @@ table.md-grid-board:hover a.md-active {
     display: none !important;
 }
 
-/* "More" context menu
+/* "More" context menu */
 /* -------------------------------------------------------------------------- */
 #table-menu {
     width: 30ch;

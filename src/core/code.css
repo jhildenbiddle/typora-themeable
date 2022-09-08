@@ -38,7 +38,7 @@
     color: var(--code-comment-color);
 }
 
-/* Inline
+/* Inline */
 /* -------------------------------------------------------------------------- */
 [md-inline="code"] {
     padding: 0.1em 0.35em;
@@ -47,14 +47,14 @@
     color: var(--code-inline-color);
 }
 
-/* Fences
+/* Fences */
 /* -------------------------------------------------------------------------- */
 .md-fences {
     margin: 2rem 0;
     background: none;
 }
 
-/* CodeMirror
+/* CodeMirror */
 /* -------------------------------------------------------------------------- */
 #typora-source .CodeMirror-lines {
     max-width: var(--max-width);
@@ -111,7 +111,7 @@
     background: var(--code-selected-background) !important;
 }
 
-/* Syntax Highlighting
+/* Syntax Highlighting */
 /* -------------------------------------------------------------------------- */
 #typora-source .cm-atom {
     color: inherit !important;
@@ -211,7 +211,7 @@
     color: var(--code-bracket-color) !important;
 }
 
-/* Language Selector
+/* Language Selector */
 /* -------------------------------------------------------------------------- */
 #write .md-fences > .code-tooltip,
 #write .md-fences > .code-tooltip .ty-cm-lang-input {
@@ -248,7 +248,7 @@
     color: var(--text-color);
 }
 
-/* Diagrams
+/* Diagrams */
 /* -------------------------------------------------------------------------- */
 .md-diagram-panel,
 .md-diagram-panel svg,
@@ -376,7 +376,7 @@ pre.md-fences[lang="sequence"] .md-diagram-panel {
     padding: 20px var(--code-padding-lr);
 }
 
-/* Raw Blocks
+/* Raw Blocks */
 /* -------------------------------------------------------------------------- */
 .md-rawblock:hover .md-rawblock-container,
 .md-rawblock:hover .md-rawblock-tooltip {
