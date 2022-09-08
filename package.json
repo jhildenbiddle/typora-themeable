@@ -40,7 +40,7 @@
     "start": "npm run serve & npm run watch",
     "version": "npm run lint && npm run prepare && git add -A",
     "watch": "npm run build -- -w",
-    "zip": "cd dist && zip -r typora-themeable.zip ./* && cd .."
+    "zip": "cd dist && zip -r typora-themeable.zip ./* && cd .. && zip ./dist/typora-themeable.zip themeable.md"
   },
   "devDependencies": {
     "browser-sync": "^2.27.10",
