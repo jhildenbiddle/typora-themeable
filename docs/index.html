@@ -69,12 +69,14 @@
         .swatch-grid {
             display: grid;
             grid-template-columns: repeat(11, 1fr);
+            overflow: auto;
             margin: 1em 0 1.5em 0;
             line-height: 2.25; gap: 1px;
             border-radius: 4px;
         }
 
         .swatch-grid > * {
+            min-width: 2.5em;
             border-radius: 2px;
         }
 
