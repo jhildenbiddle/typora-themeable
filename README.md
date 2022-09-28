@@ -2,6 +2,8 @@
 
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/jhildenbiddle/typora-themeable?style=flat-square)](https://github.com/jhildenbiddle/typora-themeable/releases)
 [![GitHub Workflow Status (main)](https://img.shields.io/github/workflow/status/jhildenbiddle/typora-themeable/Build%20&%20Test/main?label=checks&style=flat-square)](https://github.com/jhildenbiddle/typora-themeable/actions?query=branch%3Amain+)
+![GitHub all releases](https://img.shields.io/github/downloads/jhildenbiddle/typora-themeable/total?style=flat-square)
+![jsDelivr hits (GitHub)](https://img.shields.io/jsdelivr/gh/hm/jhildenbiddle/typora-themeable?style=flat-square)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://github.com/jhildenbiddle/typora-themeable/blob/master/LICENSE)
 
 A clean, customizable, typography-focused theme system for the markdown editor, [Typora](https://typora.io).

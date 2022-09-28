@@ -2,6 +2,8 @@
 
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/jhildenbiddle/typora-themeable?style=flat-square)](https://github.com/jhildenbiddle/typora-themeable/releases)
 [![GitHub Workflow Status (main)](https://img.shields.io/github/workflow/status/jhildenbiddle/typora-themeable/Build%20&%20Test/main?label=checks&style=flat-square)](https://github.com/jhildenbiddle/typora-themeable/actions?query=branch%3Amain+)
+![GitHub all releases](https://img.shields.io/github/downloads/jhildenbiddle/typora-themeable/total?style=flat-square)
+![jsDelivr hits (GitHub)](https://img.shields.io/jsdelivr/gh/hm/jhildenbiddle/typora-themeable?style=flat-square)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://github.com/jhildenbiddle/typora-themeable/blob/main/LICENSE)
 [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?url=https%3A%2F%2Fgithub.com%2Fjhildenbiddle%2Ftypora-themeable&hashtags=developers,frontend,javascript)
 <a class="github-button" href="https://github.com/jhildenbiddle/typora-themeable" data-icon="octicon-star" data-show-count="true" aria-label="Star jhildenbiddle/typora-themeable on GitHub">Star</a>
