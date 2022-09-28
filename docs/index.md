@@ -41,13 +41,14 @@ The screenshot below illustrates how Typora Themeable renders various markdown e
 
 1. Download the latest [release](https://github.com/jhildenbiddle/typora-themeable/releases) of Typora Themeable: <a href="https://github.com/jhildenbiddle/typora-themeable/releases/latest/download/typora-themeable.zip" download>typora-themeable.zip</a>
 2. Extract files from the ZIP archive
-3. Copy the extracted files (including the `themeable` directory) into Typora's `themes` directory
+3. Open Typora's `themes` directory:
    - Open Typora's preferences
    - Select **Appearance**
    - Click **Open Theme Folder**
-4. Delete the ZIP archive
-5. Restart Typora
-6. Select a **Themeable** theme  from Typora's **Preferences** or **Themes** menu
+4. Copy the extracted files (including the `themeable` directory) into Typora's `themes` directory
+5. Delete the ZIP archive
+6. Restart Typora
+7. Select a **Themeable** theme  from Typora's **Preferences** or **Themes** menu
 
 Alternatively, command line users can perform the same download, extract, copy, and delete actions in a single step using one of the following commands:
 
@@ -109,7 +110,7 @@ cd ~/snap/typora/current/.config/Typora/themes/ \
 
 <!-- tabs:end -->
 
-!> **Don't forget to update Typora Themeable!**<br>Typora currently does not auto-update third-party themes when new versions are released. To ensure you are running the latest version of Typora Themeable, check this site periodically or follow [@jhildenbiddle](https://twitter.com/jhildenbiddle) for update notifications.
+!> **Don't forget to update Typora Themeable!**<br>Typora currently does not auto-update third-party themes when new versions are released. To ensure you are running the latest version of Typora Themeable, check this site periodically or follow **@jhildenbiddle** on [Twitter](https://twitter.com/jhildenbiddle) or [GitHub](https://github.com/jhildenbiddle) for update notifications.
 
 ## Customization
 
@@ -569,11 +570,15 @@ In dark mode or when using the **Themeable Dark** variant, monochrome color rang
 
 ### Theme Properties
 
-Typora Themeable offers customizable [theme properties](#theme-properties) defined using [CSS custom properties](https://jhildenbiddle.github.io/docsify-themeable/#/customization). These properties allow style changes to be made without the need to navigate and modify complex CSS.
+Typora Themeable offers customizable theme properties defined using [CSS custom properties](https://jhildenbiddle.github.io/docsify-themeable/#/customization). These properties allow style changes to be made without the need to navigate and modify complex CSS.
+
+The following CSS represents a complete list of available theme properties. The values shown are those applied in light mode or when using the **Themeable Light** variant.
 
 [vars-theme.css](https://cdn.jsdelivr.net/gh/jhildenbiddle/typora-themeable/src/core/vars-theme.css ':include')
 
 **Dark Mode / Themeable Dark**
+
+The following CSS contains the modified theme properties that are applied in dark mode or when using the **Themeable Dark** variant.
 
 [vars-theme.css](https://cdn.jsdelivr.net/gh/jhildenbiddle/typora-themeable/src/core/vars-theme-dark.css ':include')
 
