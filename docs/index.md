@@ -580,7 +580,7 @@ Typora Themeable offers customizable [theme properties](#theme-properties) defin
 ## Contact & Support
 
 - Create a [GitHub issue](https://github.com/jhildenbiddle/typora-themeable/issues) for bug reports, feature requests, or questions
-- Follow [@jhildenbiddle](https://twitter.com/jhildenbiddle) for announcements
+- Follow **@jhildenbiddle** on [Twitter](https://twitter.com/jhildenbiddle) or [GitHub](https://github.com/jhildenbiddle) for announcements
 - Add a ⭐️ [star on GitHub](https://github.com/jhildenbiddle/typora-themeable) or 🐦 [tweet](https://twitter.com/intent/tweet?url=https%3A%2F%2Fgithub.com%2Fjhildenbiddle%2Ftypora-themeable&hashtags=typora,markdown,css,developers) to support the project!
 
 ## License
