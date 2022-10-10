@@ -596,7 +596,7 @@ Thank you! 🙏🏻
 
 ## Contact & Support
 
-- Follow <img src="http://www.gravatar.com/avatar/3c9ccc6841966c8c99b86896d56cdfd3?d=identicon" alt="John Hildenbiddle" title="Hey, that's me!" style="height: 1.3em; width: 1.3em; margin-bottom: -0.1em; border-radius: 50%; background: #eee; vertical-align: text-bottom; cursor: help;"> **@jhildenbiddle** on [Twitter](https://twitter.com/jhildenbiddle) and [GitHub](https://github.com/jhildenbiddle) for announcements
+- Follow 👨🏻‍💻 **@jhildenbiddle** on [Twitter](https://twitter.com/jhildenbiddle) and [GitHub](https://github.com/jhildenbiddle) for announcements
 - Create a 💬 [GitHub issue](https://github.com/jhildenbiddle/typora-themeable/issues) for bug reports, feature requests, or questions
 - Add a ⭐️ [star on GitHub](https://github.com/jhildenbiddle/typora-themeable) and 🐦 [tweet](https://twitter.com/intent/tweet?url=https%3A%2F%2Fgithub.com%2Fjhildenbiddle%2Ftypora-themeable&hashtags=typora,markdown,css,developers) to promote the project
 - Become a 💖 [sponsor](https://github.com/sponsors/jhildenbiddle) to support the project and future efforts
