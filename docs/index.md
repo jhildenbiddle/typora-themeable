@@ -5,6 +5,8 @@
 ![GitHub all releases](https://img.shields.io/github/downloads/jhildenbiddle/typora-themeable/total?style=flat-square)
 ![jsDelivr hits (GitHub)](https://img.shields.io/jsdelivr/gh/hm/jhildenbiddle/typora-themeable?style=flat-square)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://github.com/jhildenbiddle/typora-themeable/blob/main/LICENSE)
+[![Sponsor this project](https://img.shields.io/static/v1?style=flat-square&label=Sponsor&message=%E2%9D%A4&logo=GitHub&color=%23fe8e86)](https://github.com/sponsors/jhildenbiddle)
+
 [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?url=https%3A%2F%2Fgithub.com%2Fjhildenbiddle%2Ftypora-themeable&hashtags=developers,frontend,javascript)
 <a class="github-button" href="https://github.com/jhildenbiddle/typora-themeable" data-icon="octicon-star" data-show-count="true" aria-label="Star jhildenbiddle/typora-themeable on GitHub">Star</a>
 
@@ -582,11 +584,22 @@ The following CSS contains the modified theme properties that are applied in dar
 
 [vars-theme.css](https://cdn.jsdelivr.net/gh/jhildenbiddle/typora-themeable/src/core/vars-theme-dark.css ':include')
 
+## Sponsorship
+
+A [sponsorship](https://github.com/sponsors/jhildenbiddle) is more than just a way to support and show appreciation for the open-source authors and projects we benefit from every day; it can be the spark that ignites the next great idea, the motivation to create something new, and the inspiration to contribute back to the open-source community.
+
+If you benefit from this project and have the means to do so, please consider [sponsoring](https://github.com/sponsors/jhildenbiddle) the project and its author. It's a great way to say "thanks", help support this project, and encourage future efforts.
+
+Thank you! 🙏🏻
+
+<iframe src="https://github.com/sponsors/jhildenbiddle/button" title="Sponsor jhildenbiddle" height="35" width="116" style="border: 0; margin: 0;"></iframe>
+
 ## Contact & Support
 
-- Create a [GitHub issue](https://github.com/jhildenbiddle/typora-themeable/issues) for bug reports, feature requests, or questions
-- Follow **@jhildenbiddle** on [Twitter](https://twitter.com/jhildenbiddle) or [GitHub](https://github.com/jhildenbiddle) for announcements
-- Add a ⭐️ [star on GitHub](https://github.com/jhildenbiddle/typora-themeable) or 🐦 [tweet](https://twitter.com/intent/tweet?url=https%3A%2F%2Fgithub.com%2Fjhildenbiddle%2Ftypora-themeable&hashtags=typora,markdown,css,developers) to support the project!
+- Follow <img src="http://www.gravatar.com/avatar/3c9ccc6841966c8c99b86896d56cdfd3?d=identicon" alt="John Hildenbiddle" title="Hey, that's me!" style="height: 1.3em; width: 1.3em; margin-bottom: -0.1em; border-radius: 50%; background: #eee; vertical-align: text-bottom; cursor: help;"> **@jhildenbiddle** on [Twitter](https://twitter.com/jhildenbiddle) and [GitHub](https://github.com/jhildenbiddle) for announcements
+- Create a 💬 [GitHub issue](https://github.com/jhildenbiddle/typora-themeable/issues) for bug reports, feature requests, or questions
+- Add a ⭐️ [star on GitHub](https://github.com/jhildenbiddle/typora-themeable) and 🐦 [tweet](https://twitter.com/intent/tweet?url=https%3A%2F%2Fgithub.com%2Fjhildenbiddle%2Ftypora-themeable&hashtags=typora,markdown,css,developers) to promote the project
+- Become a 💖 [sponsor](https://github.com/sponsors/jhildenbiddle) to support the project and future efforts
 
 ## License
 
