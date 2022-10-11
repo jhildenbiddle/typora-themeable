@@ -586,9 +586,9 @@ The following CSS contains the modified theme properties that are applied in dar
 
 ## Sponsorship
 
-A [sponsorship](https://github.com/sponsors/jhildenbiddle) is more than just a way to support and show appreciation for the open-source authors and projects we benefit from every day; it can be the spark that ignites the next great idea, the motivation to create something new, and the inspiration to contribute back to the open-source community.
+A [sponsorship](https://github.com/sponsors/jhildenbiddle) is more than just a way to show appreciation for the open-source authors and projects we rely on every day; it can be the spark that ignites the next big idea, the motivation to create something new, and the inspiration to contribute to the open-source community.
 
-If you benefit from this project and have the means to do so, please consider [sponsoring](https://github.com/sponsors/jhildenbiddle) the project and its author. It's a great way to say "thanks", help support this project, and encourage future efforts.
+If you benefit from this project, please consider supporting the project and encouraging future efforts by [becoming a sponsor](https://github.com/sponsors/jhildenbiddle).
 
 Thank you! 🙏🏻
 
