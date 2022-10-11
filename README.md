@@ -31,9 +31,9 @@ See the [documentation site](https://jhildenbiddle.github.io/typora-themeable/) 
 
 ## Sponsorship
 
-A [sponsorship](https://github.com/sponsors/jhildenbiddle) is more than just a way to show appreciation for the open-source authors and projects we rely on every day; it can be the spark that ignites the next big idea, the motivation to create something new, and the inspiration to contribute to the open-source community.
+A [sponsorship](https://github.com/sponsors/jhildenbiddle) is more than just a way to show appreciation for the open-source authors and projects we rely on; it can be the spark that ignites the next big idea, the inspiration to create something new, and the motivation to share so that others may benefit.
 
-If you benefit from this project, please consider supporting the project and encouraging future efforts by [becoming a sponsor](https://github.com/sponsors/jhildenbiddle).
+If you benefit from this project, please consider supporting the author and encouraging future efforts by [becoming a sponsor](https://github.com/sponsors/jhildenbiddle).
 
 Thank you! 🙏🏻
 
