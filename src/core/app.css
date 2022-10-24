@@ -124,3 +124,21 @@ body :is(#write, #typora-source) .cm-search-hit {
 #write > :last-child {
     margin-bottom: 0;
 }
+
+/* ========================================================================== */
+/* Footer
+/* ========================================================================== */
+footer.ty-footer {
+    border-color: var(--mono-200);
+}
+
+.typora-sourceview-on #toggle-sourceview-btn {
+    background: none;
+    opacity: 1;
+}
+
+.footer-item:hover,
+.typora-sourceview-on #toggle-sourceview-btn:hover {
+    background: var(--sidebar-hover-background);
+    color: var(--sidebar-hover-color);
+}
