@@ -1,5 +1,11 @@
 # Change Log
 
+## 1.0.3
+
+*2023-01-19*
+
+- Fix Windows unibody style
+
 ## 1.0.2
 
 *2022-10-24*
