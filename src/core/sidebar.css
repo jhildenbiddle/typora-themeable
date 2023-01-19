@@ -2,6 +2,7 @@
 /* Sidebar
 /* ========================================================================== */
 #typora-sidebar {
+    border-top: none !important;
     border-right: var(--sidebar-border-width) solid var(--sidebar-border-color);
     background: var(--sidebar-background);
     color: var(--sidebar-color);
