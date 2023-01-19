@@ -1,0 +1,282 @@
+/* ========================================================================== */
+/* Mega Menu (Windows only)
+/* ========================================================================== */
+.megamenu-opened #w-traffic-lights {
+    background: var(--mono-50);
+    border-bottom-left-radius: var(--border-radius);
+    overflow: hidden;
+}
+
+.paint-border .megamenu-content {
+    border-color: var(--sidebar-border-color);
+}
+
+.megamenu-menu,
+.megamenu-opened .megamenu-menu {
+    transition: .2s;
+}
+
+.megamenu-menu {
+    border-right: var(--sidebar-border-width) solid var(--sidebar-border-color);
+    box-shadow: none;
+    background: var(--sidebar-background);
+    color: var(--sidebar-color);
+}
+
+/* Header */
+/* -------------------------------------------------------------------------- */
+.megamenu-menu-header {
+    border-bottom: var(--sidebar-border-width) solid var(--sidebar-border-color);
+}
+
+#megamenu-menu-header-title {
+    font-size: var(--font-size-ui-l);
+    color: inherit !important;
+}
+
+#megamenu-back-btn {
+    border-color: transparent;
+    color: var(--mono-300);
+    font-size: min(16px, calc(var(--font-size-ui-l) * 0.85));
+}
+
+.megamenu-menu-header:is(:focus, :hover) {
+    color: inherit;
+}
+
+.megamenu-menu-header:is(:focus,:hover) #megamenu-back-btn {
+    color: var(--color-primary);
+}
+
+.megamenu-menu-list {
+    background-color: transparent;
+    border: 0;
+    border-radius: none;
+}
+
+.megamenu-menu-list.dropdown-menu .divider {
+    background-color: var(--sidebar-border-color);
+    opacity: 1;
+}
+
+.megamenu-menu-list #m-saved .fa {
+    font-size: 1em;
+}
+
+.megamenu-menu-list #m-saved .fa::before {
+    content: "\f00c";
+    color: var(--color-primary);
+}
+
+.megamenu-menu-list:not(.saved) li a:hover {
+    background-color: transparent;
+}
+
+.megamenu-menu-list li {
+    font-size: var(--font-size-ui);
+}
+
+.megamenu-menu-list li a.active,
+.megamenu-menu-list:not(.saved) li a:hover {
+    background-color: var(--item-hover-bg-color);
+    color: var(--item-hover-text-color)
+}
+
+.megamenu-opened header {
+    background: none !important;
+}
+
+/* Content */
+/* -------------------------------------------------------------------------- */
+.megamenu-content {
+    background: transparent;
+}
+
+.megamenu-opened > content {
+    opacity: 0.2;
+    filter: blur(10px);
+}
+
+#m-import-local:hover .preference-item-hint {
+    /* color: #999; */
+}
+
+.megamenu-menu-panel h1,
+.megamenu-menu-panel h2  {
+    line-height: 1;
+    font-weight: var(--strong-font-weight);
+}
+
+.megamenu-menu-panel h1 {
+    font-size: var(--font-size-ui-xl);
+}
+
+.megamenu-menu-panel h2 {
+    font-size: var(--font-size-ui-l);
+}
+
+.long-btn,
+.megamenu-menu-panel .btn,
+#recent-file-panel-action-btn {
+    background: var(--mono-100);
+    border: 1px solid var(--mono-300);
+}
+
+.long-btn:hover,
+.megamenu-menu-panel .btn:hover,
+#recent-file-panel-action-btn:hover {
+    background-color: var(--item-hover-bg-color);
+    color: var(--item-hover-text-color) !important;
+}
+
+.long-btn {
+    padding: 0.75em 1em;
+    border-radius: var(--border-radius);
+    font-size: inherit;
+}
+
+.megamenu-menu-panel table,
+.megamenu-menu-panel table :is(thead, tbody, tr, th, td) {
+    border-style: solid;
+}
+
+.megamenu-menu-panel table {
+    font-size: inherit !important;
+    font-weight: inherit;
+    letter-spacing: inherit;
+    line-height: inherit;
+}
+
+.megamenu-menu-panel table thead {
+    border-width: var(--thead-border-width, 0);
+    border-color: var(--thead-border-color);
+}
+
+.megamenu-menu-panel table tbody {
+    border-width: var(--tbody-border-width, 0);
+    border-color: var(--tbody-border-color);
+}
+
+.megamenu-menu-panel table tbody tr {
+    border-width: var(--tr-border-width, 0);
+    border-color: var(--tr-border-color);
+    background: transparent !important;
+}
+
+.megamenu-menu-panel table tbody tr:nth-child(even) {
+    background: var(--tr-alt-background) !important;
+}
+
+.megamenu-menu-panel table tr th {
+    padding: var(--th-padding);
+    border-width: var(--th-border-width, 0);
+    border-color: var(--th-border-color);
+    font-weight: var(--th-font-weight);
+    color: var(--th-color)
+}
+
+.megamenu-menu-panel table tr td {
+    padding: var(--td-padding);
+    border-width: var(--td-border-width, 0);
+    border-color: var(--td-border-color);
+}
+
+#recent-file-panel {
+    font-size: inherit;
+}
+
+#recent-document-table {
+    margin-top: 1.5em !important;
+}
+
+@media (max-width: 530px) {
+    .megamenu-menu-header #megamenu-menu-header-title {
+        display: none;
+    }
+
+    .megamenu-menu-list li a {
+        font-size: 24px;
+    }
+
+    .megamenu-menu-list li a.active {
+        background-color: var(--item-hover-bg-color);
+        color: inherit;
+    }
+}
+
+/* Modals */
+/* -------------------------------------------------------------------------- */
+.error-dialog .modal-header {
+    /* border-left: 8px #d9534f solid; */
+}
+
+.modal-open .modal.fade.in {
+    /* background-color: rgba(0, 0, 0, .1) */
+}
+
+.megamenu-opened.modal-open .modal.fade.in {
+    /* background-color: rgba(0, 0, 0, .35) */
+}
+
+/* About */
+/* -------------------------------------------------------------------------- */
+#about-content-license-button {
+    border-radius: var(--border-radius);
+    font-size: inherit;
+}
+
+.about-content-slogon {
+    font-family: var(--font-family);
+    letter-spacing: normal;
+    color: var(--color-secondary);
+}
+
+.about-content-hint {
+    font-size: inherit;
+    /* opacity: .6; */
+}
+
+.about-content-meta {
+    /* opacity: .8; */
+    font-size: inherit;
+    font-family: var(--font-family-mono);
+}
+
+/* Theme Thumbnails */
+/* -------------------------------------------------------------------------- */
+.theme-preview-content {
+    border-radius: var(--border-radius);
+    border: none
+}
+
+.theme-preview-div {
+    --border-width: 4px;
+
+    border: var(--border-width) solid var(--mono-200);
+    color: var(--side-bar-menu-active-tint);
+    border-radius: calc(var(--border-radius) + var(--border-width));
+}
+
+.theme-preview-div:hover {
+    border-color: var(--color-primary);
+}
+
+.theme-preview-div.active,
+.theme-preview-div.active:hover {
+    border-color: var(--color-primary);
+}
+
+.theme-preview-div .fa {
+    bottom: 8px;
+    left: auto;
+    right: 8px;
+    padding: 0.25em;
+    border-radius: 50%;
+    background: var(--color-primary);
+    color: #fff;
+    font-size: 125%;
+}
+
+.theme-preview-div .fa::before {
+    content: "\f00c";
+}

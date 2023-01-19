@@ -29,7 +29,7 @@ th {
     border-width: var(--th-border-width, 0);
     border-color: var(--th-border-color);
     font-weight: var(--th-font-weight);
-    color: var(--th-color)
+    color: var(--th-color);
 }
 
 td {
