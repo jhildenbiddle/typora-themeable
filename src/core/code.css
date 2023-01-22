@@ -93,6 +93,10 @@
     min-width: 2.25em;
 }
 
+#write .CodeMirror-scroll {
+    cursor: auto;
+}
+
 :is(#write, #typora-source) .CodeMirror-cursor {
     border-left: var(--code-cursor-border);
 }
