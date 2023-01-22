@@ -1,10 +1,16 @@
 # Change Log
 
+## 1.0.4
+
+*2023-01-21*
+
+- Fix code fence scrollbar cursor (#3)
+
 ## 1.0.3
 
 *2023-01-19*
 
-- Fix Windows unibody style
+- Fix Windows unibody style (#2)
 
 ## 1.0.2
 
