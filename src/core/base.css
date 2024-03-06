@@ -19,6 +19,8 @@ body {
 html {
     accent-color: var(--color-primary);
     font-family: var(--font-family-ui);
+    font-feature-settings: "liga" 1, "calt" 1; /* fix for Chrome */
+    font-optical-sizing: auto;
     font-size: var(--font-size);
     font-weight: var(--font-weight);
 }

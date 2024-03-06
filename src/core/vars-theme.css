@@ -29,7 +29,7 @@
     --mono-900: var(--neutral-900);
 
     /* Typography */
-    --font-family     : "Inter var", "Inter", system, -apple-system, ".SFNSText-Regular", "San Francisco", "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    --font-family     : "InterVariable", "Inter", system, -apple-system, ".SFNSText-Regular", "San Francisco", "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
     --font-family-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     --font-size       : 16px;
     --font-size-mono  : 15px;
