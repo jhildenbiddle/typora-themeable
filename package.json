@@ -43,13 +43,13 @@
     "zip": "cd dist && zip -r typora-themeable.zip ./* && cd .. && zip ./dist/typora-themeable.zip themeable.md"
   },
   "devDependencies": {
-    "browser-sync": "^2.27.10",
-    "cpy-cli": "^4.2.0",
-    "markdownlint-cli": "^0.33.0",
+    "browser-sync": "^3.0.2",
+    "cpy-cli": "^5.0.0",
+    "markdownlint-cli": "^0.39.0",
     "postcss-banner": "^4.0.1",
-    "postcss-cli": "^10.0.0",
-    "postcss-discard-comments": "^5.1.2",
-    "postcss-import": "^15.0.0",
-    "rimraf": "^4.1.1"
+    "postcss-cli": "^11.0.0",
+    "postcss-discard-comments": "^6.0.2",
+    "postcss-import": "^16.0.1",
+    "rimraf": "^5.0.5"
   }
 }
