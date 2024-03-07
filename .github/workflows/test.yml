@@ -32,9 +32,6 @@ jobs:
       - name: Lint
         run: npm run lint
 
-      - name: Create archive
-        run: npm run zip
-
       - name: Release
         uses: softprops/action-gh-release@v1
         if: startsWith(github.ref, 'refs/tags/')
