@@ -30,17 +30,17 @@
   ],
   "style": "dist/themeable.css",
   "scripts": {
-    "build": "postcss {src,src/themeable/**}/*.css --dir dist --base src",
-    "postbuild": "npm run copy",
+    "build": "npm run build:css && npm run build:fonts && npm run build:zip",
+    "build:css": "postcss {src,src/themeable/**}/*.css --dir dist --base src",
+    "build:fonts": "cpy 'src/themeable/fonts/*' 'dist/themeable/fonts/'",
+    "build:zip": "cd dist && rimraf *.zip && zip typora-themeable -r ./* && zip typora-themeable -j ../themeable.md",
     "clean": "rimraf dist/*",
-    "copy": "cpy 'src/themeable/fonts/*' 'dist/themeable/fonts/'",
     "lint": "markdownlint . --ignore node_modules",
     "prepare": "npm run clean && npm run build",
     "serve": "node server.js",
-    "start": "npm run serve & npm run watch",
+    "start": "npm run prepare && npm run serve & npm run watch",
     "version": "npm run lint && npm run prepare && git add -A",
-    "watch": "npm run build -- -w",
-    "zip": "cd dist && zip -r typora-themeable.zip ./* && cd .. && zip ./dist/typora-themeable.zip themeable.md"
+    "watch": "npm run build:css -- -w"
   },
   "devDependencies": {
     "browser-sync": "^3.0.2",
