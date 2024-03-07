@@ -14,7 +14,7 @@ A clean, customizable, typography-focused theme for the markdown editor, [Typora
 <figure>
   <picture>
     <source srcset="assets/img/screenshot-dark.webp" width="700" media="(prefers-color-scheme:dark)">
-    <img src="assets/img/screenshot-light.webp" width="700">
+    <img src="assets/img/screenshot-light.webp" width="700" alt="">
   </picture>
   <figcaption>Light and dark theme examples</figcaption>
 </figure>
@@ -33,7 +33,7 @@ The screenshot below illustrates how Typora Themeable renders various markdown e
 <figure>
   <picture class="screenshot-scroll">
     <source srcset="assets/img/screenshot-dark-full.jpg" width="871" media="(prefers-color-scheme:dark)">
-    <img src="assets/img/screenshot-light-full.jpg" width="872" loading="lazy">
+    <img src="assets/img/screenshot-light-full.jpg" width="872" loading="lazy" alt="">
   </picture>
   <figcaption>Typora Themeable markdown demo</figcaption>
 </figure>

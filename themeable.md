@@ -339,9 +339,9 @@ This is ~subscript~ text
 
 [Reference link][link1]
 
-www.some-domain.com
+www.some-domain.com <!-- markdownlint-disable no-bare-urls -->
 
-person@email.com
+person@email.com <!-- markdownlint-disable no-bare-urls -->
 
 [link1]: https://google.com "This an optional title"
 

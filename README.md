@@ -13,7 +13,7 @@ A clean, customizable, typography-focused theme system for the markdown editor, 
   <a href="https://jhildenbiddle.github.io/typora-themeable/">
     <picture>
       <source srcset="docs/assets/img/screenshot-dark.webp" width="700" media="(prefers-color-scheme:dark)">
-      <img src="docs/assets/img/screenshot-light.webp" width="700">
+      <img src="docs/assets/img/screenshot-light.webp" width="700" alt="">
     </picture>
   </a>
 </p>
