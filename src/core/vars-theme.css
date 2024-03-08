@@ -93,6 +93,8 @@
     --menu-background             : #fff;
     --menu-border-width           : 0;
     --menu-color                  : inherit;
+    --scrollbar-thumb-color       : var(--mono-300);
+    --scrollbar-width             : 6px;
     --search-match-color          : var(--text-color);
     --selection-color             : ;
     --sidebar-active-background   : var(--color-hover);

@@ -21,6 +21,21 @@
 /* ========================================================================== */
 /* App
 /* ========================================================================== */
+::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar-thumb-color);
+}
+
+.mac-os {
+    ::-webkit-scrollbar {
+      max-width: var(--scrollbar-width);
+      max-height: var(--scrollbar-width);
+    }
+
+    ::-webkit-scrollbar-thumb {
+        border-radius: 100vw;
+    }
+}
+
 /* Tabs */
 body:not([class*="seamless"]) :is(#typora-sidebar, content) {
     border-top: 1px solid var(--border-color);
