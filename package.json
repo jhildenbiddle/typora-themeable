@@ -30,7 +30,7 @@
   ],
   "style": "dist/themeable.css",
   "scripts": {
-    "build": "npm run build:css && npm run build:fonts && npm run build:zip",
+    "build": "npm run build:css && npm run build:fonts",
     "build:css": "postcss {src,src/themeable/**}/*.css --dir dist --base src",
     "build:fonts": "cpy 'src/themeable/fonts/*' 'dist/themeable/fonts/'",
     "build:zip": "cd dist && rimraf *.zip && zip typora-themeable -r ./* && zip typora-themeable -j ../themeable.md",
