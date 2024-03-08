@@ -34,7 +34,7 @@ ul > li::marker {
     padding-left: 0.75em;
 }
 
-input[checked] ~ * {
+input[checked] + * {
     opacity: 0.6;
     text-decoration: line-through;
 }
