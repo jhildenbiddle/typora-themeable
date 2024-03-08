@@ -34,6 +34,11 @@ a {
     text-decoration: underline;
 }
 
+:where(abbr, dfn)[title] {
+    cursor: help;
+    border-bottom: 1px dotted;
+}
+
 b,
 strong {
     color: var(--strong-color);

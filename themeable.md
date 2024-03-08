@@ -210,6 +210,7 @@ description: >
   <div style="background: var(--rose-800);"></div>
   <div style="background: var(--rose-900);"></div>
 </div>
+
 ## Monochrome Palette
 
 <div style="display: grid; grid-template-columns: repeat(11, 1fr); line-height: 2.25; gap: 1px;">
@@ -452,6 +453,14 @@ console.log(mergedObj);
 <!-- This is an HTML comment -->
 
 <br>
+
+<abbr title="Abbreviation">abbr</abbr> tag with title
+
+<abbr>abbr</abbr> (Abbreviation) tag without title
+
+<dfn title="Definition">dfn</dfn> tag with title
+
+<dfn>dfn</dfn> (Definition) tag without title
 
 ## Horizontal Rule
 
