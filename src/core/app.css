@@ -92,6 +92,12 @@ body:not([class*="seamless"]) :is(#typora-sidebar, content) {
     color: unset;
 }
 
+#ty-tooltip {
+    border: 0;
+    background: var(--tooltip-background);
+    color: var(--tooltip-text-color);
+}
+
 /* Auto-suggest (ex: code fence language selection) */
 #ty-auto-suggest {
     border-radius: var(--border-radius);

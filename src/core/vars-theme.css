@@ -106,6 +106,8 @@
     --sidebar-hover-background    : var(--color-hover);
     --sidebar-hover-color         : var(--color-hover-content);
     --text-color                  : var(--mono-700);
+    --tooltip-background          : var(--mono-50);
+    --tooltip-text-color          : var(--mono-800);
 
     /* Elements */
     --blockquote-background       : var(--mono-100);

@@ -19,10 +19,11 @@
     --color-status: var(--mono-300);
 
     /* App */
-    --input-background : var(--mono-50);
-    --menu-background  : var(--mono-100);
-    --menu-border-width: 1px;
+    --input-background     : var(--mono-50);
+    --menu-background      : var(--mono-100);
+    --menu-border-width    : 1px;
     --scrollbar-thumb-color: var(--mono-200);
+    --tooltip-background   : var(--mono-200);
 
     /* Elements */
     --kbd-background  : var(--mono-100);
