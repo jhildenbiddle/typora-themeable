@@ -1,5 +1,20 @@
 # Change Log
 
+## 1.1.0
+
+*2024-03-08*
+
+- Add abbr and dfn styles
+- Update Inter font to v4
+- Fix ligature rendering (#5)
+- Fix scrollbar colors in dark theme and on OS color scheme switch (#6)
+- Fix strikeout of nested checklist items (#7)
+- Fix opacity of nested checklist items (#8)
+- Fix small, sub, and sup sizing (#9)
+- Fix letter spacing on heading indicators
+- Fix tooltip styles in dark theme (#10)
+- Fix monospace font scaling (#11)
+
 ## 1.0.4
 
 *2023-01-21*
