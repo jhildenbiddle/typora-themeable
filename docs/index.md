@@ -561,11 +561,11 @@ In dark mode or when using the **Themeable Dark** variant, monochrome color rang
 
 #### **CSS**
 
-[vars-palette.css](https://cdn.jsdelivr.net/gh/jhildenbiddle/typora-themeable/src/core/vars-palette.css ':include')
+[vars-palette.css](https://raw.githubusercontent.com/jhildenbiddle/typora-themeable/main/src/core/vars-palette.css ':include')
 
 **Dark Mode / Themeable Dark**
 
-[vars-palette-dark.css](https://cdn.jsdelivr.net/gh/jhildenbiddle/typora-themeable/src/core/vars-palette-dark.css ':include')
+[vars-palette-dark.css](https://raw.githubusercontent.com/jhildenbiddle/typora-themeable/main/src/core/vars-palette-dark.css ':include')
 
 <!-- tabs:end -->
 
@@ -575,13 +575,13 @@ Typora Themeable offers customizable theme properties defined using [CSS custom 
 
 The following CSS represents a complete list of available theme properties. The values shown are those applied in light mode or when using the **Themeable Light** variant.
 
-[vars-theme.css](https://cdn.jsdelivr.net/gh/jhildenbiddle/typora-themeable/src/core/vars-theme.css ':include')
+[vars-theme.css](https://raw.githubusercontent.com/jhildenbiddle/typora-themeable/main/src/core/vars-theme.css ':include')
 
 **Dark Mode / Themeable Dark**
 
 The following CSS contains the modified theme properties that are applied in dark mode or when using the **Themeable Dark** variant.
 
-[vars-theme.css](https://cdn.jsdelivr.net/gh/jhildenbiddle/typora-themeable/src/core/vars-theme-dark.css ':include')
+[vars-theme.css](https://raw.githubusercontent.com/jhildenbiddle/typora-themeable/main/src/core/vars-theme-dark.css ':include')
 
 ## Sponsorship
 
