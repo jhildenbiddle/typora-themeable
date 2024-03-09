@@ -23,6 +23,7 @@ jobs:
         run: npm run build
 
       - name: Prepare Release
+        if: runner.os == 'Linux'
         run: npm run build:zip
 
       - name: Publish Release
